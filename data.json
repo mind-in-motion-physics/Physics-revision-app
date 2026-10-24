@@ -1,4 +1,38 @@
 {
+  "chapters": {
+    "11": [
+      { "id": 1, "title": "એકમ અને માપન", "enTitle": "Units & Measurements", "emoji": "📏", "theme": "sky" },
+      { "id": 2, "title": "સુરેખપથ પર ગતિ", "enTitle": "Motion in a Straight Line", "emoji": "🚗", "theme": "mint" },
+      { "id": 3, "title": "સમતલમાં ગતિ", "enTitle": "Motion in a Plane", "emoji": "🎯", "theme": "amber" },
+      { "id": 4, "title": "ગતિના નિયમો", "enTitle": "Laws of Motion", "emoji": "⚙️", "theme": "peach" },
+      { "id": 5, "title": "કાર્ય, ઊર્જા અને પાવર", "enTitle": "Work, Energy & Power", "emoji": "⚡", "theme": "purple" },
+      { "id": 6, "title": "કણોના તંત્રો અને ચાકગતિ", "enTitle": "System of Particles & Rotational Motion", "emoji": "🎡", "theme": "sky" },
+      { "id": 7, "title": "ગુરુત્વાકર્ષણ", "enTitle": "Gravitation", "emoji": "🪐", "theme": "mint" },
+      { "id": 8, "title": "ઘન પદાર્થોના યાંત્રિક ગુણધર્મો", "enTitle": "Mechanical Properties of Solids", "emoji": "🧱", "theme": "amber" },
+      { "id": 9, "title": "પ્રવાહીના યાંત્રિક ગુણધર્મો", "enTitle": "Mechanical Properties of Fluids", "emoji": "💧", "theme": "sky" },
+      { "id": 10, "title": "દ્રવ્યના ઉષ્મીય ગુણધર્મો", "enTitle": "Thermal Properties of Matter", "emoji": "🌡️", "theme": "peach" },
+      { "id": 11, "title": "થર્મોડાયનેમિક્સ", "enTitle": "Thermodynamics", "emoji": "🔥", "theme": "purple" },
+      { "id": 12, "title": "ગતિવાદ", "enTitle": "Kinetic Theory", "emoji": "💨", "theme": "mint" },
+      { "id": 13, "title": "દોલનો", "enTitle": "Oscillations", "emoji": "⏱️", "theme": "amber" },
+      { "id": 14, "title": "તરંગો", "enTitle": "Waves", "emoji": "〰️", "theme": "sky" }
+    ],
+    "12": [
+      { "id": 1, "title": "વિદ્યુતભારો અને ક્ષેત્રો", "enTitle": "Electric Charges & Fields", "emoji": "⚡", "theme": "peach" },
+      { "id": 2, "title": "સ્થિત-વિદ્યુતસ્થિતિમાન અને કેપેસિટન્સ", "enTitle": "Electrostatic Potential & Capacitance", "emoji": "🔋", "theme": "purple" },
+      { "id": 3, "title": "પ્રવાહ વિદ્યુત", "enTitle": "Current Electricity", "emoji": "💡", "theme": "sky" },
+      { "id": 4, "title": "ગતિમાન વિદ્યુતભારો અને ચુંબકત્વ", "enTitle": "Moving Charges & Magnetism", "emoji": "🧲", "theme": "amber" },
+      { "id": 5, "title": "ચુંબકત્વ અને દ્રવ્ય", "enTitle": "Magnetism & Matter", "emoji": "🧭", "theme": "mint" },
+      { "id": 6, "title": "વિદ્યુતચુંબકીય પ્રેરણા", "enTitle": "Electromagnetic Induction", "emoji": "🌀", "theme": "sky" },
+      { "id": 7, "title": "પ્રત્યાવર્તી પ્રવાહ", "enTitle": "Alternating Current (AC)", "emoji": "🔌", "theme": "peach" },
+      { "id": 8, "title": "વિદ્યુતચુંબકીય તરંગો", "enTitle": "Electromagnetic Waves", "emoji": "📡", "theme": "purple" },
+      { "id": 9, "title": "કિરણ પ્રકાશશાસ્ત્ર અને પ્રકાશીય ઉપકરણો", "enTitle": "Ray Optics & Optical Instruments", "emoji": "🔬", "theme": "amber" },
+      { "id": 10, "title": "તરંગ પ્રકાશશાસ્ત્ર", "enTitle": "Wave Optics", "emoji": "🌈", "theme": "sky" },
+      { "id": 11, "title": "વિકિરણ અને દ્રવ્યની દ્વૈત પ્રકૃતિ", "enTitle": "Dual Nature of Radiation & Matter", "emoji": "✨", "theme": "mint" },
+      { "id": 12, "title": "પરમાણુઓ", "enTitle": "Atoms", "emoji": "⚛️", "theme": "peach" },
+      { "id": 13, "title": "ન્યુક્લિયસ", "enTitle": "Nuclei", "emoji": "☢️", "theme": "purple" },
+      { "id": 14, "title": "સેમિકન્ડક્ટર ઇલેક્ટ્રોનિક્સ", "enTitle": "Semiconductor Electronics", "emoji": "💻", "theme": "mint" }
+    ]
+  },
   "12": {
     "1": {
       "cards": [
@@ -92,6 +126,61 @@
             "જવાબ: શૂન્ય (Zero), કારણ કે પૃષ્ઠના તમામ બિંદુએ સ્થિતિમાન સમાન હોય છે."
           ],
           "formula": "W = q · ΔV = 0"
+        }
+      ]
+    },
+    "3": {
+      "cards": [
+        {
+          "id": 1,
+          "title": "વિદ્યુતપ્રવાહ",
+          "enTitle": "Electric Current (I)",
+          "theme": "sky",
+          "points": [
+            "વાહકના કોઈપણ આડછેદમાંથી એકમ સમયમાં પસાર થતો ચોખ્ખો વિદ્યુતભાર.",
+            "અદિશ અને સ્થૂળ (Macroscopic) ભૌતિક રાશિ છે.",
+            "SI એકમ: એમ્પિયર (1 A = 1 C/s)"
+          ],
+          "formula": "I = dQ / dt | I = q / t"
+        },
+        {
+          "id": 2,
+          "title": "ડ્રિફ્ટ વેગ",
+          "enTitle": "Drift Velocity (v_d)",
+          "theme": "peach",
+          "points": [
+            "બાહ્ય ક્ષેત્રની હાજરીમાં મુક્ત ઇલેક્ટ્રોન ક્ષેત્રની વિરુદ્ધમાં મેળવતો ચોખ્ખો સરેરાશ વેગ.",
+            "તેનું સરેરાશ મૂલ્ય ~ 10⁻⁴ m/s ના ક્રમનું હોય છે.",
+            "τ = રિલેક્સેશન સમય (બે ક્રમિક અથડામણો વચ્ચેનો સમય)."
+          ],
+          "formula": "v_d = (e·E / m)·τ | I = n·e·A·v_d"
+        }
+      ],
+      "formulas": [
+        {
+          "id": 1,
+          "title": "ઓહ્મનો નિયમ",
+          "enTitle": "Ohm's Law",
+          "theme": "mint",
+          "points": [
+            "V = I · R",
+            "R = વાહકનો અવરોધ (SI એકમ: Ω)",
+            "વાહકતા σ = 1 / ρ"
+          ],
+          "formula": "V = I · R | R = ρ · (l / A)"
+        }
+      ],
+      "questions": [
+        {
+          "id": 1,
+          "title": "પ્રવાહ ઘનતાનો SI એકમ",
+          "enTitle": "1-Mark Question",
+          "theme": "amber",
+          "points": [
+            "પ્રશ્ન: પ્રવાહ ઘનતા (j) નો SI એકમ અને રાશિનો પ્રકાર જણાવો.",
+            "જવાબ: SI એકમ A/m² છે અને તે સદિશ રાશિ છે."
+          ],
+          "formula": "j = I / A | j = σ · E"
         }
       ]
     }
