@@ -2,304 +2,640 @@
 <html lang="gu">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Physics Quick Revision Hub</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Mind In Motion Physics - Interactive Revision Portal</title>
   
-  <!-- MathJax for Formula Rendering -->
-  <script>
-    window.MathJax = {
-      tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] }
-    };
-  </script>
-  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500;600;700;800&family=Outfit:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
 
   <style>
     :root {
-      --primary: #f97316;
-      --primary-dark: #ea580c;
-      --bg: #f8fafc;
-      --card-bg: #ffffff;
-      --text: #1e293b;
-      --muted: #64748b;
-      --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+      --bg-body: #f8fafc;
+      --header-grad: linear-gradient(135deg, #ea580c 0%, #c2410c 100%);
     }
 
-    * { box-sizing: border-box; margin: 0; padding: 0; font-family: system-ui, -apple-system, sans-serif; }
-    body { background: var(--bg); color: var(--text); padding-bottom: 60px; }
-
-    header {
-      background: linear-gradient(135deg, var(--primary), var(--primary-dark));
-      color: white;
-      text-align: center;
-      padding: 1.5rem 1rem;
-      box-shadow: var(--shadow);
-    }
-    header h1 { font-size: 1.4rem; margin-bottom: 0.25rem; }
-    header p { font-size: 0.9rem; opacity: 0.9; }
-
-    .nav-tabs {
-      display: flex;
-      justify-content: center;
-      gap: 8px;
-      margin: 1rem auto;
-      padding: 0 10px;
-      max-width: 500px;
-    }
-    .tab-btn {
-      flex: 1;
-      padding: 10px;
-      border: none;
-      background: #e2e8f0;
-      color: var(--text);
-      font-weight: 600;
-      border-radius: 8px;
-      cursor: pointer;
-      transition: all 0.2s ease;
-      font-size: 0.85rem;
-    }
-    .tab-btn.active {
-      background: var(--primary);
-      color: white;
-      box-shadow: var(--shadow);
+    * {
+      box-sizing: border-box;
+      -webkit-tap-highlight-color: transparent;
+      user-select: none;
     }
 
-    .container {
-      max-width: 600px;
-      margin: 0 auto;
-      padding: 0 12px;
+    body {
+      background-color: var(--bg-body);
+      font-family: 'Outfit', 'Baloo Bhai 2', sans-serif;
+      min-height: 100vh;
+      color: #0f172a;
+      overflow-x: hidden;
     }
 
-    .view-section { display: none; }
-    .view-section.active { display: block; }
-
-    /* Flashcard Flip Styling */
-    .flashcard-wrapper {
-      perspective: 1000px;
-      margin: 1.5rem 0;
-      min-height: 240px;
-      cursor: pointer;
+    .brand-logo-clean {
+      border: 0 !important;
+      outline: none !important;
+      box-shadow: none !important;
+      padding: 0 !important;
+      margin: 0 !important;
+      background: transparent !important;
+      border-radius: 50% !important;
+      object-fit: cover !important;
+      display: block;
     }
-    .flashcard {
-      width: 100%;
-      min-height: 240px;
-      position: relative;
+
+    /* 3D Flip System */
+    .preserve-3d {
       transform-style: preserve-3d;
-      transition: transform 0.5s ease;
-      border-radius: 12px;
-      box-shadow: var(--shadow);
+      -webkit-transform-style: preserve-3d;
     }
-    .flashcard.flipped { transform: rotateY(180deg); }
-    .card-face {
-      position: absolute;
+
+    .backface-hidden {
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+    }
+
+    .rotate-y-180 {
+      transform: rotateY(180deg);
+    }
+
+    .grid-flashcard {
+      transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.25s ease;
+      cursor: pointer;
+    }
+
+    .grid-flashcard:hover {
+      transform: translateY(-4px) scale(1.02);
+      box-shadow: 0 12px 24px -4px rgba(15, 23, 42, 0.12);
+    }
+
+    .grid-flashcard:active {
+      transform: scale(0.97);
+    }
+
+    .view-container {
+      animation: fadeInScale 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
+
+    @keyframes fadeInScale {
+      from { opacity: 0; transform: translateY(12px) scale(0.98); }
+      to { opacity: 1; transform: translateY(0) scale(1); }
+    }
+
+    #zoomBackdrop {
+      position: fixed;
+      inset: 0;
+      background-color: rgba(15, 23, 42, 0.68);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.35s ease;
+      z-index: 90;
+      cursor: pointer;
+    }
+
+    #zoomBackdrop.active {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    #zoomActor {
+      position: fixed;
+      top: 0;
+      left: 0;
+      transform-origin: top left;
+      z-index: 100;
+      pointer-events: none;
+      display: none;
+      will-change: transform, width, height;
+      perspective: 1200px;
+    }
+
+    #zoomActor.visible {
+      display: block;
+      pointer-events: auto;
+    }
+
+    #zoomCardFlipper {
       width: 100%;
       height: 100%;
-      backface-visibility: hidden;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      padding: 1.5rem;
-      border-radius: 12px;
-      background: var(--card-bg);
-      border: 1px solid #e2e8f0;
-      text-align: center;
+      position: relative;
+      transform-style: preserve-3d;
+      -webkit-transform-style: preserve-3d;
+      transition: transform 0.6s cubic-bezier(0.4, 0.0, 0.2, 1);
+      cursor: pointer;
     }
-    .card-back {
+
+    #zoomCardFlipper.is-flipped {
       transform: rotateY(180deg);
-      background: #fff7ed;
-      border-color: #ffedd5;
-    }
-    .badge {
-      position: absolute;
-      top: 12px;
-      left: 12px;
-      font-size: 0.75rem;
-      background: #fed7aa;
-      color: #9a3412;
-      padding: 2px 8px;
-      border-radius: 4px;
-      font-weight: 600;
     }
 
-    /* Controls */
-    .controls {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 10px;
-    }
-    .btn {
-      padding: 8px 16px;
-      border: none;
-      background: white;
-      border: 1px solid #cbd5e1;
-      border-radius: 6px;
-      cursor: pointer;
-      font-weight: 500;
+    .math-font {
+      font-family: 'JetBrains Mono', 'Outfit', monospace;
+      font-weight: 700;
+      letter-spacing: -0.02em;
     }
 
-    /* List items for Formulas & 1-mark Qs */
-    .item-card {
-      background: var(--card-bg);
-      padding: 1rem;
-      border-radius: 8px;
-      margin-bottom: 0.75rem;
-      box-shadow: var(--shadow);
-      border-left: 4px solid var(--primary);
+    .custom-scroll::-webkit-scrollbar {
+      width: 4px;
     }
-    .item-header {
-      font-weight: 600;
-      margin-bottom: 0.5rem;
-      display: flex;
-      justify-content: space-between;
+    .custom-scroll::-webkit-scrollbar-thumb {
+      background: rgba(0, 0, 0, 0.18);
+      border-radius: 999px;
     }
-    .answer-box {
-      margin-top: 0.5rem;
-      padding: 0.5rem;
-      background: #f1f5f9;
-      border-radius: 6px;
-      display: none;
+
+    .pulse-badge {
+      animation: floatBadge 2.4s ease-in-out infinite;
     }
-    .reveal-btn {
-      font-size: 0.75rem;
-      color: var(--primary-dark);
-      cursor: pointer;
-      text-decoration: underline;
-      display: inline-block;
-      margin-top: 4px;
+
+    @keyframes floatBadge {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-4px); }
     }
   </style>
 </head>
-<body>
+<body class="flex flex-col items-center p-3 sm:p-6 lg:p-8">
 
-  <header>
-    <h1>Physics Revision Hub</h1>
-    <p>Flashcards • Formulas • 1-Mark Quick Practice</p>
+  <!-- ================= HEADER BANNER ================= -->
+  <header class="w-full max-w-5xl rounded-3xl p-4 sm:p-6 text-white shadow-xl flex flex-col md:flex-row items-center justify-between gap-4 mb-6"
+          style="background: var(--header-grad); box-shadow: 0 10px 28px -6px rgba(234, 88, 12, 0.38);">
+    <div class="flex items-center gap-3.5 text-center md:text-left flex-col md:flex-row">
+      <img src="https://drive.google.com/thumbnail?id=1eCSReKlV_fPkLyw5VBPuB0h6WRoainYN&sz=w200" 
+           alt="Mind In Motion Physics" 
+           class="brand-logo-clean w-14 h-14 sm:w-16 sm:h-16 flex-shrink-0"
+           onerror="this.src='https://placehold.co/120x120/ea580c/ffffff?text=MIM'">
+      <div>
+        <h1 class="text-2xl sm:text-3xl font-extrabold tracking-wide drop-shadow-sm leading-tight">Mind In Motion Physics</h1>
+        <p id="headerSubtitle" class="text-orange-100 font-medium text-xs sm:text-sm mt-0.5">
+          GSEB • GUJCET • NEET • Interactive Revision Platform
+        </p>
+      </div>
+    </div>
+    
+    <div class="flex items-center gap-2">
+      <span id="navStatusBadge" class="bg-white/20 backdrop-blur-md border border-white/30 text-white text-xs sm:text-sm font-bold px-4 py-1.5 rounded-full uppercase tracking-wider">
+        Select Class
+      </span>
+    </div>
   </header>
 
-  <nav class="nav-tabs">
-    <button class="tab-btn active" onclick="switchTab('flashcards')">🃏 Flashcards</button>
-    <button class="tab-btn" onclick="switchTab('formulas')">📐 Formulas</button>
-    <button class="tab-btn" onclick="switchTab('questions')">⚡ 1-Mark Qs</button>
-  </nav>
-
-  <div class="container">
-    
-    <!-- SECTION 1: FLASHCARDS -->
-    <section id="flashcards" class="view-section active">
-      <div class="flashcard-wrapper" onclick="flipCard()">
-        <div class="flashcard" id="currentCard">
-          <div class="card-face card-front">
-            <span class="badge" id="cardTopic">Topic</span>
-            <h3 id="cardPrompt" style="margin-top: 10px;">Question loading...</h3>
-            <span style="margin-top: 15px; font-size: 0.8rem; color: var(--muted);">Tap card to reveal answer</span>
-          </div>
-          <div class="card-face card-back">
-            <span class="badge">Solution</span>
-            <div id="cardAnswer" style="margin-top: 10px;"></div>
-          </div>
-        </div>
-      </div>
-      <div class="controls">
-        <button class="btn" onclick="prevCard()">← Previous</button>
-        <span id="cardCounter" style="font-size: 0.85rem; color: var(--muted);">1 / 1</span>
-        <button class="btn" onclick="nextCard()">Next →</button>
-      </div>
-    </section>
-
-    <!-- SECTION 2: FORMULAS -->
-    <section id="formulas" class="view-section">
-      <div id="formulaList"></div>
-    </section>
-
-    <!-- SECTION 3: 1-MARK QUESTIONS -->
-    <section id="questions" class="view-section">
-      <div id="questionList"></div>
-    </section>
-
+  <!-- ================= BACK NAVIGATION ================= -->
+  <div id="navBar" class="w-full max-w-5xl hidden items-center justify-between gap-2 mb-4 px-2">
+    <button onclick="goBack()" class="flex items-center gap-2 bg-white hover:bg-slate-100 border border-slate-200 text-slate-700 px-4 py-2 rounded-2xl text-xs sm:text-sm font-bold shadow-sm transition-all active:scale-95">
+      <span>← પાછા જાઓ (Back)</span>
+    </button>
+    <div id="breadcrumbText" class="text-xs sm:text-sm font-extrabold text-orange-600 bg-orange-50 border border-orange-200 px-4 py-2 rounded-2xl">
+      Class
+    </div>
   </div>
 
+  <!-- ================= VIEW 1: CLASS SELECTION ================= -->
+  <section id="viewClasses" class="view-container w-full max-w-4xl py-6 flex flex-col items-center">
+    <h2 class="text-xl sm:text-2xl font-extrabold text-slate-800 mb-2 text-center">તમારું ધોરણ પસંદ કરો</h2>
+    <p class="text-xs sm:text-sm text-slate-500 font-medium mb-8 text-center">Select your Class to start revision</p>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 w-full max-w-2xl px-4">
+      <div onclick="selectClass(11)" class="group cursor-pointer bg-white rounded-3xl p-6 sm:p-8 border-2 border-emerald-200 hover:border-emerald-400 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center relative overflow-hidden active:scale-95">
+        <div class="absolute -right-8 -bottom-8 w-32 h-32 bg-emerald-50 rounded-full group-hover:scale-125 transition-transform"></div>
+        <div class="w-20 h-20 bg-emerald-100 text-emerald-600 rounded-3xl flex items-center justify-center font-extrabold text-3xl mb-4 shadow-inner">
+          11
+        </div>
+        <h3 class="text-2xl font-extrabold text-slate-800 group-hover:text-emerald-700 transition-colors">ધોરણ ૧૧ ભૌતિકવિજ્ઞાન</h3>
+        <p class="text-xs font-bold text-slate-400 uppercase tracking-widest mt-1">Class 11 Science • GSEB / NEET</p>
+        <span class="mt-6 text-xs font-bold bg-emerald-50 text-emerald-700 border border-emerald-200 px-4 py-2 rounded-xl group-hover:bg-emerald-600 group-hover:text-white transition-all">
+          પ્રકરણો જુઓ →
+        </span>
+      </div>
+
+      <div onclick="selectClass(12)" class="group cursor-pointer bg-white rounded-3xl p-6 sm:p-8 border-2 border-orange-200 hover:border-orange-400 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center relative overflow-hidden active:scale-95">
+        <div class="absolute -right-8 -bottom-8 w-32 h-32 bg-orange-50 rounded-full group-hover:scale-125 transition-transform"></div>
+        <div class="w-20 h-20 bg-orange-100 text-orange-600 rounded-3xl flex items-center justify-center font-extrabold text-3xl mb-4 shadow-inner">
+          12
+        </div>
+        <h3 class="text-2xl font-extrabold text-slate-800 group-hover:text-orange-700 transition-colors">ધોરણ ૧૨ ભૌતિકવિજ્ઞાન</h3>
+        <p class="text-xs font-bold text-slate-400 uppercase tracking-widest mt-1">Class 12 Science • Board / GUJCET / NEET</p>
+        <span class="mt-6 text-xs font-bold bg-orange-50 text-orange-700 border border-orange-200 px-4 py-2 rounded-xl group-hover:bg-orange-600 group-hover:text-white transition-all">
+          પ્રકરણો જુઓ →
+        </span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= VIEW 2: CHAPTER LIST ================= -->
+  <section id="viewChapters" class="view-container w-full max-w-5xl hidden flex-col items-center mb-10">
+    <div class="text-center mb-6">
+      <h2 id="chapterViewTitle" class="text-xl sm:text-2xl font-extrabold text-slate-800">પ્રકરણ પસંદ કરો</h2>
+      <p class="text-xs sm:text-sm text-slate-500 font-medium mt-0.5">Choose a chapter to begin interactive 3D revision</p>
+    </div>
+    <div id="chaptersGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 w-full"></div>
+  </section>
+
+  <!-- ================= VIEW 3: CHAPTER CONTENT ================= -->
+  <section id="viewContent" class="view-container w-full max-w-5xl hidden flex-col items-center">
+    
+    <!-- TABS -->
+    <div class="w-full flex items-center justify-center gap-2 sm:gap-4 mb-6">
+      <button id="tabBtn-cards" onclick="switchCategory('cards')" class="flex-1 max-w-[160px] py-2.5 rounded-2xl text-xs sm:text-sm font-extrabold border transition-all active:scale-95 bg-orange-500 text-white border-orange-600 shadow-md">
+        🃏 Flashcards
+      </button>
+      <button id="tabBtn-formulas" onclick="switchCategory('formulas')" class="flex-1 max-w-[160px] py-2.5 rounded-2xl text-xs sm:text-sm font-extrabold border border-slate-200 bg-white text-slate-700 hover:bg-slate-50 transition-all active:scale-95 shadow-sm">
+        📐 Formulas
+      </button>
+      <button id="tabBtn-questions" onclick="switchCategory('questions')" class="flex-1 max-w-[160px] py-2.5 rounded-2xl text-xs sm:text-sm font-extrabold border border-slate-200 bg-white text-slate-700 hover:bg-slate-50 transition-all active:scale-95 shadow-sm">
+        ⚡ 1-Mark Qs
+      </button>
+    </div>
+
+    <!-- Instructions -->
+    <div class="w-full flex flex-wrap items-center justify-center gap-2 sm:gap-6 text-xs sm:text-sm font-semibold text-slate-700 bg-white border border-slate-200 py-3 px-5 rounded-2xl mb-6 shadow-sm text-center">
+      <div class="flex items-center gap-1.5 text-orange-600 font-bold">
+        <span>👆 ૧. કાર્ડ પર ટચ: Expand</span>
+      </div>
+      <span class="text-slate-300 hidden sm:inline">•</span>
+      <div class="flex items-center gap-1.5 text-indigo-700 font-bold">
+        <span>🔄 ૨. ફરી ટચ: 3D Flip (સૂત્રો & નોટ્સ)</span>
+      </div>
+      <span class="text-slate-300 hidden sm:inline">•</span>
+      <div class="flex items-center gap-1.5 text-emerald-700 font-bold">
+        <span>✕ ૩. બહાર ક્લિક: Close</span>
+      </div>
+    </div>
+
+    <!-- CARDS CONTAINER -->
+    <main id="cardsGrid" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3.5 sm:gap-5 w-full mb-12">
+    </main>
+  </section>
+
+  <!-- ================= 3D MODAL ACTOR ================= -->
+  <div id="zoomBackdrop" aria-hidden="true"></div>
+
+  <div id="zoomActor" aria-modal="true" role="dialog">
+    <div class="absolute -top-11 left-1/2 -translate-x-1/2 whitespace-nowrap bg-white/95 border border-slate-200 text-slate-800 text-[11px] sm:text-xs font-bold px-3.5 py-1 rounded-full shadow-lg flex items-center gap-1.5 pointer-events-none pulse-badge z-30">
+      <span class="w-2 h-2 rounded-full bg-emerald-500 animate-ping"></span>
+      <span>કાર્ડ પર ટચ = 3D Flip | બહાર ટચ = Close</span>
+    </div>
+
+    <button id="zoomCloseBtn" class="absolute -top-3.5 -right-3.5 w-8 h-8 bg-white hover:bg-slate-100 text-slate-800 rounded-full flex items-center justify-center shadow-xl border border-slate-200 font-bold text-sm z-40 transition-transform active:scale-90" title="Close">
+      ✕
+    </button>
+
+    <div id="zoomCardFlipper" class="preserve-3d rounded-3xl shadow-2xl">
+      <div id="zoomFaceFront" class="card-face backface-hidden absolute inset-0 w-full h-full bg-white rounded-3xl p-5 sm:p-6 flex flex-col justify-between border-2 shadow-2xl">
+      </div>
+      <div id="zoomFaceBack" class="card-face backface-hidden rotate-y-180 absolute inset-0 w-full h-full bg-white rounded-3xl p-5 sm:p-6 flex flex-col justify-between border-2 shadow-2xl">
+      </div>
+    </div>
+  </div>
+
+  <footer class="mt-auto text-center text-xs text-slate-500 pb-6">
+    <p>Mind In Motion Physics • Concept by <span class="font-bold text-slate-700">Vasim Luhar</span> (MSc, B.Ed)</p>
+  </footer>
+
+  <!-- ================= DYNAMIC SCRIPT ENGINE ================= -->
   <script>
-    // DATA SOURCE
-    const flashcardData = [
-      { topic: "Electrostatics", q: "State Gauss's Law in electrostatics.", a: "$\\oint \\vec{E} \\cdot d\\vec{A} = \\frac{q_{\\text{enclosed}}}{\\varepsilon_0}$" },
-      { topic: "Current Electricity", q: "Define Drift Velocity ($v_d$) and its relation with electric field.", a: "$v_d = -\\frac{e E \\tau}{m}$ (where $\\tau$ is relaxation time)." },
-      { topic: "Magnetism", q: "What is the magnetic dipole moment of a current loop?", a: "$\\vec{M} = N I \\vec{A}$" }
-    ];
+    // Course Chapters Outline
+    const courseData = {
+      11: [
+        { id: 1, title: "એકમ અને માપન", enTitle: "Units & Measurements", theme: "sky" },
+        { id: 2, title: "સુરેખ પથ પર ગતિ", enTitle: "Motion in a Straight Line", theme: "mint" },
+        { id: 3, title: "સમતલમાં ગતિ", enTitle: "Motion in a Plane", theme: "amber" },
+        { id: 4, title: "ગતિના નિયમો", enTitle: "Laws of Motion", theme: "peach" },
+        { id: 5, title: "કાર્ય, ઊર્જા અને પાવર", enTitle: "Work, Energy & Power", theme: "purple" },
+        { id: 6, title: "કણોના તંત્રો અને ચાકગતિ", enTitle: "Rotational Motion", theme: "sky" },
+        { id: 7, title: "ગુરુત્વાકર્ષણ", enTitle: "Gravitation", theme: "mint" }
+      ],
+      12: [
+        { id: 1, title: "સ્થિત વિદ્યુતભારો અને ક્ષેત્રો", enTitle: "Electric Charges & Fields", theme: "peach" },
+        { id: 2, title: "સ્થિત વિદ્યુતસ્થિતિમાન અને કેપેસિટન્સ", enTitle: "Electrostatic Potential", theme: "purple" },
+        { id: 3, title: "પ્રવાહ વિદ્યુત", enTitle: "Current Electricity", theme: "sky" },
+        { id: 4, title: "ગતિમાન વિદ્યુતભારો અને ચુંબકત્વ", enTitle: "Moving Charges & Magnetism", theme: "amber" },
+        { id: 5, title: "ચુંબકત્વ અને દ્રવ્ય", enTitle: "Magnetism & Matter", theme: "mint" },
+        { id: 6, title: "વિદ્યુતચુંબકીય પ્રેરણ", enTitle: "Electromagnetic Induction", theme: "sky" },
+        { id: 7, title: "પ્રત્યાવર્તી પ્રવાહ (AC)", enTitle: "Alternating Current", theme: "peach" }
+      ]
+    };
 
-    const formulaData = [
-      { name: "Coulomb's Law", formula: "$$F = \\frac{1}{4\\pi\\varepsilon_0} \\frac{q_1 q_2}{r^2}$$", note: "In vacuum / air" },
-      { name: "Electric Potential (Point Charge)", formula: "$$V = \\frac{k q}{r}$$", note: "Scalar quantity" },
-      { name: "Capacitance (Parallel Plate)", formula: "$$C = \\frac{\\varepsilon_0 A}{d}$$", note: "Increases by factor $K$ with dielectric" }
-    ];
+    const themes = {
+      sky: { border: "border-sky-300", badgeBg: "bg-sky-100", badgeText: "text-sky-800", titleText: "text-sky-800", backBorder: "border-sky-400", formulaBg: "bg-sky-50 border-sky-300", bullet: "text-sky-600", hoverBorder: "hover:border-sky-400", bgLight: "bg-sky-50/50" },
+      amber: { border: "border-amber-300", badgeBg: "bg-amber-100", badgeText: "text-amber-900", titleText: "text-amber-800", backBorder: "border-amber-400", formulaBg: "bg-amber-50 border-amber-300", bullet: "text-amber-600", hoverBorder: "hover:border-amber-400", bgLight: "bg-amber-50/50" },
+      mint: { border: "border-emerald-300", badgeBg: "bg-emerald-100", badgeText: "text-emerald-900", titleText: "text-emerald-800", backBorder: "border-emerald-400", formulaBg: "bg-emerald-50 border-emerald-300", bullet: "text-emerald-600", hoverBorder: "hover:border-emerald-400", bgLight: "bg-emerald-50/50" },
+      peach: { border: "border-rose-300", badgeBg: "bg-rose-100", badgeText: "text-rose-900", titleText: "text-rose-800", backBorder: "border-rose-400", formulaBg: "bg-rose-50 border-rose-300", bullet: "text-rose-600", hoverBorder: "hover:border-rose-400", bgLight: "bg-rose-50/50" },
+      purple: { border: "border-purple-300", badgeBg: "bg-purple-100", badgeText: "text-purple-900", titleText: "text-purple-800", backBorder: "border-purple-400", formulaBg: "bg-purple-50 border-purple-300", bullet: "text-purple-600", hoverBorder: "hover:border-purple-400", bgLight: "bg-purple-50/50" }
+    };
 
-    const questionData = [
-      { q: "What is the unit of electric flux in SI system?", a: "$\\text{N}\\cdot\\text{m}^2/\\text{C}$ or $\\text{V}\\cdot\\text{m}$" },
-      { q: "What happens to the resistance of a semiconductor with increase in temperature?", a: "Resistance decreases (negative temperature coefficient of resistance)." }
-    ];
+    let fullDatabase = {};
+    let currentClass = null;
+    let currentChapter = null;
+    let currentCategory = 'cards';
+    const logoUrl = "https://drive.google.com/thumbnail?id=1eCSReKlV_fPkLyw5VBPuB0h6WRoainYN&sz=w200";
 
-    // FLASHCARD LOGIC
-    let currentIdx = 0;
-    function renderFlashcard() {
-      const card = flashcardData[currentIdx];
-      document.getElementById("cardTopic").innerText = card.topic;
-      document.getElementById("cardPrompt").innerHTML = card.q;
-      document.getElementById("cardAnswer").innerHTML = card.a;
-      document.getElementById("cardCounter").innerText = `${currentIdx + 1} / ${flashcardData.length}`;
-      document.getElementById("currentCard").classList.remove("flipped");
-      if (window.MathJax) MathJax.typesetPromise();
+    // Load data directly from data.json file
+    async function loadJsonDatabase() {
+      try {
+        const response = await fetch('./data.json?t=' + new Date().getTime());
+        if (response.ok) {
+          fullDatabase = await response.json();
+        }
+      } catch (err) {
+        console.warn("data.json not loaded yet:", err);
+      }
     }
-    function flipCard() {
-      document.getElementById("currentCard").classList.toggle("flipped");
-    }
-    function nextCard() {
-      if (currentIdx < flashcardData.length - 1) { currentIdx++; renderFlashcard(); }
-    }
-    function prevCard() {
-      if (currentIdx > 0) { currentIdx--; renderFlashcard(); }
+    loadJsonDatabase();
+
+    function selectClass(cls) {
+      currentClass = cls;
+      document.getElementById('viewClasses').classList.add('hidden');
+      document.getElementById('viewChapters').classList.remove('hidden');
+      document.getElementById('navBar').classList.remove('hidden');
+      document.getElementById('navBar').classList.add('flex');
+      
+      document.getElementById('chapterViewTitle').innerText = `ધોરણ ${cls} ભૌતિકવિજ્ઞાન - પ્રકરણો`;
+      document.getElementById('navStatusBadge').innerText = `Class ${cls}`;
+      document.getElementById('breadcrumbText').innerText = `ધોરણ ${cls}`;
+      
+      renderChaptersList();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
-    // FORMULA & QUESTION LIST LOGIC
-    function renderFormulas() {
-      const container = document.getElementById("formulaList");
-      container.innerHTML = formulaData.map(f => `
-        <div class="item-card">
-          <div class="item-header"><span>${f.name}</span><small style="color:var(--muted)">${f.note}</small></div>
-          <div>${f.formula}</div>
+    function renderChaptersList() {
+      const list = courseData[currentClass] || [];
+      const container = document.getElementById('chaptersGrid');
+      container.innerHTML = list.map(ch => {
+        const t = themes[ch.theme] || themes.sky;
+        return `
+          <div onclick="selectChapter(${ch.id})" class="cursor-pointer bg-white rounded-2xl p-4 sm:p-5 border-2 ${t.border} ${t.hoverBorder} ${t.bgLight} shadow-sm hover:shadow-md transition-all flex items-center justify-between active:scale-95">
+            <div class="flex items-center gap-3">
+              <span class="w-10 h-10 rounded-xl ${t.badgeBg} ${t.badgeText} font-extrabold flex items-center justify-center text-sm shadow-inner">
+                ${ch.id}
+              </span>
+              <div>
+                <h4 class="font-extrabold text-slate-800 text-sm sm:text-base leading-tight">${ch.title}</h4>
+                <p class="text-[11px] font-bold text-slate-400 uppercase mt-0.5">${ch.enTitle}</p>
+              </div>
+            </div>
+            <span class="text-xs font-bold text-slate-400">ખોલો →</span>
+          </div>
+        `;
+      }).join('');
+    }
+
+    function selectChapter(chId) {
+      currentChapter = chId;
+      document.getElementById('viewChapters').classList.add('hidden');
+      document.getElementById('viewContent').classList.remove('hidden');
+      
+      const chObj = (courseData[currentClass] || []).find(c => c.id === chId);
+      const chTitle = chObj ? chObj.title : `પ્રકરણ ${chId}`;
+      document.getElementById('headerSubtitle').innerText = `ધોરણ ${currentClass} • પ્રકરણ ${chId}: ${chTitle}`;
+      document.getElementById('breadcrumbText').innerText = `ધોરણ ${currentClass} > પ્રકરણ ${chId}`;
+      document.getElementById('navStatusBadge').innerText = `Ch: ${chId}`;
+
+      switchCategory('cards');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function goBack() {
+      if (!document.getElementById('viewContent').classList.contains('hidden')) {
+        document.getElementById('viewContent').classList.add('hidden');
+        document.getElementById('viewChapters').classList.remove('hidden');
+        document.getElementById('breadcrumbText').innerText = `ધોરણ ${currentClass}`;
+        document.getElementById('navStatusBadge').innerText = `Class ${currentClass}`;
+      } else if (!document.getElementById('viewChapters').classList.contains('hidden')) {
+        document.getElementById('viewChapters').classList.add('hidden');
+        document.getElementById('viewClasses').classList.remove('hidden');
+        document.getElementById('navBar').classList.add('hidden');
+        document.getElementById('navBar').classList.remove('flex');
+        document.getElementById('navStatusBadge').innerText = `Select Class`;
+        document.getElementById('headerSubtitle').innerText = `GSEB • GUJCET • NEET • Interactive Revision Platform`;
+      }
+    }
+
+    function switchCategory(cat) {
+      currentCategory = cat;
+      ['cards', 'formulas', 'questions'].forEach(c => {
+        const btn = document.getElementById(`tabBtn-${c}`);
+        if (c === cat) {
+          btn.className = "flex-1 max-w-[160px] py-2.5 rounded-2xl text-xs sm:text-sm font-extrabold border bg-orange-500 text-white border-orange-600 shadow-md transition-all active:scale-95";
+        } else {
+          btn.className = "flex-1 max-w-[160px] py-2.5 rounded-2xl text-xs sm:text-sm font-extrabold border border-slate-200 bg-white text-slate-700 hover:bg-slate-50 shadow-sm transition-all active:scale-95";
+        }
+      });
+      renderRevisionCards();
+    }
+
+    function renderRevisionCards() {
+      const cardsGrid = document.getElementById('cardsGrid');
+      
+      // Auto-extract items for this exact Class and Chapter from JSON
+      const chData = (fullDatabase[currentClass] && fullDatabase[currentClass][currentChapter]) ? fullDatabase[currentClass][currentChapter] : null;
+      const items = (chData && chData[currentCategory]) ? chData[currentCategory] : [];
+
+      if (!items || items.length === 0) {
+        cardsGrid.className = "w-full py-12 flex flex-col items-center justify-center text-center";
+        cardsGrid.innerHTML = `
+          <div class="bg-white p-6 sm:p-8 rounded-3xl border border-slate-200 shadow-sm max-w-md">
+            <div class="text-4xl mb-3">⏳</div>
+            <h3 class="text-base sm:text-lg font-bold text-slate-700">આ પ્રકરણનું મટીરીયલ ટૂંક સમયમાં ઉમેરાશે</h3>
+            <p class="text-xs text-slate-400 mt-1">Material for this section will be updated soon in data.json</p>
+          </div>
+        `;
+        return;
+      }
+
+      cardsGrid.className = "grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3.5 sm:gap-5 w-full mb-12";
+      cardsGrid.innerHTML = items.map((card, idx) => {
+        const t = themes[card.theme] || themes.sky;
+        return `
+          <div class="grid-flashcard bg-white rounded-2xl sm:rounded-3xl p-3 sm:p-4 border-2 ${t.border} shadow-sm flex flex-col justify-between h-[230px] sm:h-[260px] relative"
+               onclick="handleCardClick(${idx}, this)">
+            <div class="flex items-center justify-between w-full">
+              <span class="text-[10px] sm:text-xs font-extrabold px-2 py-0.5 rounded-full ${t.badgeBg} ${t.badgeText}">
+                #${String(card.id || idx + 1).padStart(2, '0')}
+              </span>
+              <img src="${logoUrl}" alt="logo" class="brand-logo-clean w-4 h-4" onerror="this.src='https://placehold.co/30x30/ea580c/fff?text=M'">
+            </div>
+            <div class="text-center px-1 my-auto">
+              <h2 class="text-base sm:text-lg font-bold ${t.titleText} leading-tight">${card.title}</h2>
+              <p class="text-[10px] sm:text-xs font-bold text-slate-400 uppercase tracking-wider mt-1">${card.enTitle || ''}</p>
+            </div>
+            <div class="pt-2 border-t border-dashed border-slate-200 text-center">
+              <span class="text-[11px] font-bold text-slate-500">🔍 ટચ: 3D Flip</span>
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    // Modal Builder
+    const zoomBackdrop = document.getElementById("zoomBackdrop");
+    const zoomActor = document.getElementById("zoomActor");
+    const zoomCardFlipper = document.getElementById("zoomCardFlipper");
+    const zoomFaceFront = document.getElementById("zoomFaceFront");
+    const zoomFaceBack = document.getElementById("zoomFaceBack");
+    const zoomCloseBtn = document.getElementById("zoomCloseBtn");
+
+    let activeCardIndex = null;
+    let activeCardEl = null;
+    let isFlipped = false;
+    let isAnimating = false;
+
+    function buildFrontHtml(card) {
+      const t = themes[card.theme] || themes.sky;
+      return `
+        <div class="flex items-center justify-between w-full flex-shrink-0">
+          <span class="text-xs sm:text-sm font-extrabold px-3 py-1 rounded-full ${t.badgeBg} ${t.badgeText}">
+            ITEM ${String(card.id || 1).padStart(2, '0')}
+          </span>
+          <div class="flex items-center gap-2">
+            <span class="text-xs font-bold text-slate-400">Mind In Motion</span>
+            <img src="${logoUrl}" alt="logo" class="brand-logo-clean w-6 h-6" onerror="this.src='https://placehold.co/40x40/ea580c/fff?text=M'">
+          </div>
         </div>
-      `).join('');
-    }
-
-    function renderQuestions() {
-      const container = document.getElementById("questionList");
-      container.innerHTML = questionData.map((q, idx) => `
-        <div class="item-card">
-          <div class="item-header">Q${idx + 1}. ${q.q}</div>
-          <span class="reveal-btn" onclick="toggleAnswer(${idx})">Show Answer</span>
-          <div class="answer-box" id="ans-${idx}">${q.a}</div>
+        <div class="text-center my-auto px-2">
+          <h2 class="text-2xl sm:text-3xl font-extrabold ${t.titleText}">${card.title}</h2>
+          <p class="text-xs sm:text-sm font-bold text-slate-400 uppercase tracking-widest mt-1">${card.enTitle || ''}</p>
         </div>
+        <div class="mt-4 pt-3 border-t border-dashed border-slate-200 text-center flex items-center justify-center gap-2 text-xs sm:text-sm font-bold text-indigo-700 bg-indigo-50/90 py-2.5 rounded-2xl flex-shrink-0">
+          <span>🔄 કાર્ડ પર ફરી ટચ કરો: 3D Flip</span>
+        </div>
+      `;
+    }
+
+    function buildBackHtml(card) {
+      const t = themes[card.theme] || themes.sky;
+      const pointsArray = Array.isArray(card.points) ? card.points : [card.points];
+      const itemsList = pointsArray.map(pt => `
+        <li class="flex items-start gap-2 text-xs sm:text-sm leading-relaxed text-slate-800 font-medium">
+          <span class="${t.bullet} font-extrabold text-base leading-none select-none mt-1 flex-shrink-0">•</span>
+          <span class="text-slate-800 leading-snug">${pt}</span>
+        </li>
       `).join('');
+
+      return `
+        <div class="flex items-center justify-between w-full border-b border-dashed border-slate-200 pb-2 px-1 flex-shrink-0">
+          <div>
+            <h3 class="text-lg sm:text-xl font-extrabold ${t.titleText}">${card.title}</h3>
+            <p class="text-[11px] font-bold text-slate-400 uppercase tracking-wider">${card.enTitle || ''}</p>
+          </div>
+          <span class="text-xs font-extrabold px-2.5 py-1 rounded-full ${t.badgeBg} ${t.badgeText}">
+            મુખ્ય વિગતો
+          </span>
+        </div>
+        <div class="my-auto py-2 px-1 overflow-y-auto max-h-[320px] custom-scroll">
+          <ul class="space-y-2 text-left">${itemsList}</ul>
+          ${card.formula ? `
+            <div class="mt-3 p-2.5 rounded-2xl border ${t.formulaBg} shadow-sm overflow-x-auto text-center math-font text-sm sm:text-base font-bold">
+              ${card.formula}
+            </div>` : ''}
+        </div>
+        <div class="pt-2 border-t border-dashed border-slate-200 flex items-center justify-between text-[11px] font-semibold text-slate-400 px-1 flex-shrink-0">
+          <span>Mind In Motion Physics</span>
+          <span class="text-indigo-600 font-bold">ટચ: પાછા ફરો (Flip)</span>
+        </div>
+      `;
     }
 
-    function toggleAnswer(idx) {
-      const el = document.getElementById(`ans-${idx}`);
-      el.style.display = (el.style.display === "block") ? "none" : "block";
-      if (window.MathJax) MathJax.typesetPromise();
+    function handleCardClick(index, el) {
+      if (isAnimating) return;
+      isAnimating = true;
+      activeCardIndex = index;
+      activeCardEl = el;
+      isFlipped = false;
+
+      const items = fullDatabase[currentClass][currentChapter][currentCategory];
+      const card = items[index];
+      const t = themes[card.theme] || themes.sky;
+
+      zoomFaceFront.className = `card-face backface-hidden absolute inset-0 w-full h-full bg-white rounded-3xl p-5 sm:p-6 flex flex-col justify-between border-2 ${t.border} shadow-2xl`;
+      zoomFaceFront.innerHTML = buildFrontHtml(card);
+
+      zoomFaceBack.className = `card-face backface-hidden rotate-y-180 absolute inset-0 w-full h-full bg-white rounded-3xl p-5 sm:p-6 flex flex-col justify-between border-2 ${t.backBorder} shadow-2xl`;
+      zoomFaceBack.innerHTML = buildBackHtml(card);
+
+      zoomCardFlipper.classList.remove('is-flipped');
+
+      const startRect = el.getBoundingClientRect();
+      const vpW = window.innerWidth;
+      const vpH = window.innerHeight;
+      const targetW = Math.min(vpW * 0.90, 420);
+      const targetH = Math.min(vpH * 0.85, 540);
+      const targetX = (vpW - targetW) / 2;
+      const targetY = (vpH - targetH) / 2;
+
+      zoomActor.style.width = `${targetW}px`;
+      zoomActor.style.height = `${targetH}px`;
+      zoomActor.classList.add('visible');
+
+      const scaleX = startRect.width / targetW;
+      const scaleY = startRect.height / targetH;
+      const deltaX = startRect.left - targetX;
+      const deltaY = startRect.top - targetY;
+
+      zoomActor.style.transition = 'none';
+      zoomActor.style.transform = `translate3d(${targetX + deltaX}px, ${targetY + deltaY}px, 0) scale(${scaleX}, ${scaleY})`;
+
+      el.style.opacity = '0';
+      zoomBackdrop.classList.add('active');
+
+      requestAnimationFrame(() => {
+        zoomActor.style.transition = 'transform 0.4s cubic-bezier(0.16, 1, 0.3, 1)';
+        zoomActor.style.transform = `translate3d(${targetX}px, ${targetY}px, 0) scale(1, 1)`;
+        setTimeout(() => { isAnimating = false; }, 410);
+      });
     }
 
-    // NAVIGATION
-    function switchTab(tabId) {
-      document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
-      document.querySelectorAll('.view-section').forEach(sec => sec.classList.remove('active'));
-      event.target.classList.add('active');
-      document.getElementById(tabId).classList.add('active');
-      if (window.MathJax) MathJax.typesetPromise();
+    function dismissZoom() {
+      if (isAnimating || activeCardIndex === null || !activeCardEl) return;
+      isAnimating = true;
+
+      if (isFlipped) {
+        zoomCardFlipper.classList.remove('is-flipped');
+        isFlipped = false;
+      }
+
+      zoomBackdrop.classList.remove('active');
+
+      const endRect = activeCardEl.getBoundingClientRect();
+      const targetW = parseFloat(zoomActor.style.width);
+      const targetH = parseFloat(zoomActor.style.height);
+
+      const vpW = window.innerWidth;
+      const vpH = window.innerHeight;
+      const targetX = (vpW - targetW) / 2;
+      const targetY = (vpH - targetH) / 2;
+
+      const scaleX = endRect.width / targetW;
+      const scaleY = endRect.height / targetH;
+      const deltaX = endRect.left - targetX;
+      const deltaY = endRect.top - targetY;
+
+      zoomActor.style.transition = 'transform 0.35s cubic-bezier(0.4, 0, 0.2, 1)';
+      zoomActor.style.transform = `translate3d(${targetX + deltaX}px, ${targetY + deltaY}px, 0) scale(${scaleX}, ${scaleY})`;
+
+      setTimeout(() => {
+        zoomActor.classList.remove('visible');
+        zoomActor.style.transform = 'none';
+        if (activeCardEl) activeCardEl.style.opacity = '1';
+        activeCardIndex = null;
+        activeCardEl = null;
+        isAnimating = false;
+      }, 360);
     }
 
-    // INITIALIZE
-    renderFlashcard();
-    renderFormulas();
-    renderQuestions();
+    zoomCardFlipper.addEventListener('click', (e) => {
+      e.stopPropagation();
+      if (isAnimating) return;
+      isFlipped = !isFlipped;
+      zoomCardFlipper.classList.toggle('is-flipped', isFlipped);
+    });
+
+    zoomBackdrop.addEventListener('click', (e) => { e.stopPropagation(); dismissZoom(); });
+    zoomCloseBtn.addEventListener('click', (e) => { e.stopPropagation(); dismissZoom(); });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && activeCardIndex !== null) dismissZoom();
+    });
   </script>
 </body>
 </html>
