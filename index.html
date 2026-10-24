@@ -7,7 +7,7 @@
   
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500;600;700;800&family=Outfit:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
   
   <!-- Tailwind CSS -->
@@ -181,7 +181,7 @@
     </div>
   </header>
 
-  <!-- ================= BACK NAVIGATION ================= -->
+  <!-- ================= BACK NAVIGATION BAR ================= -->
   <div id="navBar" class="w-full max-w-5xl hidden items-center justify-between gap-2 mb-4 px-2">
     <button onclick="goBack()" class="flex items-center gap-2 bg-white hover:bg-slate-100 border border-slate-200 text-slate-700 px-4 py-2 rounded-2xl text-xs sm:text-sm font-bold shadow-sm transition-all active:scale-95">
       <span>← પાછા જાઓ (Back)</span>
@@ -197,6 +197,7 @@
     <p class="text-xs sm:text-sm text-slate-500 font-medium mb-8 text-center">Select your Class to start revision</p>
 
     <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 w-full max-w-2xl px-4">
+      <!-- Class 11 -->
       <div onclick="selectClass(11)" class="group cursor-pointer bg-white rounded-3xl p-6 sm:p-8 border-2 border-emerald-200 hover:border-emerald-400 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center relative overflow-hidden active:scale-95">
         <div class="absolute -right-8 -bottom-8 w-32 h-32 bg-emerald-50 rounded-full group-hover:scale-125 transition-transform"></div>
         <div class="w-20 h-20 bg-emerald-100 text-emerald-600 rounded-3xl flex items-center justify-center font-extrabold text-3xl mb-4 shadow-inner">
@@ -209,6 +210,7 @@
         </span>
       </div>
 
+      <!-- Class 12 -->
       <div onclick="selectClass(12)" class="group cursor-pointer bg-white rounded-3xl p-6 sm:p-8 border-2 border-orange-200 hover:border-orange-400 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center relative overflow-hidden active:scale-95">
         <div class="absolute -right-8 -bottom-8 w-32 h-32 bg-orange-50 rounded-full group-hover:scale-125 transition-transform"></div>
         <div class="w-20 h-20 bg-orange-100 text-orange-600 rounded-3xl flex items-center justify-center font-extrabold text-3xl mb-4 shadow-inner">
@@ -235,7 +237,7 @@
   <!-- ================= VIEW 3: CHAPTER CONTENT ================= -->
   <section id="viewContent" class="view-container w-full max-w-5xl hidden flex-col items-center">
     
-    <!-- TABS -->
+    <!-- Category Tabs -->
     <div class="w-full flex items-center justify-center gap-2 sm:gap-4 mb-6">
       <button id="tabBtn-cards" onclick="switchCategory('cards')" class="flex-1 max-w-[160px] py-2.5 rounded-2xl text-xs sm:text-sm font-extrabold border transition-all active:scale-95 bg-orange-500 text-white border-orange-600 shadow-md">
         🃏 Flashcards
@@ -248,7 +250,7 @@
       </button>
     </div>
 
-    <!-- Instructions -->
+    <!-- Instructions Guide Bar -->
     <div class="w-full flex flex-wrap items-center justify-center gap-2 sm:gap-6 text-xs sm:text-sm font-semibold text-slate-700 bg-white border border-slate-200 py-3 px-5 rounded-2xl mb-6 shadow-sm text-center">
       <div class="flex items-center gap-1.5 text-orange-600 font-bold">
         <span>👆 ૧. કાર્ડ પર ટચ: Expand</span>
@@ -263,12 +265,12 @@
       </div>
     </div>
 
-    <!-- CARDS CONTAINER -->
+    <!-- Active Item Cards Grid -->
     <main id="cardsGrid" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3.5 sm:gap-5 w-full mb-12">
     </main>
   </section>
 
-  <!-- ================= 3D MODAL ACTOR ================= -->
+  <!-- ================= 3D MODAL ACTOR CONTAINER ================= -->
   <div id="zoomBackdrop" aria-hidden="true"></div>
 
   <div id="zoomActor" aria-modal="true" role="dialog">
@@ -289,34 +291,14 @@
     </div>
   </div>
 
+  <!-- ================= FOOTER ================= -->
   <footer class="mt-auto text-center text-xs text-slate-500 pb-6">
     <p>Mind In Motion Physics • Concept by <span class="font-bold text-slate-700">Vasim Luhar</span> (MSc, B.Ed)</p>
   </footer>
 
-  <!-- ================= DYNAMIC SCRIPT ENGINE ================= -->
+  <!-- ================= 100% DYNAMIC SCRIPT ENGINE ================= -->
   <script>
-    // Course Chapters Outline
-    const courseData = {
-      11: [
-        { id: 1, title: "એકમ અને માપન", enTitle: "Units & Measurements", theme: "sky" },
-        { id: 2, title: "સુરેખ પથ પર ગતિ", enTitle: "Motion in a Straight Line", theme: "mint" },
-        { id: 3, title: "સમતલમાં ગતિ", enTitle: "Motion in a Plane", theme: "amber" },
-        { id: 4, title: "ગતિના નિયમો", enTitle: "Laws of Motion", theme: "peach" },
-        { id: 5, title: "કાર્ય, ઊર્જા અને પાવર", enTitle: "Work, Energy & Power", theme: "purple" },
-        { id: 6, title: "કણોના તંત્રો અને ચાકગતિ", enTitle: "Rotational Motion", theme: "sky" },
-        { id: 7, title: "ગુરુત્વાકર્ષણ", enTitle: "Gravitation", theme: "mint" }
-      ],
-      12: [
-        { id: 1, title: "સ્થિત વિદ્યુતભારો અને ક્ષેત્રો", enTitle: "Electric Charges & Fields", theme: "peach" },
-        { id: 2, title: "સ્થિત વિદ્યુતસ્થિતિમાન અને કેપેસિટન્સ", enTitle: "Electrostatic Potential", theme: "purple" },
-        { id: 3, title: "પ્રવાહ વિદ્યુત", enTitle: "Current Electricity", theme: "sky" },
-        { id: 4, title: "ગતિમાન વિદ્યુતભારો અને ચુંબકત્વ", enTitle: "Moving Charges & Magnetism", theme: "amber" },
-        { id: 5, title: "ચુંબકત્વ અને દ્રવ્ય", enTitle: "Magnetism & Matter", theme: "mint" },
-        { id: 6, title: "વિદ્યુતચુંબકીય પ્રેરણ", enTitle: "Electromagnetic Induction", theme: "sky" },
-        { id: 7, title: "પ્રત્યાવર્તી પ્રવાહ (AC)", enTitle: "Alternating Current", theme: "peach" }
-      ]
-    };
-
+    // Theme configurations
     const themes = {
       sky: { border: "border-sky-300", badgeBg: "bg-sky-100", badgeText: "text-sky-800", titleText: "text-sky-800", backBorder: "border-sky-400", formulaBg: "bg-sky-50 border-sky-300", bullet: "text-sky-600", hoverBorder: "hover:border-sky-400", bgLight: "bg-sky-50/50" },
       amber: { border: "border-amber-300", badgeBg: "bg-amber-100", badgeText: "text-amber-900", titleText: "text-amber-800", backBorder: "border-amber-400", formulaBg: "bg-amber-50 border-amber-300", bullet: "text-amber-600", hoverBorder: "hover:border-amber-400", bgLight: "bg-amber-50/50" },
@@ -325,21 +307,24 @@
       purple: { border: "border-purple-300", badgeBg: "bg-purple-100", badgeText: "text-purple-900", titleText: "text-purple-800", backBorder: "border-purple-400", formulaBg: "bg-purple-50 border-purple-300", bullet: "text-purple-600", hoverBorder: "hover:border-purple-400", bgLight: "bg-purple-50/50" }
     };
 
-    let fullDatabase = {};
+    let fullDatabase = { chapters: { 11: [], 12: [] } };
     let currentClass = null;
     let currentChapter = null;
     let currentCategory = 'cards';
     const logoUrl = "https://drive.google.com/thumbnail?id=1eCSReKlV_fPkLyw5VBPuB0h6WRoainYN&sz=w200";
 
-    // Load data directly from data.json file
+    // Read directly from data.json
     async function loadJsonDatabase() {
       try {
-        const response = await fetch('./data.json?t=' + new Date().getTime());
+        const response = await fetch('./data.json?t=' + Date.now());
         if (response.ok) {
           fullDatabase = await response.json();
+          if (currentClass && !document.getElementById('viewChapters').classList.contains('hidden')) {
+            renderChaptersList();
+          }
         }
       } catch (err) {
-        console.warn("data.json not loaded yet:", err);
+        console.warn("data.json could not be loaded:", err);
       }
     }
     loadJsonDatabase();
@@ -360,19 +345,25 @@
     }
 
     function renderChaptersList() {
-      const list = courseData[currentClass] || [];
       const container = document.getElementById('chaptersGrid');
+      const list = (fullDatabase.chapters && fullDatabase.chapters[currentClass]) ? fullDatabase.chapters[currentClass] : [];
+
+      if (!list || list.length === 0) {
+        container.innerHTML = `<div class="col-span-full text-center text-slate-500 py-10 font-bold">પ્રકરણો લોડ થઈ રહ્યા છે... કૃપા કરીને ૧ સેકન્ડ રાહ જુઓ.</div>`;
+        return;
+      }
+
       container.innerHTML = list.map(ch => {
         const t = themes[ch.theme] || themes.sky;
         return `
           <div onclick="selectChapter(${ch.id})" class="cursor-pointer bg-white rounded-2xl p-4 sm:p-5 border-2 ${t.border} ${t.hoverBorder} ${t.bgLight} shadow-sm hover:shadow-md transition-all flex items-center justify-between active:scale-95">
             <div class="flex items-center gap-3">
-              <span class="w-10 h-10 rounded-xl ${t.badgeBg} ${t.badgeText} font-extrabold flex items-center justify-center text-sm shadow-inner">
-                ${ch.id}
+              <span class="w-10 h-10 rounded-xl ${t.badgeBg} ${t.badgeText} font-extrabold flex items-center justify-center text-lg shadow-inner">
+                ${ch.emoji || ch.id}
               </span>
               <div>
-                <h4 class="font-extrabold text-slate-800 text-sm sm:text-base leading-tight">${ch.title}</h4>
-                <p class="text-[11px] font-bold text-slate-400 uppercase mt-0.5">${ch.enTitle}</p>
+                <h4 class="font-extrabold text-slate-800 text-sm sm:text-base leading-tight">${ch.id}. ${ch.title}</h4>
+                <p class="text-[11px] font-bold text-slate-400 uppercase mt-0.5">${ch.enTitle || ''}</p>
               </div>
             </div>
             <span class="text-xs font-bold text-slate-400">ખોલો →</span>
@@ -386,8 +377,10 @@
       document.getElementById('viewChapters').classList.add('hidden');
       document.getElementById('viewContent').classList.remove('hidden');
       
-      const chObj = (courseData[currentClass] || []).find(c => c.id === chId);
+      const list = (fullDatabase.chapters && fullDatabase.chapters[currentClass]) ? fullDatabase.chapters[currentClass] : [];
+      const chObj = list.find(c => c.id === chId);
       const chTitle = chObj ? chObj.title : `પ્રકરણ ${chId}`;
+
       document.getElementById('headerSubtitle').innerText = `ધોરણ ${currentClass} • પ્રકરણ ${chId}: ${chTitle}`;
       document.getElementById('breadcrumbText').innerText = `ધોરણ ${currentClass} > પ્રકરણ ${chId}`;
       document.getElementById('navStatusBadge').innerText = `Ch: ${chId}`;
@@ -427,8 +420,6 @@
 
     function renderRevisionCards() {
       const cardsGrid = document.getElementById('cardsGrid');
-      
-      // Auto-extract items for this exact Class and Chapter from JSON
       const chData = (fullDatabase[currentClass] && fullDatabase[currentClass][currentChapter]) ? fullDatabase[currentClass][currentChapter] : null;
       const items = (chData && chData[currentCategory]) ? chData[currentCategory] : [];
 
@@ -438,7 +429,7 @@
           <div class="bg-white p-6 sm:p-8 rounded-3xl border border-slate-200 shadow-sm max-w-md">
             <div class="text-4xl mb-3">⏳</div>
             <h3 class="text-base sm:text-lg font-bold text-slate-700">આ પ્રકરણનું મટીરીયલ ટૂંક સમયમાં ઉમેરાશે</h3>
-            <p class="text-xs text-slate-400 mt-1">Material for this section will be updated soon in data.json</p>
+            <p class="text-xs text-slate-400 mt-1">Material will be updated soon in data.json</p>
           </div>
         `;
         return;
@@ -468,7 +459,7 @@
       }).join('');
     }
 
-    // Modal Builder
+    // Modal Builder Engine
     const zoomBackdrop = document.getElementById("zoomBackdrop");
     const zoomActor = document.getElementById("zoomActor");
     const zoomCardFlipper = document.getElementById("zoomCardFlipper");
