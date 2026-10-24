@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="gu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Physics Quick Revision Hub</title>
+  
+  <!-- MathJax for Formula Rendering -->
+  <script>
+    window.MathJax = {
+      tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] }
+    };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+  <style>
+    :root {
+      --primary: #f97316;
+      --primary-dark: #ea580c;
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --text: #1e293b;
+      --muted: #64748b;
+      --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: system-ui, -apple-system, sans-serif; }
+    body { background: var(--bg); color: var(--text); padding-bottom: 60px; }
+
+    header {
+      background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+      color: white;
+      text-align: center;
+      padding: 1.5rem 1rem;
+      box-shadow: var(--shadow);
+    }
+    header h1 { font-size: 1.4rem; margin-bottom: 0.25rem; }
+    header p { font-size: 0.9rem; opacity: 0.9; }
+
+    .nav-tabs {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      margin: 1rem auto;
+      padding: 0 10px;
+      max-width: 500px;
+    }
+    .tab-btn {
+      flex: 1;
+      padding: 10px;
+      border: none;
+      background: #e2e8f0;
+      color: var(--text);
+      font-weight: 600;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      font-size: 0.85rem;
+    }
+    .tab-btn.active {
+      background: var(--primary);
+      color: white;
+      box-shadow: var(--shadow);
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 0 12px;
+    }
+
+    .view-section { display: none; }
+    .view-section.active { display: block; }
+
+    /* Flashcard Flip Styling */
+    .flashcard-wrapper {
+      perspective: 1000px;
+      margin: 1.5rem 0;
+      min-height: 240px;
+      cursor: pointer;
+    }
+    .flashcard {
+      width: 100%;
+      min-height: 240px;
+      position: relative;
+      transform-style: preserve-3d;
+      transition: transform 0.5s ease;
+      border-radius: 12px;
+      box-shadow: var(--shadow);
+    }
+    .flashcard.flipped { transform: rotateY(180deg); }
+    .card-face {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 1.5rem;
+      border-radius: 12px;
+      background: var(--card-bg);
+      border: 1px solid #e2e8f0;
+      text-align: center;
+    }
+    .card-back {
+      transform: rotateY(180deg);
+      background: #fff7ed;
+      border-color: #ffedd5;
+    }
+    .badge {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      font-size: 0.75rem;
+      background: #fed7aa;
+      color: #9a3412;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-weight: 600;
+    }
+
+    /* Controls */
+    .controls {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+    }
+    .btn {
+      padding: 8px 16px;
+      border: none;
+      background: white;
+      border: 1px solid #cbd5e1;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 500;
+    }
+
+    /* List items for Formulas & 1-mark Qs */
+    .item-card {
+      background: var(--card-bg);
+      padding: 1rem;
+      border-radius: 8px;
+      margin-bottom: 0.75rem;
+      box-shadow: var(--shadow);
+      border-left: 4px solid var(--primary);
+    }
+    .item-header {
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+    }
+    .answer-box {
+      margin-top: 0.5rem;
+      padding: 0.5rem;
+      background: #f1f5f9;
+      border-radius: 6px;
+      display: none;
+    }
+    .reveal-btn {
+      font-size: 0.75rem;
+      color: var(--primary-dark);
+      cursor: pointer;
+      text-decoration: underline;
+      display: inline-block;
+      margin-top: 4px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Physics Revision Hub</h1>
+    <p>Flashcards • Formulas • 1-Mark Quick Practice</p>
+  </header>
+
+  <nav class="nav-tabs">
+    <button class="tab-btn active" onclick="switchTab('flashcards')">🃏 Flashcards</button>
+    <button class="tab-btn" onclick="switchTab('formulas')">📐 Formulas</button>
+    <button class="tab-btn" onclick="switchTab('questions')">⚡ 1-Mark Qs</button>
+  </nav>
+
+  <div class="container">
+    
+    <!-- SECTION 1: FLASHCARDS -->
+    <section id="flashcards" class="view-section active">
+      <div class="flashcard-wrapper" onclick="flipCard()">
+        <div class="flashcard" id="currentCard">
+          <div class="card-face card-front">
+            <span class="badge" id="cardTopic">Topic</span>
+            <h3 id="cardPrompt" style="margin-top: 10px;">Question loading...</h3>
+            <span style="margin-top: 15px; font-size: 0.8rem; color: var(--muted);">Tap card to reveal answer</span>
+          </div>
+          <div class="card-face card-back">
+            <span class="badge">Solution</span>
+            <div id="cardAnswer" style="margin-top: 10px;"></div>
+          </div>
+        </div>
+      </div>
+      <div class="controls">
+        <button class="btn" onclick="prevCard()">← Previous</button>
+        <span id="cardCounter" style="font-size: 0.85rem; color: var(--muted);">1 / 1</span>
+        <button class="btn" onclick="nextCard()">Next →</button>
+      </div>
+    </section>
+
+    <!-- SECTION 2: FORMULAS -->
+    <section id="formulas" class="view-section">
+      <div id="formulaList"></div>
+    </section>
+
+    <!-- SECTION 3: 1-MARK QUESTIONS -->
+    <section id="questions" class="view-section">
+      <div id="questionList"></div>
+    </section>
+
+  </div>
+
+  <script>
+    // DATA SOURCE
+    const flashcardData = [
+      { topic: "Electrostatics", q: "State Gauss's Law in electrostatics.", a: "$\\oint \\vec{E} \\cdot d\\vec{A} = \\frac{q_{\\text{enclosed}}}{\\varepsilon_0}$" },
+      { topic: "Current Electricity", q: "Define Drift Velocity ($v_d$) and its relation with electric field.", a: "$v_d = -\\frac{e E \\tau}{m}$ (where $\\tau$ is relaxation time)." },
+      { topic: "Magnetism", q: "What is the magnetic dipole moment of a current loop?", a: "$\\vec{M} = N I \\vec{A}$" }
+    ];
+
+    const formulaData = [
+      { name: "Coulomb's Law", formula: "$$F = \\frac{1}{4\\pi\\varepsilon_0} \\frac{q_1 q_2}{r^2}$$", note: "In vacuum / air" },
+      { name: "Electric Potential (Point Charge)", formula: "$$V = \\frac{k q}{r}$$", note: "Scalar quantity" },
+      { name: "Capacitance (Parallel Plate)", formula: "$$C = \\frac{\\varepsilon_0 A}{d}$$", note: "Increases by factor $K$ with dielectric" }
+    ];
+
+    const questionData = [
+      { q: "What is the unit of electric flux in SI system?", a: "$\\text{N}\\cdot\\text{m}^2/\\text{C}$ or $\\text{V}\\cdot\\text{m}$" },
+      { q: "What happens to the resistance of a semiconductor with increase in temperature?", a: "Resistance decreases (negative temperature coefficient of resistance)." }
+    ];
+
+    // FLASHCARD LOGIC
+    let currentIdx = 0;
+    function renderFlashcard() {
+      const card = flashcardData[currentIdx];
+      document.getElementById("cardTopic").innerText = card.topic;
+      document.getElementById("cardPrompt").innerHTML = card.q;
+      document.getElementById("cardAnswer").innerHTML = card.a;
+      document.getElementById("cardCounter").innerText = `${currentIdx + 1} / ${flashcardData.length}`;
+      document.getElementById("currentCard").classList.remove("flipped");
+      if (window.MathJax) MathJax.typesetPromise();
+    }
+    function flipCard() {
+      document.getElementById("currentCard").classList.toggle("flipped");
+    }
+    function nextCard() {
+      if (currentIdx < flashcardData.length - 1) { currentIdx++; renderFlashcard(); }
+    }
+    function prevCard() {
+      if (currentIdx > 0) { currentIdx--; renderFlashcard(); }
+    }
+
+    // FORMULA & QUESTION LIST LOGIC
+    function renderFormulas() {
+      const container = document.getElementById("formulaList");
+      container.innerHTML = formulaData.map(f => `
+        <div class="item-card">
+          <div class="item-header"><span>${f.name}</span><small style="color:var(--muted)">${f.note}</small></div>
+          <div>${f.formula}</div>
+        </div>
+      `).join('');
+    }
+
+    function renderQuestions() {
+      const container = document.getElementById("questionList");
+      container.innerHTML = questionData.map((q, idx) => `
+        <div class="item-card">
+          <div class="item-header">Q${idx + 1}. ${q.q}</div>
+          <span class="reveal-btn" onclick="toggleAnswer(${idx})">Show Answer</span>
+          <div class="answer-box" id="ans-${idx}">${q.a}</div>
+        </div>
+      `).join('');
+    }
+
+    function toggleAnswer(idx) {
+      const el = document.getElementById(`ans-${idx}`);
+      el.style.display = (el.style.display === "block") ? "none" : "block";
+      if (window.MathJax) MathJax.typesetPromise();
+    }
+
+    // NAVIGATION
+    function switchTab(tabId) {
+      document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+      document.querySelectorAll('.view-section').forEach(sec => sec.classList.remove('active'));
+      event.target.classList.add('active');
+      document.getElementById(tabId).classList.add('active');
+      if (window.MathJax) MathJax.typesetPromise();
+    }
+
+    // INITIALIZE
+    renderFlashcard();
+    renderFormulas();
+    renderQuestions();
+  </script>
+</body>
+</html>
