@@ -45,7 +45,7 @@
       display: block;
     }
 
-    /* 100% Guaranteed Vector Arrow Support (No font/device dependency) */
+    /* 100% Guaranteed Vector Arrow Support */
     .vec {
       display: inline-block;
       position: relative;
@@ -276,7 +276,7 @@
       </div>
       <span class="text-slate-300 hidden sm:inline">•</span>
       <div class="flex items-center gap-1.5 text-indigo-700 font-bold">
-        <span>🔄 ૨. ફરી ટચ: 3D Flip (સૂત્રો & નોટ્સ)</span>
+        <span>🔄 ૨. ફરી ટચ: 3D Flip (સૂત્રો, નોટ્સ & આકૃતિ)</span>
       </div>
       <span class="text-slate-300 hidden sm:inline">•</span>
       <div class="flex items-center gap-1.5 text-emerald-700 font-bold">
@@ -305,7 +305,7 @@
     <div id="zoomCardFlipper" class="preserve-3d rounded-3xl shadow-2xl">
       <div id="zoomFaceFront" class="card-face backface-hidden absolute inset-0 w-full h-full bg-white rounded-3xl p-5 sm:p-6 flex flex-col justify-between border-2 shadow-2xl">
       </div>
-      <div id="zoomFaceBack" class="card-face backface-hidden rotate-y-180 absolute inset-0 w-full h-full bg-white rounded-3xl p-5 sm:p-6 flex flex-col justify-between border-2 shadow-2xl">
+      <div id="zoomFaceBack" class="card-face backface-hidden rotate-y-180 absolute inset-0 w-full h-full bg-white rounded-3xl p-5 sm:p-6 flex flex-col justify-between border-2 shadow-2xl overflow-hidden">
       </div>
     </div>
   </div>
@@ -468,7 +468,8 @@
               <h2 class="text-base sm:text-lg font-bold ${t.titleText} leading-tight">${card.title}</h2>
               <p class="text-[10px] sm:text-xs font-bold text-slate-400 uppercase tracking-wider mt-1">${card.enTitle || ''}</p>
             </div>
-            <div class="pt-2 border-t border-dashed border-slate-200 text-center">
+            <div class="pt-2 border-t border-dashed border-slate-200 text-center flex items-center justify-center gap-1">
+              ${card.imageUrl ? '<span class="text-[10px] bg-slate-100 text-slate-600 px-1.5 py-0.5 rounded font-bold">🖼️ આકૃતિ</span>' : ''}
               <span class="text-[11px] font-bold text-slate-500">🔍 ટચ: 3D Flip</span>
             </div>
           </div>
@@ -513,13 +514,25 @@
 
     function buildBackHtml(card) {
       const t = themes[card.theme] || themes.sky;
-      const pointsArray = Array.isArray(card.points) ? card.points : [card.points];
+      const pointsArray = Array.isArray(card.points) ? card.points : (card.points ? [card.points] : []);
       const itemsList = pointsArray.map(pt => `
         <li class="flex items-start gap-2 text-xs sm:text-sm leading-relaxed text-slate-800 font-medium">
           <span class="${t.bullet} font-extrabold text-base leading-none select-none mt-1 flex-shrink-0">•</span>
           <span class="text-slate-800 leading-snug">${pt}</span>
         </li>
       `).join('');
+
+      // Optional Image Component with clean loading & click preview
+      const imageHtml = card.imageUrl ? `
+        <div class="my-2.5 w-full flex flex-col items-center justify-center bg-slate-50 border border-slate-200 rounded-2xl p-2 shadow-inner">
+          <img src="${card.imageUrl}" 
+               alt="${card.title} આકૃતિ" 
+               class="max-h-44 sm:max-h-52 w-auto object-contain rounded-xl"
+               loading="lazy"
+               onerror="this.parentElement.style.display='none'">
+          ${card.imageCaption ? `<span class="text-[11px] font-semibold text-slate-500 mt-1.5 text-center">${card.imageCaption}</span>` : ''}
+        </div>
+      ` : '';
 
       return `
         <div class="flex items-center justify-between w-full border-b border-dashed border-slate-200 pb-2 px-1 flex-shrink-0">
@@ -531,8 +544,9 @@
             મુખ્ય વિગતો
           </span>
         </div>
-        <div class="my-auto py-2 px-1 overflow-y-auto max-h-[320px] custom-scroll">
-          <ul class="space-y-2 text-left">${itemsList}</ul>
+        <div class="my-auto py-2 px-1 overflow-y-auto max-h-[350px] custom-scroll">
+          ${itemsList ? `<ul class="space-y-2 text-left">${itemsList}</ul>` : ''}
+          ${imageHtml}
           ${card.formula ? `
             <div class="mt-3 p-2.5 rounded-2xl border ${t.formulaBg} shadow-sm overflow-x-auto text-center math-font text-sm sm:text-base font-bold">
               ${card.formula}
@@ -559,7 +573,7 @@
       zoomFaceFront.className = `card-face backface-hidden absolute inset-0 w-full h-full bg-white rounded-3xl p-5 sm:p-6 flex flex-col justify-between border-2 ${t.border} shadow-2xl`;
       zoomFaceFront.innerHTML = buildFrontHtml(card);
 
-      zoomFaceBack.className = `card-face backface-hidden rotate-y-180 absolute inset-0 w-full h-full bg-white rounded-3xl p-5 sm:p-6 flex flex-col justify-between border-2 ${t.backBorder} shadow-2xl`;
+      zoomFaceBack.className = `card-face backface-hidden rotate-y-180 absolute inset-0 w-full h-full bg-white rounded-3xl p-5 sm:p-6 flex flex-col justify-between border-2 ${t.backBorder} shadow-2xl overflow-hidden`;
       zoomFaceBack.innerHTML = buildBackHtml(card);
 
       zoomCardFlipper.classList.remove('is-flipped');
@@ -567,8 +581,8 @@
       const startRect = el.getBoundingClientRect();
       const vpW = window.innerWidth;
       const vpH = window.innerHeight;
-      const targetW = Math.min(vpW * 0.90, 420);
-      const targetH = Math.min(vpH * 0.85, 540);
+      const targetW = Math.min(vpW * 0.90, 440);
+      const targetH = Math.min(vpH * 0.88, 560);
       const targetX = (vpW - targetW) / 2;
       const targetY = (vpH - targetH) / 2;
 
