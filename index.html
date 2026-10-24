@@ -13,6 +13,24 @@
   <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
 
+  <!-- MathJax Configuration for Vector, Powers & Physics Symbols -->
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']],
+        processEscapes: true
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      },
+      svg: {
+        fontCache: 'global'
+      }
+    };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
   <style>
     :root {
       --bg-body: #f8fafc;
@@ -138,6 +156,13 @@
       letter-spacing: -0.02em;
     }
 
+    /* MathJax Styling Overrides */
+    mjx-container {
+      margin: 0 !important;
+      display: inline-block !important;
+      vertical-align: middle !important;
+    }
+
     .custom-scroll::-webkit-scrollbar {
       width: 4px;
     }
@@ -197,7 +222,6 @@
     <p class="text-xs sm:text-sm text-slate-500 font-medium mb-8 text-center">Select your Class to start revision</p>
 
     <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 w-full max-w-2xl px-4">
-      <!-- Class 11 -->
       <div onclick="selectClass(11)" class="group cursor-pointer bg-white rounded-3xl p-6 sm:p-8 border-2 border-emerald-200 hover:border-emerald-400 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center relative overflow-hidden active:scale-95">
         <div class="absolute -right-8 -bottom-8 w-32 h-32 bg-emerald-50 rounded-full group-hover:scale-125 transition-transform"></div>
         <div class="w-20 h-20 bg-emerald-100 text-emerald-600 rounded-3xl flex items-center justify-center font-extrabold text-3xl mb-4 shadow-inner">
@@ -210,7 +234,6 @@
         </span>
       </div>
 
-      <!-- Class 12 -->
       <div onclick="selectClass(12)" class="group cursor-pointer bg-white rounded-3xl p-6 sm:p-8 border-2 border-orange-200 hover:border-orange-400 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center relative overflow-hidden active:scale-95">
         <div class="absolute -right-8 -bottom-8 w-32 h-32 bg-orange-50 rounded-full group-hover:scale-125 transition-transform"></div>
         <div class="w-20 h-20 bg-orange-100 text-orange-600 rounded-3xl flex items-center justify-center font-extrabold text-3xl mb-4 shadow-inner">
@@ -265,12 +288,12 @@
       </div>
     </div>
 
-    <!-- Active Item Cards Grid -->
+    <!-- Cards Grid -->
     <main id="cardsGrid" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3.5 sm:gap-5 w-full mb-12">
     </main>
   </section>
 
-  <!-- ================= 3D MODAL ACTOR CONTAINER ================= -->
+  <!-- ================= 3D MODAL ACTOR ================= -->
   <div id="zoomBackdrop" aria-hidden="true"></div>
 
   <div id="zoomActor" aria-modal="true" role="dialog">
@@ -291,14 +314,12 @@
     </div>
   </div>
 
-  <!-- ================= FOOTER ================= -->
   <footer class="mt-auto text-center text-xs text-slate-500 pb-6">
     <p>Mind In Motion Physics • Concept by <span class="font-bold text-slate-700">Vasim Luhar</span> (MSc, B.Ed)</p>
   </footer>
 
-  <!-- ================= 100% DYNAMIC SCRIPT ENGINE ================= -->
+  <!-- ================= DYNAMIC SCRIPT ENGINE ================= -->
   <script>
-    // Theme configurations
     const themes = {
       sky: { border: "border-sky-300", badgeBg: "bg-sky-100", badgeText: "text-sky-800", titleText: "text-sky-800", backBorder: "border-sky-400", formulaBg: "bg-sky-50 border-sky-300", bullet: "text-sky-600", hoverBorder: "hover:border-sky-400", bgLight: "bg-sky-50/50" },
       amber: { border: "border-amber-300", badgeBg: "bg-amber-100", badgeText: "text-amber-900", titleText: "text-amber-800", backBorder: "border-amber-400", formulaBg: "bg-amber-50 border-amber-300", bullet: "text-amber-600", hoverBorder: "hover:border-amber-400", bgLight: "bg-amber-50/50" },
@@ -313,7 +334,13 @@
     let currentCategory = 'cards';
     const logoUrl = "https://drive.google.com/thumbnail?id=1eCSReKlV_fPkLyw5VBPuB0h6WRoainYN&sz=w200";
 
-    // Read directly from data.json
+    // Auto Typeset Math
+    function renderMathJax() {
+      if (window.MathJax && window.MathJax.typesetPromise) {
+        window.MathJax.typesetPromise().catch((err) => console.log('MathJax error:', err));
+      }
+    }
+
     async function loadJsonDatabase() {
       try {
         const response = await fetch('./data.json?t=' + Date.now());
@@ -324,7 +351,7 @@
           }
         }
       } catch (err) {
-        console.warn("data.json could not be loaded:", err);
+        console.warn("data.json error:", err);
       }
     }
     loadJsonDatabase();
@@ -349,7 +376,7 @@
       const list = (fullDatabase.chapters && fullDatabase.chapters[currentClass]) ? fullDatabase.chapters[currentClass] : [];
 
       if (!list || list.length === 0) {
-        container.innerHTML = `<div class="col-span-full text-center text-slate-500 py-10 font-bold">પ્રકરણો લોડ થઈ રહ્યા છે... કૃપા કરીને ૧ સેકન્ડ રાહ જુઓ.</div>`;
+        container.innerHTML = `<div class="col-span-full text-center text-slate-500 py-10 font-bold">પ્રકરણો લોડ થઈ રહ્યા છે...</div>`;
         return;
       }
 
@@ -457,6 +484,7 @@
           </div>
         `;
       }).join('');
+      renderMathJax();
     }
 
     // Modal Builder Engine
@@ -570,10 +598,15 @@
       el.style.opacity = '0';
       zoomBackdrop.classList.add('active');
 
+      renderMathJax();
+
       requestAnimationFrame(() => {
         zoomActor.style.transition = 'transform 0.4s cubic-bezier(0.16, 1, 0.3, 1)';
         zoomActor.style.transform = `translate3d(${targetX}px, ${targetY}px, 0) scale(1, 1)`;
-        setTimeout(() => { isAnimating = false; }, 410);
+        setTimeout(() => { 
+          isAnimating = false; 
+          renderMathJax();
+        }, 410);
       });
     }
 
@@ -620,6 +653,7 @@
       if (isAnimating) return;
       isFlipped = !isFlipped;
       zoomCardFlipper.classList.toggle('is-flipped', isFlipped);
+      renderMathJax();
     });
 
     zoomBackdrop.addEventListener('click', (e) => { e.stopPropagation(); dismissZoom(); });
