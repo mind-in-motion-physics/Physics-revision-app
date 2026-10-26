@@ -536,11 +536,178 @@
           "title": "મુક્તપતન કરતા પદાર્થ માટેના સૂત્રો",
           "enTitle": "Free Fall Relations",
           "theme": "mint",
+    "2": {
+      "cards": [
+        {
+          "id": 1,
+          "title": "ગતિ અને સાપેક્ષતાનો ખ્યાલ",
+          "enTitle": "Concept of Motion & Relativity",
+          "theme": "sky",
+          "icon": "🪐",
+          "points": [
+            "🪐 <strong>ગતિની વ્યાખ્યા:</strong> જ્યારે કોઈ પદાર્થ સમયની સાથે પોતાની આસપાસના પરિસરની સાપેક્ષમાં સ્થાન બદલે ત્યારે તે ગતિમાં છે તેમ કહેવાય[span_1](start_span)[span_1](end_span)[span_2](start_span)[span_2](end_span).",
+            "👀 <strong>ગતિ સાપેક્ષ છે:</strong> ગતિ એ પદાર્થ અને અવલોકનકારનો સંયુક્ત ગુણધર્મ છે[span_3](start_span)[span_3](end_span). સંદર્ભ બિંદુ વગર ગતિનો કોઈ સ્વતંત્ર અર્થ નથી[span_4](start_span)[span_4](end_span).",
+            "🚌 <strong>વ્યવહારુ ઉદાહરણ:</strong> દોડતી બસમાં બેઠેલા મુસાફર માટે બાજુમાં મૂકેલું પુસ્તક સ્થિર છે, પરંતુ રસ્તા પર ઊભેલા વ્યક્તિ માટે તે પુસ્તક બસની ઝડપે ગતિમાં છે[span_5](start_span)[span_5](end_span)."
+          ],
+          "formula": "ગતિ = પદાર્થ + અવલોકનકારનો સંયુક્ત સંબંધ"
+        },
+        {
+          "id": 2,
+          "title": "યંત્રશાસ્ત્રના બે મુખ્ય વિભાગો",
+          "enTitle": "Kinematics vs Dynamics",
+          "theme": "mint",
+          "icon": "⚙️",
+          "points": [
+            "⚙️ <strong>યંત્રશાસ્ત્ર (Mechanics):</strong> પદાર્થની ગતિ અને તેના નિયમોનો અભ્યાસ કરતી ભૌતિકવિજ્ઞાનની શાખા[span_6](start_span)[span_6](end_span).",
+            "📐 <strong>શુદ્ધ ગતિવિજ્ઞાન (Kinematics):</strong> ગતિ પેદા કરતા કારણો (બળ) ની ચર્ચા કર્યા વગર માત્ર ગતિનું જ વર્ણન (સ્થાન, વેગ, પ્રવેગ) કરતી શાખા[span_7](start_span)[span_7](end_span).",
+            "🚀 <strong>ગતિવિજ્ઞાન (Dynamics):</strong> ગતિ ઉપરાંત ગતિ માટે જવાબદાર પરિબળો (બળ, દળ) અને પદાર્થના ગુણધર્મો સહિતનો ઊંડાણપૂર્વકનો અભ્યાસ[span_8](start_span)[span_8](end_span)."
+          ],
+          "formula": "Mechanics = Kinematics + Dynamics"
+        },
+        {
+          "id": 3,
+          "title": "ઝડપ અને વેગ વચ્ચેનો ભેદ",
+          "enTitle": "Speed vs Velocity",
+          "theme": "amber",
+          "icon": "⚡",
+          "points": [
+            "🏃 <strong>ઝડપ (Speed):</strong> એકમ સમયમાં કાપેલ કુલ પથલંબાઈ (અંતર)[span_9](start_span)[span_9](end_span). તે <strong>અદિશ રાશિ</strong> છે અને હંમેશા ધન જ હોય છે[span_10](start_span)[span_10](end_span).",
+            "🧭 <strong>વેગ (Velocity):</strong> એકમ સમયમાં થયેલું સ્થાનાંતર[span_11](start_span)[span_11](end_span). તે <strong>સદિશ રાશિ</strong> છે (ધન, ઋણ કે શૂન્ય હોઈ શકે)[span_12](start_span)[span_12](end_span)[span_13](start_span)[span_13](end_span).",
+            "🔄 <strong>વેગ બદલાવાની ૩ રીતો:</strong> (૧) માત્ર ઝડપ બદલાય, (૨) માત્ર ગતિની દિશા બદલાય, અથવા (૩) મૂલ્ય અને દિશા બંને બદલાય ત્યારે વેગ બદલાય છે અને પ્રવેગ ઉદ્ભવે છે[span_14](start_span)[span_14](end_span)."
+          ],
+          "formula": "ઝડપ = અંતર / સમય &nbsp;|&nbsp; <span class='vec'>v</span> = સ્થાનાંતર / સમય"
+        },
+        {
+          "id": 4,
+          "title": "તત્કાલીન વેગ અને આલેખનો ઢાળ",
+          "enTitle": "Instantaneous Velocity",
+          "theme": "purple",
+          "icon": "📈",
+          "points": [
+            "⏱️ <strong>તત્કાલીન વેગ:</strong> જ્યારે સમયગાળો શૂન્યની નજીક પહોંચે (Δt → 0) ત્યારે સરેરાશ વેગના સીમાંત મૂલ્ય (લક્ષ) ને તે ક્ષણનો તત્કાલીન વેગ કહે છે[span_15](start_span)[span_15](end_span).",
+            "📈 <strong>કલનશાસ્ત્ર સ્વરૂપ:</strong> તે સ્થાન (x) નું સમય (t) ની સાપેક્ષે પ્રથમ વિકલન ફળ છે (v = dx/dt)[span_16](start_span)[span_16](end_span).",
+            "📐 <strong>આલેખીય અર્થ:</strong> સ્થાન વિરુદ્ધ સમય (x → t) ના આલેખ પર જે-તે બિંદુએ દોરેલા સ્પર્શકનો ઢાળ (tanθ) તત્કાલીન વેગનું મૂલ્ય આપે છે[span_17](start_span)[span_17](end_span)."
+          ],
+          "formula": "v = lim<sub>Δt→0</sub> (Δx / Δt) = dx / dt = tanθ"
+        },
+        {
+          "id": 5,
+          "title": "પ્રવેગ અને પ્રતિપ્રવેગી ગતિ",
+          "enTitle": "Acceleration & Retardation",
+          "theme": "peach",
+          "icon": "🏎️",
+          "points": [
+            "🏎️ <strong>પ્રવેગ:</strong> સમય સાથે કણના વેગમાં થતા ફેરફારના દરને પ્રવેગ કહે છે (a = dv/dt)[span_18](start_span)[span_18](end_span). SI એકમ: m/s<sup>2</sup>[span_19](start_span)[span_19](end_span).",
+            "🛑 <strong>પ્રતિપ્રવેગ:</strong> જ્યારે સમય સાથે વેગ ઘટતો હોય ત્યારે ઉદ્ભવતા ઋણ પ્રવેગને પ્રતિપ્રવેગ કહે છે[span_20](start_span)[span_20](end_span).",
+            "🟢 <strong>ઝડપ વધવાની શરત:</strong> જો વેગ અને પ્રવેગ બંને એક જ દિશામાં (બંને ધન અથવા બંને ઋણ) હોય તો ઝડપ વધે છે[span_21](start_span)[span_21](end_span).",
+            "🔴 <strong>ઝડપ ઘટવાની શરત:</strong> જો વેગ અને પ્રવેગ પરસ્પર વિરુદ્ધ સંજ્ઞાના હોય તો ઝડપ ઘટે છે[span_22](start_span)[span_22](end_span)."
+          ],
+          "formula": "a = dv/dt = d<sup>2</sup>x/dt<sup>2</sup> &nbsp;|&nbsp; એકમ: m/s<sup>2</sup>"
+        },
+        {
+          "id": 6,
+          "title": "મુક્તપતન અને ગેલિલિયોનું તારણ",
+          "enTitle": "Galileo's Free Fall Deduction",
+          "theme": "sky",
           "icon": "🍎",
           "points": [
-            "🍎 પ્રારંભિક વેગ: v₀ = 0 અને પ્રવેગ: a = -g = -9.8 m/s<sup>2</sup>[span_48](start_span)[span_48](end_span)[span_49](start_span)[span_49](end_span)",
-            "📉 t સમય પછી અધોદિશામાં વેગ: v = -g·t[span_50](start_span)[span_50](end_span)",
-            "📏 t સમયમાં કપાતું અધો-અંતર: y = -(1/2)·g·t<sup>2</sup>[span_51](start_span)[span_51](end_span)",
+            "🍎 <strong>અચળ પ્રવેગ:</strong> ગેલિલિયોએ સાબિત કર્યું કે ગુરુત્વાકર્ષણ હેઠળ મુક્તપતન કરતા દરેક પદાર્થ માટે વેગના ફેરફારનો દર (પ્રવેગ g) સમય સાથે અચળ (-9.8 m/s<sup>2</sup>) રહે છે[span_23](start_span)[span_23](end_span)[span_24](start_span)[span_24](end_span).",
+            "📏 <strong>અંતર સાથે ફેરફાર:</strong> વેગના ફેરફારનો દર અંતર સાથે અચળ રહેતો નથી; પદાર્થ જેમ વધુ અંતર કાપે તેમ dv/ds ઘટે છે[span_25](start_span)[span_25](end_span).",
+            "💡 આ અગત્યના અવલોકનથી સમય સાપેક્ષ વેગના ફેરફારને ભૌતિકવિજ્ઞાનમાં 'પ્રવેગ' તરીકે વ્યાખ્યાયિત કરવામાં આવ્યો[span_26](start_span)[span_26](end_span)."
+          ],
+          "formula": "g = -9.8 m/s<sup>2</sup> (અચળ) &nbsp;|&nbsp; dv/ds ઘટે છે"
+        },
+        {
+          "id": 7,
+          "title": "ગતિના આલેખોનું રહસ્ય (x-t & v-t)",
+          "enTitle": "Analysis of Motion Graphs",
+          "theme": "mint",
+          "icon": "📊",
+          "points": [
+            "📈 <strong>x-t આલેખનો આકાર:</strong> ધન પ્રવેગ માટે આલેખ ઉપર તરફ વળે છે (વક્ર), ઋણ પ્રવેગ માટે નીચે તરફ વળે છે અને અચળ વેગ (a = 0) માટે સીધી રેખા હોય છે[span_27](start_span)[span_27](end_span).",
+            "📐 <strong>v-t આલેખનો ઢાળ:</strong> વેગ-સમય આલેખની રેખાનો ઢાળ કણનો પ્રવેગ દર્શાવે છે[span_28](start_span)[span_28](end_span).",
+            "📊 <strong>v-t આલેખનું ક્ષેત્રફળ:</strong> વેગ-સમય આલેખ અને સમય-અક્ષ વચ્ચે ઘેરાયેલા બંધ પ્રદેશનું ક્ષેત્રફળ કણે કરેલું કુલ સ્થાનાંતર આપે છે[span_29](start_span)[span_29](end_span)[span_30](start_span)[span_30](end_span)."
+          ],
+          "formula": "ઢાળ (v-t) = પ્રવેગ &nbsp;|&nbsp; ક્ષેત્રફળ (v-t) = સ્થાનાંતર"
+        },
+        {
+          "id": 8,
+          "title": "વાહનનું સ્ટોપિંગ ડિસ્ટન્સ",
+          "enTitle": "Stopping Distance Concept",
+          "theme": "amber",
+          "icon": "🛑",
+          "points": [
+            "🛑 <strong>વ્યાખ્યા:</strong> ગતિમાન વાહનને બ્રેક માર્યા પછી તે સંપૂર્ણ ઊભું રહે તે પહેલાં કાપેલા અંતરને સ્ટોપિંગ ડિસ્ટન્સ (d<sub>s</sub>) કહે છે[span_31](start_span)[span_31](end_span).",
+            "⚡ <strong>ઝડપનો પ્રભાવ:</strong> સ્ટોપિંગ ડિસ્ટન્સ પ્રારંભિક ઝડપના વર્ગના સમપ્રમાણમાં છે (d<sub>s</sub> ∝ v₀<sup>2</sup>). એટલે ઝડપ બમણી થાય તો ઊભા રહેવાનું અંતર ૪ ગણું લાંબુ થઈ જાય છે[span_32](start_span)[span_32](end_span)[span_33](start_span)[span_33](end_span)!",
+            "⚠️ આ પરિબળને ધ્યાને રાખીને જ શાળા, હૉસ્પિટલ કે વળાંક વાળા રસ્તાઓ પર વાહનોની ગતિ મર્યાદા (Speed Limit) નક્કી કરવામાં આવે છે[span_34](start_span)[span_34](end_span)."
+          ],
+          "formula": "d<sub>s</sub> = v₀<sup>2</sup> / (2a) &nbsp;|&nbsp; d<sub>s</sub> ∝ v₀<sup>2</sup>"
+        }
+      ],
+      "formulas": [
+        {
+          "id": 1,
+          "title": "તત્કાલીન વેગ અને પ્રવેગ (કલનશાસ્ત્ર)",
+          "enTitle": "Calculus Derivatives",
+          "theme": "purple",
+          "icon": "📐",
+          "points": [
+            "🎯 તત્કાલીન વેગ: v = dx / dt = ẋ (સ્થાનનું સમય સાપેક્ષ પ્રથમ વિકલન)[span_35](start_span)[span_35](end_span)[span_36](start_span)[span_36](end_span)",
+            "⚡ તત્કાલીન પ્રવેગ: a = dv / dt = d<sup>2</sup>x / dt<sup>2</sup> = ẍ (સ્થાનનું દ્વિતીય વિકલન)[span_37](start_span)[span_37](end_span)",
+            "⏱️ સરેરાશ પ્રવેગ: <a = (v₂ - v₁) / (t₂ - t₁) = Δv / Δt[span_38](start_span)[span_38](end_span)"
+          ],
+          "formula": "v = dx/dt &nbsp;|&nbsp; a = dv/dt = d<sup>2</sup>x/dt<sup>2</sup>"
+        },
+        {
+          "id": 2,
+          "title": "નિયમિત અચળ પ્રવેગી ગતિના સમીકરણો",
+          "enTitle": "Kinematic Equations of Motion",
+          "theme": "sky",
+          "icon": "🏎️",
+          "points": [
+            "1️⃣ પ્રથમ સમીકરણ: v = v₀ + a·t[span_39](start_span)[span_39](end_span)",
+            "2️⃣ દ્વિતીય સમીકરણ: x = v₀·t + (1/2)·a·t<sup>2</sup>[span_40](start_span)[span_40](end_span)",
+            "3️⃣ તૃતીય સમીકરણ: v<sup>2</sup> - v₀<sup>2</sup> = 2·a·x[span_41](start_span)[span_41](end_span)",
+            "📌 જો કણ t = 0 સમયે x₀ સ્થાને હોય તો: x - x₀ = v₀·t + (1/2)·a·t<sup>2</sup>[span_42](start_span)[span_42](end_span)"
+          ],
+          "formula": "v = v₀ + at &nbsp;|&nbsp; x = v₀t + &frac12;at<sup>2</sup> &nbsp;|&nbsp; v<sup>2</sup> - v₀<sup>2</sup> = 2ax"
+        },
+        {
+          "id": 3,
+          "title": "n-મી સેકન્ડમાં કપાયેલું અંતર",
+          "enTitle": "Distance in nth Second",
+          "theme": "peach",
+          "icon": "⏱️",
+          "points": [
+            "🎯 ચોક્કસ n-મી સેકન્ડનું અંતર = n સેકન્ડનું અંતર - (n - 1) સેકન્ડનું અંતર[span_43](start_span)[span_43](end_span)",
+            "📐 સામાન્ય સૂત્ર: d<sub>n</sub> = v₀ + (1/2)·a·(2n - 1)[span_44](start_span)[span_44](end_span)",
+            "🍎 સ્થિર સ્થિતિમાંથી મુક્તપતન માટે (v₀ = 0): d<sub>n</sub> = (1/2)·g·(2n - 1)[span_45](start_span)[span_45](end_span)"
+          ],
+          "formula": "d<sub>n</sub> = v₀ + &frac12; a(2n - 1)"
+        },
+        {
+          "id": 4,
+          "title": "સ્ટોપિંગ ડિસ્ટન્સ અને ઝડપ સંબંધ",
+          "enTitle": "Stopping Distance Equation",
+          "theme": "amber",
+          "icon": "🛑",
+          "points": [
+            "🛑 સ્ટોપિંગ અંતરનું સૂત્ર: d<sub>s</sub> = v₀<sup>2</sup> / (2a)[span_46](start_span)[span_46](end_span)",
+            "🚗 પ્રતિપ્રવેગ a અચળ હોય ત્યારે: d<sub>s</sub> ∝ v₀<sup>2</sup>[span_47](start_span)[span_47](end_span)",
+            "⚡ ગુણોત્તર સંબંધ: (d<sub>s</sub>)₂ / (d<sub>s</sub>)₁ = [ (v₀)₂ / (v₀)₁ ]<sup>2</sup>[span_48](start_span)[span_48](end_span)"
+          ],
+          "formula": "d<sub>s</sub> = v₀<sup>2</sup> / (2a) &nbsp;|&nbsp; d<sub>s</sub> ∝ v₀<sup>2</sup>"
+        },
+        {
+          "id": 5,
+          "title": "મુક્તપતન કરતા પદાર્થ માટેના સૂત્રો",
+          "enTitle": "Free Fall Relations",
+          "theme": "mint",
+          "icon": "🍎",
+          "points": [
+            "🍎 પ્રારંભિક વેગ: v₀ = 0 અને પ્રવેગ: a = -g = -9.8 m/s<sup>2</sup>[span_49](start_span)[span_49](end_span)[span_50](start_span)[span_50](end_span)",
+            "📉 t સમય પછી અધોદિશામાં વેગ: v = -g·t[span_51](start_span)[span_51](end_span)",
+            "📏 t સમયમાં કપાતું અધો-અંતર: y = -(1/2)·g·t<sup>2</sup>[span_52](start_span)[span_52](end_span)",
             "🚀 ઊંચાઈ h પરથી જમીન પર પહોંચતાં વેગ: v = √(2gh)"
           ],
           "formula": "v = -gt &nbsp;|&nbsp; y = -&frac12;gt<sup>2</sup> &nbsp;|&nbsp; v = √(2gh)"
@@ -554,8 +721,8 @@
           "theme": "mint",
           "icon": "❓",
           "points": [
-            "❓ <strong>પ્રશ્ન:</strong> શુદ્ધ ગતિવિજ્ઞાન (Kinematics) ની વ્યાખ્યા આપો[span_52](start_span)[span_52](end_span).",
-            "💡 <strong>જવાબ:</strong> ભૌતિકવિજ્ઞાનની જે શાખામાં પદાર્થની ગતિ ઉત્પન્ન કરતાં કારણો (બળ) ની ચર્ચા કર્યા વગર માત્ર તેની ગતિનું જ વર્ણન કરવામાં આવે છે તેને <strong>શુદ્ધ ગતિવિજ્ઞાન (Kinematics)</strong> કહે છે[span_53](start_span)[span_53](end_span)."
+            "❓ <strong>પ્રશ્ન:</strong> શુદ્ધ ગતિવિજ્ઞાન (Kinematics) ની વ્યાખ્યા આપો[span_53](start_span)[span_53](end_span).",
+            "💡 <strong>જવાબ:</strong> ભૌતિકવિજ્ઞાનની જે શાખામાં પદાર્થની ગતિ ઉત્પન્ન કરતાં કારણો (બળ) ની ચર્ચા કર્યા વગર માત્ર તેની ગતિનું જ વર્ણન કરવામાં આવે છે તેને <strong>શુદ્ધ ગતિવિજ્ઞાન (Kinematics)</strong> કહે છે[span_54](start_span)[span_54](end_span)."
           ],
           "formula": "Kinematics = ગતિનું શુદ્ધ વર્ણન (કારણો રહિત)"
         },
@@ -566,8 +733,8 @@
           "theme": "sky",
           "icon": "📈",
           "points": [
-            "❓ <strong>પ્રશ્ન:</strong> સ્થાન વિરુદ્ધ સમય (x → t) ના આલેખ પર દોરેલા સ્પર્શકનો ઢાળ કઈ ભૌતિકરાશિ આપે છે[span_54](start_span)[span_54](end_span)?",
-            "💡 <strong>જવાબ:</strong> x → t આલેખના સ્પર્શકનો ઢાળ તે ક્ષણે કણનો <strong>તત્કાલીન વેગ (v = dx/dt)</strong> દર્શાવે છે[span_55](start_span)[span_55](end_span)."
+            "❓ <strong>પ્રશ્ન:</strong> સ્થાન વિરુદ્ધ સમય (x → t) ના આલેખ પર દોરેલા સ્પર્શકનો ઢાળ કઈ ભૌતિકરાશિ આપે છે[span_55](start_span)[span_55](end_span)?",
+            "💡 <strong>જવાબ:</strong> x → t આલેખના સ્પર્શકનો ઢાળ તે ક્ષણે કણનો <strong>તત્કાલીન વેગ (v = dx/dt)</strong> દર્શાવે છે[span_56](start_span)[span_56](end_span)."
           ],
           "formula": "ઢાળ (tanθ) = dx / dt = તત્કાલીન વેગ"
         },
@@ -578,8 +745,8 @@
           "theme": "purple",
           "icon": "📊",
           "points": [
-            "❓ <strong>પ્રશ્ન:</strong> નિયમિત પ્રવેગી ગતિ કરતા પદાર્થના v → t આલેખ વડે ઘેરાતું ક્ષેત્રફળ શું દર્શાવે છે[span_56](start_span)[span_56](end_span)[span_57](start_span)[span_57](end_span)?",
-            "💡 <strong>જવાબ:</strong> v → t આલેખ અને સમય-અક્ષ વચ્ચે ઘેરાયેલા પ્રદેશનું ક્ષેત્રફળ તે સમયગાળા દરમિયાન પદાર્થે કરેલું <strong>કુલ સ્થાનાંતર (Displacement)</strong> આપે છે[span_58](start_span)[span_58](end_span)[span_59](start_span)[span_59](end_span)."
+            "❓ <strong>પ્રશ્ન:</strong> નિયમિત પ્રવેગી ગતિ કરતા પદાર્થના v → t આલેખ વડે ઘેરાતું ક્ષેત્રફળ શું દર્શાવે છે[span_57](start_span)[span_57](end_span)[span_58](start_span)[span_58](end_span)?",
+            "💡 <strong>જવાબ:</strong> v → t આલેખ અને સમય-અક્ષ વચ્ચે ઘેરાયેલા પ્રદેશનું ક્ષેત્રફળ તે સમયગાળા દરમિયાન પદાર્થે કરેલું <strong>કુલ સ્થાનાંતર (Displacement)</strong> આપે છે[span_59](start_span)[span_59](end_span)[span_60](start_span)[span_60](end_span)."
           ],
           "formula": "ક્ષેત્રફળ = સ્થાનાંતર (x)"
         },
@@ -590,8 +757,8 @@
           "theme": "amber",
           "icon": "⚡",
           "points": [
-            "❓ <strong>પ્રશ્ન:</strong> કણમાં પ્રવેગ કઈ કઈ રીતે ઉદ્ભવી શકે છે[span_60](start_span)[span_60](end_span)?",
-            "💡 <strong>જવાબ:</strong> (૧) માત્ર વેગના મૂલ્ય (ઝડપ) માં ફેરફાર થવાથી, (૨) માત્ર ગતિની દિશા બદલાવાથી, અથવા (૩) મૂલ્ય અને દિશા બંને એકસાથે બદલાવાથી પ્રવેગ ઉદ્ભવે છે[span_61](start_span)[span_61](end_span)."
+            "❓ <strong>પ્રશ્ન:</strong> કણમાં પ્રવેગ કઈ કઈ રીતે ઉદ્ભવી શકે છે[span_61](start_span)[span_61](end_span)?",
+            "💡 <strong>જવાબ:</strong> (૧) માત્ર વેગના મૂલ્ય (ઝડપ) માં ફેરફાર થવાથી, (૨) માત્ર ગતિની દિશા બદલાવાથી, અથવા (૩) મૂલ્ય અને દિશા બંને એકસાથે બદલાવાથી પ્રવેગ ઉદ્ભવે છે[span_62](start_span)[span_62](end_span)."
           ],
           "formula": "વેગમાં ફેરફાર → પ્રવેગ (a)"
         },
@@ -602,8 +769,8 @@
           "theme": "peach",
           "icon": "🚗",
           "points": [
-            "❓ <strong>પ્રશ્ન:</strong> વાહનનો પ્રારંભિક વેગ બમણો કરવામાં આવે, તો તેનું સ્ટોપિંગ અંતર કેટલા ગણું થઈ જાય[span_62](start_span)[span_62](end_span)?",
-            "💡 <strong>જવાબ:</strong> સ્ટોપિંગ ડિસ્ટન્સ <strong>૪ ગણું</strong> થાય (કારણ કે d<sub>s</sub> ∝ v₀<sup>2</sup> હોવાથી નવી કિંમત (2)<sup>2</sup> = 4 ગણી થાય છે)[span_63](start_span)[span_63](end_span)[span_64](start_span)[span_64](end_span)."
+            "❓ <strong>પ્રશ્ન:</strong> વાહનનો પ્રારંભિક વેગ બમણો કરવામાં આવે, તો તેનું સ્ટોપિંગ અંતર કેટલા ગણું થઈ જાય[span_63](start_span)[span_63](end_span)?",
+            "💡 <strong>જવાબ:</strong> સ્ટોપિંગ ડિસ્ટન્સ <strong>૪ ગણું</strong> થાય (કારણ કે d<sub>s</sub> ∝ v₀<sup>2</sup> હોવાથી નવી કિંમત (2)<sup>2</sup> = 4 ગણી થાય છે)[span_64](start_span)[span_64](end_span)[span_65](start_span)[span_65](end_span)."
           ],
           "formula": "(d<sub>s</sub>)₂ = 4 × (d<sub>s</sub>)₁"
         },
@@ -614,8 +781,8 @@
           "theme": "mint",
           "icon": "🛑",
           "points": [
-            "❓ <strong>પ્રશ્ન:</strong> કણની ગતિમાં ઝડપ ક્યારે ઘટે છે (પ્રતિપ્રવેગી ગતિ ક્યારે થાય)[span_65](start_span)[span_65](end_span)?",
-            "💡 <strong>જવાબ:</strong> જ્યારે કણનો વેગ અને તેનો પ્રવેગ બંને પરસ્પર <strong>વિરુદ્ધ દિશામાં (વિરુદ્ધ સંજ્ઞા ધરાવતા)</strong> હોય ત્યારે કણ પ્રતિપ્રવેગી ગતિ કરે છે અને ઝડપ ઘટે છે[span_66](start_span)[span_66](end_span)."
+            "❓ <strong>પ્રશ્ન:</strong> કણની ગતિમાં ઝડપ ક્યારે ઘટે છે (પ્રતિપ્રવેગી ગતિ ક્યારે થાય)[span_66](start_span)[span_66](end_span)?",
+            "💡 <strong>જવાબ:</strong> જ્યારે કણનો વેગ અને તેનો પ્રવેગ બંને પરસ્પર <strong>વિરુદ્ધ દિશામાં (વિરુદ્ધ સંજ્ઞા ધરાવતા)</strong> હોય ત્યારે કણ પ્રતિપ્રવેગી ગતિ કરે છે અને ઝડપ ઘટે છે[span_67](start_span)[span_67](end_span)."
           ],
           "formula": "વેગ અને પ્રવેગ વિરુદ્ધ → પ્રતિપ્રવેગ"
         },
@@ -626,8 +793,8 @@
           "theme": "sky",
           "icon": "⚠️",
           "points": [
-            "❓ <strong>પ્રશ્ન:</strong> વાહનનું સ્ટોપિંગ ડિસ્ટન્સ કઈ મુખ્ય બે બાબતો પર આધાર રાખે છે[span_67](start_span)[span_67](end_span)?",
-            "💡 <strong>જવાબ:</strong> સ્ટોપિંગ ડિસ્ટન્સ એ (૧) વાહનના પ્રારંભિક વેગ (v₀) અને (૨) વાહનની બ્રેકિંગ ક્ષમતા એટલે કે ઉદ્ભવતા પ્રતિપ્રવેગ (a) પર આધાર રાખે છે[span_68](start_span)[span_68](end_span)."
+            "❓ <strong>પ્રશ્ન:</strong> વાહનનું સ્ટોપિંગ ડિસ્ટન્સ કઈ મુખ્ય બે બાબતો પર આધાર રાખે છે[span_68](start_span)[span_68](end_span)?",
+            "💡 <strong>જવાબ:</strong> સ્ટોપિંગ ડિસ્ટન્સ એ (૧) વાહનના પ્રારંભિક વેગ (v₀) અને (૨) વાહનની બ્રેકિંગ ક્ષમતા એટલે કે ઉદ્ભવતા પ્રતિપ્રવેગ (a) પર આધાર રાખે છે[span_69](start_span)[span_69](end_span)."
           ],
           "formula": "આધાર: પ્રારંભિક વેગ (v₀) અને પ્રતિપ્રવેગ (a)"
         }
