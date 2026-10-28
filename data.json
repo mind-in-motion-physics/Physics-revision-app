@@ -632,7 +632,7 @@
         }
       ]
     },
-      "3": {
+          "3": {
       "cards": [
         {
           "id": 1,
@@ -641,9 +641,9 @@
           "theme": "sky",
           "icon": "🧭",
           "points": [
-            "અદિશ રાશિ: જે ભૌતિકરાશિના વર્ણન માટે માત્ર માન (મૂલ્ય) ની જ જરૂર પડે છે[span_1](start_span)[span_1](end_span). દા.ત. દળ, અંતર, સમય, ઘનતા, તાપમાન, દબાણ, ઝડપ, કાર્ય, પાવર[span_2](start_span)[span_2](end_span).",
-            "સદિશ રાશિ: જે ભૌતિકરાશિની સંપૂર્ણ માહિતી માટે માન ઉપરાંત દિશાની પણ જરૂર પડે છે[span_3](start_span)[span_3](end_span). દા.ત. સ્થાન, સ્થાનાંતર, વેગ, પ્રવેગ, બળ[span_4](start_span)[span_4](end_span).",
-            "સુરેખ પથ પર દિશા ધન (+) અને ઋણ (-) ચિહ્નો વડે જાણી શકાય, પરંતુ દ્વિ-પરિમાણ કે ત્રિ-પરિમાણમાં સદિશની અનિવાર્ય જરૂર પડે છે[span_5](start_span)[span_5](end_span)."
+            "અદિશ રાશિ: જે ભૌતિકરાશિના વર્ણન માટે માત્ર માન (મૂલ્ય) ની જ જરૂર પડે છે[span_5](start_span)[span_5](end_span). દા.ત. દળ, અંતર, સમય, ઘનતા, તાપમાન, દબાણ, ઝડપ, કાર્ય, પાવર[span_6](start_span)[span_6](end_span).",
+            "સદિશ રાશિ: જે ભૌતિકરાશિની સંપૂર્ણ માહિતી માટે માન ઉપરાંત દિશાની પણ જરૂર પડે છે[span_7](start_span)[span_7](end_span). દા.ત. સ્થાન, સ્થાનાંતર, વેગ, પ્રવેગ, બળ[span_8](start_span)[span_8](end_span).",
+            "સુરેખ પથ પર દિશા ધન (+) અને ઋણ (-) ચિહ્નો વડે જાણી શકાય, પરંતુ દ્વિ-પરિમાણ કે ત્રિ-પરિમાણમાં સદિશની અનિવાર્ય જરૂર પડે છે[span_9](start_span)[span_9](end_span)."
           ],
           "formula": "સદિશ = માન (મૂલ્ય) + દિશા"
         },
@@ -654,9 +654,9 @@
           "theme": "mint",
           "icon": "📍",
           "points": [
-            "સ્થાન સદિશ: કોઈ નિશ્ચિત બિંદુ (ઉગમબિંદુ O) ને અનુલક્ષીને કણનું સ્થાન દર્શાવતો સદિશ છે, જે સુરેખ અંતર અને દિશા દર્શાવે છે[span_6](start_span)[span_6](end_span).",
-            "સ્થાનાંતર સદિશ: કણના પ્રારંભિક સ્થાન P અને અંતિમ સ્થાન P' ને જોડતો સુરેખ સદિશ Δr છે[span_7](start_span)[span_7](end_span).",
-            "સ્થાનાંતર સદિશ કણના ખરેખર ગતિમાર્ગ પર આધાર રાખતો નથી; તેનું માન પથલંબાઈ જેટલું અથવા તેનાથી ઓછું હોય છે[span_8](start_span)[span_8](end_span)."
+            "સ્થાન સદિશ: કોઈ નિશ્ચિત બિંદુ (ઉગમબિંદુ O) ને અનુલક્ષીને કણનું સ્થાન દર્શાવતો સદિશ છે, જે સુરેખ અંતર અને દિશા દર્શાવે છે[span_10](start_span)[span_10](end_span).",
+            "સ્થાનાંતર સદિશ: કણના પ્રારંભિક સ્થાન P અને અંતિમ સ્થાન P' ને જોડતો સુરેખ સદિશ Δr છે[span_11](start_span)[span_11](end_span).",
+            "સ્થાનાંતર સદિશ કણના ખરેખર ગતિમાર્ગ પર આધાર રાખતો નથી; તેનું માન પથલંબાઈ જેટલું અથવા તેનાથી ઓછું હોય છે[span_12](start_span)[span_12](end_span)."
           ],
           "formula": "Δr = r' - r"
         },
@@ -667,11 +667,11 @@
           "theme": "amber",
           "icon": "📐",
           "points": [
-            "સમાન સદિશ: જો બે સદિશોના માન અને દિશા બંને સમાન હોય, તો તેમને સમાન સદિશો કહેવાય છે[span_9](start_span)[span_9](end_span).",
-            "સદિશને પોતાની દિશા બદલ્યા વિના સમાંતર ખસેડવાથી સદિશ બદલાતો નથી[span_10](start_span)[span_10](end_span).",
-            "સમાંતર સદિશ: જો બે સદિશો એક જ દિશામાં હોય (ખૂણો θ = 0°), તો તેમને સમાંતર સદિશો કહે છે[span_11](start_span)[span_11](end_span)."
+            "સમાન સદિશ: જો બે સદિશોના માન અને દિશા બંને સમાન હોય, તો તેમને સમાન સદિશો કહેવાય છે[span_13](start_span)[span_13](end_span).",
+            "સદિશને પોતાની દિશા બદલ્યા વિના સમાંતર ખસેડવાથી સદિશ બદલાતો નથી[span_14](start_span)[span_14](end_span).",
+            "સમાંતર સદિશ: જો બે સદિશો એક જ દિશામાં હોય (ખૂણો θ = 0°), તો તેમને સમાંતર સદિશો કહે છે[span_15](start_span)[span_15](end_span)."
           ],
-          "formula": "A = B (સમાન સદિશ) | A || B (સમાંતર સદિશ)"
+          "formula": "A = B (સમાન સદિશ) &nbsp;|&nbsp; A || B (સમાંતર સદિશ)"
         },
         {
           "id": 4,
@@ -680,9 +680,9 @@
           "theme": "purple",
           "icon": "🔺",
           "points": [
-            "પ્રથમ સદિશ A ના શીર્ષ પર બીજા સદિશ B નું પુચ્છ મૂકી, A ના પુચ્છથી B ના શીર્ષને જોડતો સદિશ દોરતાં પરિણામી સદિશ R મળે છે[span_12](start_span)[span_12](end_span).",
-            "એક સદિશના શીર્ષ પર બીજા સદિશનું પુચ્છ ગોઠવાતું હોવાથી આ પદ્ધતિને શીર્ષથી પુચ્છની રીત પણ કહે છે[span_13](start_span)[span_13](end_span).",
-            "સદિશોનો સરવાળો સમક્રમી છે (A + B = B + A) અને તે જૂથના નિયમને પણ અનુસરે છે[span_14](start_span)[span_14](end_span)."
+            "પ્રથમ સદિશ A ના શીર્ષ પર બીજા સદિશ B નું પુચ્છ મૂકી, A ના પુચ્છથી B ના શીર્ષને જોડતો સદિશ દોરતાં પરિણામી સદિશ R મળે છે[span_16](start_span)[span_16](end_span).",
+            "એક સદિશના શીર્ષ પર બીજા સદિશનું પુચ્છ ગોઠવાતું હોવાથી આ પદ્ધતિને શીર્ષથી પુચ્છની રીત પણ કહે છે[span_17](start_span)[span_17](end_span).",
+            "સદિશોનો સરવાળો સમક્રમી છે (A + B = B + A) અને તે જૂથના નિયમને પણ અનુસરે છે[span_18](start_span)[span_18](end_span)."
           ],
           "formula": "R = A + B (શીર્ષથી પુચ્છની રીત)"
         },
@@ -693,11 +693,11 @@
           "theme": "peach",
           "icon": "⭕",
           "points": [
-            "જે સદિશનું માન શૂન્ય હોય તેને શૂન્ય સદિશ કહે છે; તેને કોઈ ચોક્કસ દિશા દર્શાવી શકાતી નથી[span_15](start_span)[span_15](end_span).",
-            "કોઈ સદિશમાં તે જ સદિશનો વિરોધી સદિશ ઉમેરતાં અથવા શૂન્ય સંખ્યા વડે ગુણતાં શૂન્ય સદિશ મળે છે[span_16](start_span)[span_16](end_span).",
-            "ગુણધર્મો: A + 0 = A, λ·0 = 0, અને 0·A = 0[span_17](start_span)[span_17](end_span)."
+            "જે સદિશનું માન શૂન્ય હોય તેને શૂન્ય સદિશ કહે છે; તેને કોઈ ચોક્કસ દિશા દર્શાવી શકાતી નથી[span_19](start_span)[span_19](end_span).",
+            "કોઈ સદિશમાં તે જ સદિશનો વિરોધી સદિશ ઉમેરતાં અથવા શૂન્ય સંખ્યા વડે ગુણતાં શૂન્ય સદિશ મળે છે[span_20](start_span)[span_20](end_span).",
+            "ગુણધર્મો: A + 0 = A, λ·0 = 0, અને 0·A = 0[span_21](start_span)[span_21](end_span)."
           ],
-          "formula": "A + (-A) = 0 | |0| = 0"
+          "formula": "A + (-A) = 0 &nbsp;|&nbsp; |0| = 0"
         },
         {
           "id": 6,
@@ -706,9 +706,9 @@
           "theme": "sky",
           "icon": "🎯",
           "points": [
-            "જે સદિશનું માન ૧ એકમ હોય તેને એકમ સદિશ કહે છે; તે માત્ર ચોક્કસ દિશા દર્શાવવા વપરાય છે[span_18](start_span)[span_18](end_span).",
-            "એકમ સદિશને કોઈ એકમ કે પરિમાણ હોતાં નથી; તેને અક્ષર પર કેપ (^) મૂકીને દર્શાવાય છે[span_19](start_span)[span_19](end_span).",
-            "લંબ યામાક્ષ પદ્ધતિમાં X, Y અને Z દિશાના એકમ સદિશો અનુક્રમે î, ĵ, k̂ છે અને |î| = |ĵ| = |k̂| = 1 થાય છે[span_20](start_span)[span_20](end_span)."
+            "જે સદિશનું માન ૧ એકમ હોય તેને એકમ સદિશ કહે છે; તે માત્ર ચોક્કસ દિશા દર્શાવવા વપરાય છે[span_22](start_span)[span_22](end_span).",
+            "એકમ સદિશને કોઈ એકમ કે પરિમાણ હોતાં નથી; તેને અક્ષર પર કેપ (^) મૂકીને દર્શાવાય છે[span_23](start_span)[span_23](end_span).",
+            "લંબ યામાક્ષ પદ્ધતિમાં X, Y અને Z દિશાના એકમ સદિશો અનુક્રમે î, ĵ, k̂ છે અને |î| = |ĵ| = |k̂| = 1 થાય છે[span_24](start_span)[span_24](end_span)."
           ],
           "formula": "n̂ = A / |A| (સદિશ / સદિશનું માન)"
         },
@@ -719,11 +719,11 @@
           "theme": "mint",
           "icon": "쪼",
           "points": [
-            "દ્વિ-પરિમાણમાં સદિશ A ના સમક્ષિતિજ અને શિરોલંબ લંબઘટકો: Ax = A·cosθ અને Ay = A·sinθ મળે છે[span_21](start_span)[span_21](end_span).",
-            "સદિશનું માન એટલે કે તેના ઘટકોના વર્ગોના સરવાળાનું વર્ગમૂળ: A = √(Ax² + Ay²)[span_22](start_span)[span_22](end_span).",
-            "સદિશે X-અક્ષ સાથે બનાવેલો ખૂણો tanθ = Ay / Ax વડે દર્શાવાય છે[span_23](start_span)[span_23](end_span)."
+            "દ્વિ-પરિમાણમાં સદિશ A ના સમક્ષિતિજ અને શિરોલંબ લંબઘટકો: A<sub>x</sub> = A·cosθ અને A<sub>y</sub> = A·sinθ મળે છે[span_25](start_span)[span_25](end_span).",
+            "સદિશનું માન એટલે કે તેના ઘટકોના વર્ગોના સરવાળાનું વર્ગમૂળ: A = √(A<sub>x</sub><sup>2</sup> + A<sub>y</sub><sup>2</sup>)[span_26](start_span)[span_26](end_span).",
+            "સદિશે X-અક્ષ સાથે બનાવેલો ખૂણો tanθ = A<sub>y</sub> / A<sub>x</sub> વડે દર્શાવાય છે[span_27](start_span)[span_27](end_span)."
           ],
-          "formula": "A = Ax·î + Ay·ĵ | tanθ = Ay / Ax"
+          "formula": "A = A<sub>x</sub>î + A<sub>y</sub>ĵ &nbsp;|&nbsp; tanθ = A<sub>y</sub> / A<sub>x</sub>"
         },
         {
           "id": 8,
@@ -732,11 +732,11 @@
           "theme": "amber",
           "icon": "▱",
           "points": [
-            "જો બે સદિશો કોઈ બિંદુ પાસે ચતુષ્કોણની બે સંલગ્ન બાજુઓ દર્શાવે, તો તે બિંદુમાંથી નીકળતો વિકર્ણ પરિણામી સદિશ દર્શાવે છે[span_24](start_span)[span_24](end_span).",
-            "પરિણામી સદિશનું મૂલ્ય: R = √(A² + B² + 2AB·cosθ) થાય છે[span_25](start_span)[span_25](end_span).",
-            "પરિણામી સદિશની દિશા: tanβ = (B·sinθ) / (A + B·cosθ) વડે મળે છે[span_26](start_span)[span_26](end_span)."
+            "જો બે સદિશો કોઈ બિંદુ પાસે ચતુષ્કોણની બે સંલગ્ન બાજુઓ દર્શાવે, તો તે બિંદુમાંથી નીકળતો વિકર્ણ પરિણામી સદિશ દર્શાવે છે[span_28](start_span)[span_28](end_span).",
+            "પરિણામી સદિશનું મૂલ્ય: R = √(A<sup>2</sup> + B<sup>2</sup> + 2AB·cosθ) થાય છે[span_29](start_span)[span_29](end_span).",
+            "પરિણામી સદિશની દિશા: tanβ = (B·sinθ) / (A + B·cosθ) વડે મળે છે[span_30](start_span)[span_30](end_span)."
           ],
-          "formula": "R = √(A² + B² + 2AB cosθ)"
+          "formula": "R = √(A<sup>2</sup> + B<sup>2</sup> + 2AB·cosθ)"
         },
         {
           "id": 9,
@@ -745,11 +745,11 @@
           "theme": "purple",
           "icon": "➖",
           "points": [
-            "સદિશ A માંથી સદિશ B બાદ કરવો એટલે કે A માં B નો વિરોધી સદિશ (-B) ઉમેરવો[span_27](start_span)[span_27](end_span).",
-            "જો A અને B વચ્ચેનો કોણ θ હોય, તો A અને -B વચ્ચેનો કોણ (180° - θ) થાય છે[span_28](start_span)[span_28](end_span).",
-            "બાદબાકીનું પરિણામી મૂલ્ય: |A - B| = √(A² + B² - 2AB·cosθ) થાય છે[span_29](start_span)[span_29](end_span)."
+            "સદિશ A માંથી સદિશ B બાદ કરવો એટલે કે A માં B નો વિરોધી સદિશ (-B) ઉમેરવો[span_31](start_span)[span_31](end_span).",
+            "જો A અને B વચ્ચેનો કોણ θ હોય, તો A અને -B વચ્ચેનો કોણ (180° - θ) થાય છે[span_32](start_span)[span_32](end_span).",
+            "બાદબાકીનું પરિણામી મૂલ્ય: |A - B| = √(A<sup>2</sup> + B<sup>2</sup> - 2AB·cosθ) થાય છે[span_33](start_span)[span_33](end_span)."
           ],
-          "formula": "A - B = A + (-B) | |A - B| = √(A² + B² - 2AB cosθ)"
+          "formula": "|A - B| = √(A<sup>2</sup> + B<sup>2</sup> - 2AB·cosθ)"
         },
         {
           "id": 10,
@@ -758,11 +758,11 @@
           "theme": "peach",
           "icon": "📦",
           "points": [
-            "ત્રિ-પરિમાણમાં સદિશ A = Ax·î + Ay·ĵ + Az·k̂ અને તેનું મૂલ્ય |A| = √(Ax² + Ay² + Az²) થાય છે[span_30](start_span)[span_30](end_span).",
-            "સદિશ X, Y, Z અક્ષ સાથે અનુક્રમે α, β, γ કોણ બનાવે તો cosα = Ax/A, cosβ = Ay/A, cosγ = Az/A થાય છે[span_31](start_span)[span_31](end_span).",
-            "Direction cosines નો મૂળભૂત સંબંધ: cos²α + cos²β + cos²γ = 1 થાય છે[span_32](start_span)[span_32](end_span)."
+            "ત્રિ-પરિમાણમાં સદિશ A = A<sub>x</sub>î + A<sub>y</sub>ĵ + A<sub>z</sub>k̂ અને તેનું મૂલ્ય |A| = √(A<sub>x</sub><sup>2</sup> + A<sub>y</sub><sup>2</sup> + A<sub>z</sub><sup>2</sup>) થાય છે[span_34](start_span)[span_34](end_span).",
+            "સદિશ X, Y, Z અક્ષ સાથે અનુક્રમે α, β, γ કોણ બનાવે તો cosα = A<sub>x</sub>/A, cosβ = A<sub>y</sub>/A, cosγ = A<sub>z</sub>/A થાય છે[span_35](start_span)[span_35](end_span).",
+            "Direction cosines નો મૂળભૂત સંબંધ: cos<sup>2</sup>α + cos<sup>2</sup>β + cos<sup>2</sup>γ = 1 થાય છે[span_36](start_span)[span_36](end_span)."
           ],
-          "formula": "cos²α + cos²β + cos²γ = 1"
+          "formula": "cos<sup>2</sup>α + cos<sup>2</sup>β + cos<sup>2</sup>γ = 1"
         },
         {
           "id": 11,
@@ -771,11 +771,11 @@
           "theme": "sky",
           "icon": "🚀",
           "points": [
-            "પૃથ્વીના ગુરુત્વાકર્ષી ક્ષેત્રમાં સમક્ષિતિજ સાથે અમુક કોણે ફેંકવામાં આવતા પદાર્થની દ્વિ-પરિમાણ્વીય ગતિને પ્રક્ષિપ્ત ગતિ કહે છે[span_33](start_span)[span_33](end_span).",
-            "સમક્ષિતિજ દિશામાં વેગનો ઘટક vx = v0·cosθ0 સમગ્ર ગતિ દરમિયાન અચળ રહે છે[span_34](start_span)[span_34](end_span).",
-            "શિરોલંબ દિશામાં ગુરુત્વપ્રવેગ (ay = -g) લાગતો હોવાથી વેગ ઘટક vy = v0·sinθ0 - gt મુજબ મુક્તપતનની જેમ બદલાય છે[span_35](start_span)[span_35](end_span)."
+            "પૃથ્વીના ગુરુત્વાકર્ષી ક્ષેત્રમાં સમક્ષિતિજ સાથે અમુક કોણે ફેંકવામાં આવતા પદાર્થની દ્વિ-પરિમાણ્વીય ગતિને પ્રક્ષિપ્ત ગતિ કહે છે[span_37](start_span)[span_37](end_span).",
+            "સમક્ષિતિજ દિશામાં વેગનો ઘટક v<sub>x</sub> = v<sub>0</sub>·cosθ<sub>0</sub> સમગ્ર ગતિ દરમિયાન અચળ રહે છે[span_38](start_span)[span_38](end_span).",
+            "શિરોલંબ દિશામાં ગુરુત્વપ્રવેગ (a<sub>y</sub> = -g) લાગતો હોવાથી વેગ ઘટક v<sub>y</sub> = v<sub>0</sub>·sinθ<sub>0</sub> - gt મુજબ મુક્તપતનની જેમ બદલાય છે[span_39](start_span)[span_39](end_span)."
           ],
-          "formula": "x = (v0 cosθ0)t | y = (v0 sinθ0)t - &frac12;gt²"
+          "formula": "x = (v<sub>0</sub>·cosθ<sub>0</sub>)t &nbsp;|&nbsp; y = (v<sub>0</sub>·sinθ<sub>0</sub>)t - &frac12;gt<sup>2</sup>"
         },
         {
           "id": 12,
@@ -784,11 +784,11 @@
           "theme": "mint",
           "icon": "📈",
           "points": [
-            "સમય t નો લોપ કરતાં ગતિપથનું સમીકરણ: y = (tanθ0)x - [g / (2v0²cos²θ0)]x² મળે છે[span_36](start_span)[span_36](end_span).",
-            "અહીં v0, θ0 અને g અચળ હોવાથી સમીકરણ y = ax + bx² પ્રકારનું દ્વિઘાત બને છે[span_37](start_span)[span_37](end_span).",
-            "આ સમીકરણ પરવલય દર્શાવતું હોવાથી સાબિત થાય છે કે પ્રક્ષિપ્ત પદાર્થનો ગતિપથ પરવલયાકાર હોય છે[span_38](start_span)[span_38](end_span)."
+            "સમય t નો લોપ કરતાં ગતિપથનું સમીકરણ: y = (tanθ<sub>0</sub>)x - [g / (2v<sub>0</sub><sup>2</sup>cos<sup>2</sup>θ<sub>0</sub>)]x<sup>2</sup> મળે છે[span_40](start_span)[span_40](end_span).",
+            "અહીં v<sub>0</sub>, θ<sub>0</sub> અને g અચળ હોવાથી સમીકરણ y = ax + bx<sup>2</sup> પ્રકારનું દ્વિઘાત બને છે[span_41](start_span)[span_41](end_span).",
+            "આ સમીકરણ પરવલય દર્શાવતું હોવાથી સાબિત થાય છે કે પ્રક્ષિપ્ત પદાર્થનો ગતિપથ પરવલયાકાર હોય છે[span_42](start_span)[span_42](end_span)."
           ],
-          "formula": "y = (tanθ0)x - [g / (2v0²cos²θ0)]x² (પરવલય)"
+          "formula": "y = (tanθ<sub>0</sub>)x - [g / (2v<sub>0</sub><sup>2</sup>cos<sup>2</sup>θ<sub>0</sub>)]x<sup>2</sup>"
         },
         {
           "id": 13,
@@ -797,11 +797,11 @@
           "theme": "amber",
           "icon": "⏱️",
           "points": [
-            "મહત્તમ ઊંચાઈ પ્રાપ્ત કરવાનો સમય tm = (v0·sinθ0)/g અને કુલ ઉડ્ડયન સમય tf = 2tm = (2v0·sinθ0)/g થાય છે[span_39](start_span)[span_39](end_span).",
-            "પ્રક્ષિપ્ત પદાર્થે પ્રાપ્ત કરેલી મહત્તમ ઊંચાઈ H = (v0²·sin²θ0) / (2g) છે[span_40](start_span)[span_40](end_span).",
-            "સમક્ષિતિજ અવધિ R = (v0²·sin2θ0) / g મળે છે; θ0 = 45° ના કોણે મહત્તમ અવધિ Rmax = v0² / g થાય છે[span_41](start_span)[span_41](end_span)."
+            "મહત્તમ ઊંચાઈ પ્રાપ્ત કરવાનો સમય t<sub>m</sub> = (v<sub>0</sub>·sinθ<sub>0</sub>)/g અને કુલ ઉડ્ડયન સમય t<sub>f</sub> = 2t<sub>m</sub> = (2v<sub>0</sub>·sinθ<sub>0</sub>)/g થાય છે[span_43](start_span)[span_43](end_span).",
+            "પ્રક્ષિપ્ત પદાર્થે પ્રાપ્ત કરેલી મહત્તમ ઊંચાઈ H = (v<sub>0</sub><sup>2</sup>·sin<sup>2</sup>θ<sub>0</sub>) / (2g) છે[span_44](start_span)[span_44](end_span).",
+            "સમક્ષિતિજ અવધિ R = (v<sub>0</sub><sup>2</sup>·sin2θ<sub>0</sub>) / g મળે છે; θ<sub>0</sub> = 45° ના કોણે મહત્તમ અવધિ R<sub>max</sub> = v<sub>0</sub><sup>2</sup> / g થાય છે[span_45](start_span)[span_45](end_span)."
           ],
-          "formula": "H = (v0² sin²θ0)/2g | R = (v0² sin2θ0)/g"
+          "formula": "H = (v<sub>0</sub><sup>2</sup> sin<sup>2</sup>θ<sub>0</sub>)/2g &nbsp;|&nbsp; R = (v<sub>0</sub><sup>2</sup> sin2θ<sub>0</sub>)/g"
         },
         {
           "id": 14,
@@ -810,11 +810,11 @@
           "theme": "purple",
           "icon": "🎡",
           "points": [
-            "અચળ ઝડપથી વર્તુળાકાર માર્ગ પર ગતિ કરતા પદાર્થની ગતિને નિયમિત વર્તુળ ગતિ કહે છે[span_42](start_span)[span_42](end_span).",
-            "વેગનું મૂલ્ય (ઝડપ) અચળ રહે છે, પરંતુ સ્પર્શકની દિશા સતત બદલાતી હોવાથી વેગમાં ફેરફાર થઈ પ્રવેગ ઉદ્ભવે છે[span_43](start_span)[span_43](end_span).",
-            "આ પ્રવેગ ત્રિજ્યા પર વર્તુળના કેન્દ્ર તરફ હોવાથી કેન્દ્રગામી પ્રવેગ ac = v² / R કહેવાય છે[span_44](start_span)[span_44](end_span)."
+            "અચળ ઝડપથી વર્તુળાકાર માર્ગ પર ગતિ કરતા પદાર્થની ગતિને નિયમિત વર્તુળ ગતિ કહે છે[span_46](start_span)[span_46](end_span).",
+            "વેગનું મૂલ્ય (ઝડપ) અચળ રહે છે, પરંતુ સ્પર્શકની દિશા સતત બદલાતી હોવાથી વેગમાં ફેરફાર થઈ પ્રવેગ ઉદ્ભવે છે[span_47](start_span)[span_47](end_span).",
+            "આ પ્રવેગ ત્રિજ્યા પર વર્તુળના કેન્દ્ર તરફ હોવાથી કેન્દ્રગામી પ્રવેગ a<sub>c</sub> = v<sup>2</sup> / R કહેવાય છે[span_48](start_span)[span_48](end_span)."
           ],
-          "formula": "ac = v² / R = ω²R = 4π²v²R"
+          "formula": "a<sub>c</sub> = v<sup>2</sup> / R = ω<sup>2</sup>R = 4π<sup>2</sup>ν<sup>2</sup>R"
         },
         {
           "id": 15,
@@ -823,11 +823,11 @@
           "theme": "peach",
           "icon": "☂️",
           "points": [
-            "જમીનની સાપેક્ષે દોડતા માણસ માટે વરસાદનો સાપેક્ષ વેગ vRM = vRG - vMG = (a - v)î - bĵ થાય છે[span_45](start_span)[span_45](end_span).",
-            "માણસે વરસાદથી બચવા માટે છત્રી હંમેશા વરસાદના સાપેક્ષ વેગ vRM ની દિશામાં રાખવી પડે છે[span_46](start_span)[span_46](end_span).",
-            "જો વરસાદ શિરોલંબ b વેગથી પડતો હોય અને માણસ v વેગથી દોડતો હોય, તો છત્રી શિરોલંબ સાથે tanθ = v / b કોણે રાખવી જોઈએ[span_47](start_span)[span_47](end_span)."
+            "જમીનની સાપેક્ષે દોડતા માણસ માટે વરસાદનો સાપેક્ષ વેગ v<sub>RM</sub> = v<sub>RG</sub> - v<sub>MG</sub> = (a - v)î - bĵ થાય છે[span_49](start_span)[span_49](end_span).",
+            "માણસે વરસાદથી બચવા માટે છત્રી હંમેશા વરસાદના સાપેક્ષ વેગ v<sub>RM</sub> ની દિશામાં રાખવી પડે છે[span_50](start_span)[span_50](end_span).",
+            "જો વરસાદ શિરોલંબ b વેગથી પડતો હોય અને માણસ v વેગથી દોડતો હોય, તો છત્રી શિરોલંબ સાથે tanθ = v / b કોણે રાખવી જોઈએ[span_51](start_span)[span_51](end_span)."
           ],
-          "formula": "tanθ = v / b | vRM = vR - vM"
+          "formula": "tanθ = v / b &nbsp;|&nbsp; v<sub>RM</sub> = v<sub>R</sub> - v<sub>M</sub>"
         }
       ],
       "formulas": [
@@ -838,11 +838,11 @@
           "theme": "sky",
           "icon": "📐",
           "points": [
-            "પરિણામી સદિશનું માન: R = √(A² + B² + 2AB·cosθ)[span_48](start_span)[span_48](end_span)",
-            "પરિણામી સદિશનો ખૂણો: tanβ = (B·sinθ) / (A + B·cosθ)[span_49](start_span)[span_49](end_span)",
-            "બાદબાકી માટે પરિણામી માન: |A - B| = √(A² + B² - 2AB·cosθ)[span_50](start_span)[span_50](end_span)"
+            "પરિણામી સદિશનું માન: R = √(A<sup>2</sup> + B<sup>2</sup> + 2AB·cosθ)[span_52](start_span)[span_52](end_span)[span_53](start_span)[span_53](end_span)",
+            "પરિણામી સદિશનો ખૂણો: tanβ = (B·sinθ) / (A + B·cosθ)[span_54](start_span)[span_54](end_span)[span_55](start_span)[span_55](end_span)",
+            "બાદબાકી માટે પરિણામી માન: |A - B| = √(A<sup>2</sup> + B<sup>2</sup> - 2AB·cosθ)[span_56](start_span)[span_56](end_span)[span_57](start_span)[span_57](end_span)"
           ],
-          "formula": "R = √(A² + B² + 2AB cosθ)"
+          "formula": "R = √(A<sup>2</sup> + B<sup>2</sup> + 2AB·cosθ)"
         },
         {
           "id": 2,
@@ -851,11 +851,11 @@
           "theme": "mint",
           "icon": "🎯",
           "points": [
-            "દિશાનો એકમ સદિશ: n̂ = A / |A|[span_51](start_span)[span_51](end_span)",
-            "ત્રિ-પરિમાણીય સદિશનું માન: |A| = √(Ax² + Ay² + Az²)[span_52](start_span)[span_52](end_span)",
-            "Direction cosines: cos²α + cos²β + cos²γ = 1[span_53](start_span)[span_53](end_span)"
+            "દિશાનો એકમ સદિશ: n̂ = A / |A|[span_58](start_span)[span_58](end_span)",
+            "ત્રિ-પરિમાણીય સદિશનું માન: |A| = √(A<sub>x</sub><sup>2</sup> + A<sub>y</sub><sup>2</sup> + A<sub>z</sub><sup>2</sup>)[span_59](start_span)[span_59](end_span)",
+            "Direction cosines: cos<sup>2</sup>α + cos<sup>2</sup>β + cos<sup>2</sup>γ = 1[span_60](start_span)[span_60](end_span)"
           ],
-          "formula": "n̂ = A / |A| | |A| = √(Ax² + Ay² + Az²)"
+          "formula": "n̂ = A / |A| &nbsp;|&nbsp; |A| = √(A<sub>x</sub><sup>2</sup> + A<sub>y</sub><sup>2</sup> + A<sub>z</sub><sup>2</sup>)"
         },
         {
           "id": 3,
@@ -864,12 +864,12 @@
           "theme": "amber",
           "icon": "🚀",
           "points": [
-            "ઉડ્ડયન સમય: tf = (2v0·sinθ0) / g[span_54](start_span)[span_54](end_span)",
-            "મહત્તમ ઊંચાઈ: H = (v0²·sin²θ0) / (2g)[span_55](start_span)[span_55](end_span)",
-            "સમક્ષિતિજ અવધિ: R = (v0²·sin2θ0) / g[span_56](start_span)[span_56](end_span)",
-            "મહત્તમ અવધિ (θ0 = 45°): Rmax = v0² / g[span_57](start_span)[span_57](end_span)"
+            "ઉડ્ડયન સમય: t<sub>f</sub> = (2v<sub>0</sub>·sinθ<sub>0</sub>) / g[span_61](start_span)[span_61](end_span)",
+            "મહત્તમ ઊંચાઈ: H = (v<sub>0</sub><sup>2</sup>·sin<sup>2</sup>θ<sub>0</sub>) / (2g)[span_62](start_span)[span_62](end_span)",
+            "સમક્ષિતિજ અવધિ: R = (v<sub>0</sub><sup>2</sup>·sin2θ<sub>0</sub>) / g[span_63](start_span)[span_63](end_span)",
+            "મહત્તમ અવધિ (θ<sub>0</sub> = 45°): R<sub>max</sub> = v<sub>0</sub><sup>2</sup> / g[span_64](start_span)[span_64](end_span)"
           ],
-          "formula": "tf = (2v0 sinθ0)/g | H = (v0² sin²θ0)/2g | R = (v0² sin2θ0)/g"
+          "formula": "t<sub>f</sub> = (2v<sub>0</sub> sinθ<sub>0</sub>)/g &nbsp;|&nbsp; H = (v<sub>0</sub><sup>2</sup> sin<sup>2</sup>θ<sub>0</sub>)/2g &nbsp;|&nbsp; R = (v<sub>0</sub><sup>2</sup> sin2θ<sub>0</sub>)/g"
         },
         {
           "id": 4,
@@ -878,11 +878,11 @@
           "theme": "purple",
           "icon": "⚡",
           "points": [
-            "ગતિપથ સમીકરણ: y = (tanθ0)x - [g / (2v0²cos²θ0)]x²[span_58](start_span)[span_58](end_span)",
-            "અવધિના પદમાં વૈકલ્પિક સમીકરણ: y = x·tanθ · (1 - x/R)[span_59](start_span)[span_59](end_span)",
-            "અવધિ અને ઊંચાઈ વચ્ચે સંબંધ: tanθ = 4H / R[span_60](start_span)[span_60](end_span)"
+            "ગતિપથ સમીકરણ: y = (tanθ<sub>0</sub>)x - [g / (2v<sub>0</sub><sup>2</sup>cos<sup>2</sup>θ<sub>0</sub>)]x<sup>2</sup>[span_65](start_span)[span_65](end_span)",
+            "અવધિના પદમાં વૈકલ્પિક સમીકરણ: y = x·tanθ · (1 - x/R)[span_66](start_span)[span_66](end_span)",
+            "અવધિ અને ઊંચાઈ વચ્ચે સંબંધ: tanθ = 4H / R[span_67](start_span)[span_67](end_span)"
           ],
-          "formula": "y = x tanθ (1 - x/R) | tanθ = 4H / R"
+          "formula": "y = x·tanθ (1 - x/R) &nbsp;|&nbsp; tanθ = 4H / R"
         },
         {
           "id": 5,
@@ -891,11 +891,11 @@
           "theme": "peach",
           "icon": "📊",
           "points": [
-            "મહત્તમ ઊંચાઈ H = uy² / (2g) હોવાથી જો H1 = H2 = H3 હોય તો uy ત્રણેય કિસ્સામાં સમાન રહે[span_61](start_span)[span_61](end_span).",
-            "કુલ ઉડ્ડયન સમય T = (2uy)/g હોવાથી T1 = T2 = T3 થાય[span_62](start_span)[span_62](end_span).",
-            "સમક્ષિતિજ અવધિ R = (2ux·uy)/g હોવાથી જો R3 > R2 > R1 હોય તો ux3 > ux2 > ux1 થાય[span_63](start_span)[span_63](end_span)."
+            "મહત્તમ ઊંચાઈ H = u<sub>y</sub><sup>2</sup> / (2g) હોવાથી જો H₁ = H₂ = H₃ હોય તો u<sub>y</sub> ત્રણેય કિસ્સામાં સમાન રહે[span_68](start_span)[span_68](end_span).",
+            "કુલ ઉડ્ડયન સમય T = (2u<sub>y</sub>) / g હોવાથી T₁ = T₂ = T₃ થાય[span_69](start_span)[span_69](end_span).",
+            "સમક્ષિતિજ અવધિ R = (2u<sub>x</sub>·u<sub>y</sub>) / g હોવાથી જો R₃ > R₂ > R₁ હોય તો u<sub>x3</sub> > u<sub>x2</sub> > u<sub>x1</sub> થાય[span_70](start_span)[span_70](end_span)."
           ],
-          "formula": "R = (2 ux uy) / g | T = (2uy) / g"
+          "formula": "R = (2 u<sub>x</sub> u<sub>y</sub>) / g &nbsp;|&nbsp; T = (2 u<sub>y</sub>) / g[span_71](start_span)[span_71](end_span)"
         },
         {
           "id": 6,
@@ -904,12 +904,12 @@
           "theme": "sky",
           "icon": "📐",
           "points": [
-            "ઢાળ પર અવધિ: R = [u² / (g·cos²θ0)] · [sin(2θ - θ0) - sinθ0][span_64](start_span)[span_64](end_span)",
-            "ઢાળ પર ઉડ્ડયન સમય: T = [2u·sin(θ - θ0)] / (g·cosθ0)[span_65](start_span)[span_65](end_span)",
-            "ઢાળ પર મહત્તમ અવધિ: Rmax = u² / [g(1 + sinθ0)][span_66](start_span)[span_66](end_span)",
-            "મહત્તમ અવધિ માટે સમક્ષિતિજ સાથે કોણ: θ = π/4 + θ0/2[span_67](start_span)[span_67](end_span)"
+            "ઢાળ પર અવધિ: R = [u<sup>2</sup> / (g·cos<sup>2</sup>θ<sub>0</sub>)] · [sin(2θ - θ<sub>0</sub>) - sinθ<sub>0</sub>][span_72](start_span)[span_72](end_span)[span_73](start_span)[span_73](end_span)",
+            "ઢાળ પર ઉડ્ડયન સમય: T = [2u·sin(θ - θ<sub>0</sub>)] / (g·cosθ<sub>0</sub>)[span_74](start_span)[span_74](end_span)[span_75](start_span)[span_75](end_span)",
+            "ઢાળ પર મહત્તમ અવધિ: R<sub>max</sub> = u<sup>2</sup> / [g(1 + sinθ<sub>0</sub>)][span_76](start_span)[span_76](end_span)[span_77](start_span)[span_77](end_span)",
+            "મહત્તમ અવધિ માટે સમક્ષિતિજ સાથે કોણ: θ = π/4 + θ<sub>0</sub>/2[span_78](start_span)[span_78](end_span)[span_79](start_span)[span_79](end_span)"
           ],
-          "formula": "Rmax = u² / [g(1 + sinθ0)] (ઢાળ પર)"
+          "formula": "R<sub>max</sub> = u<sup>2</sup> / [g(1 + sinθ<sub>0</sub>)] (ઢાળ પર)[span_80](start_span)[span_80](end_span)"
         },
         {
           "id": 7,
@@ -918,11 +918,11 @@
           "theme": "mint",
           "icon": "🎡",
           "points": [
-            "રેખીય વેગ અને કોણીય વેગ: v = R·ω[span_68](start_span)[span_68](end_span)",
-            "કેન્દ્રગામી પ્રવેગ: ac = v² / R = ω²·R[span_69](start_span)[span_69](end_span)",
-            "આવૃત્તિ અને આવર્તકાળ સ્વરૂપે: ac = 4π²v²R = (4π²R) / T²[span_70](start_span)[span_70](end_span)"
+            "રેખીય વેગ અને કોણીય વેગ: v = R·ω[span_81](start_span)[span_81](end_span)",
+            "કેન્દ્રગામી પ્રવેગ: a<sub>c</sub> = v<sup>2</sup> / R = ω<sup>2</sup>·R[span_82](start_span)[span_82](end_span)",
+            "આવૃત્તિ અને આવર્તકાળ સ્વરૂપે: a<sub>c</sub> = 4π<sup>2</sup>ν<sup>2</sup>R = (4π<sup>2</sup>R) / T<sup>2</sup>[span_83](start_span)[span_83](end_span)"
           ],
-          "formula": "ac = v²/R = ω²R = 4π²v²R"
+          "formula": "a<sub>c</sub> = v<sup>2</sup>/R = ω<sup>2</sup>R = 4π<sup>2</sup>ν<sup>2</sup>R"
         },
         {
           "id": 8,
@@ -931,11 +931,11 @@
           "theme": "amber",
           "icon": "⚙️",
           "points": [
-            "રેખીય વેગ સદિશ સ્વરૂપે: v = ω × r[span_71](start_span)[span_71](end_span)",
-            "કેન્દ્રગામી બળ Fc હંમેશા વેગને લંબ દિશામાં હોવાથી દિશા સતત બદલાય છે[span_72](start_span)[span_72](end_span).",
-            "Fc વડે થતું કાર્ય હંમેશા શૂન્ય હોય છે (W = 0) અને તાત્ક્ષણિક પાવર P = Fc · v = 0 થાય છે[span_73](start_span)[span_73](end_span)."
+            "રેખીય વેગ સદિશ સ્વરૂપે: v = ω × r[span_84](start_span)[span_84](end_span)",
+            "કેન્દ્રગામી બળ F<sub>c</sub> હંમેશા વેગને લંબ દિશામાં હોવાથી દિશા સતત બદલાય છે[span_85](start_span)[span_85](end_span).",
+            "F<sub>c</sub> વડે થતું કાર્ય હંમેશા શૂન્ય હોય છે (W = 0) અને તાત્ક્ષણિક પાવર P = F<sub>c</sub> · v = 0 થાય છે[span_86](start_span)[span_86](end_span)."
           ],
-          "formula": "W = 0 | P = Fc · v = 0"
+          "formula": "W = 0 &nbsp;|&nbsp; P = F<sub>c</sub> · v = 0"
         }
       ],
       "questions": [
@@ -946,8 +946,8 @@
           "theme": "sky",
           "icon": "❓",
           "points": [
-            "પ્રશ્ન: દ્વિ-પરિમાણ કે ત્રિ-પરિમાણમાં સદિશની જરૂર શા માટે પડે છે[span_74](start_span)[span_74](end_span)?",
-            "જવાબ: સુરેખ પથ પર માત્ર બે જ દિશાઓ હોવાથી ધન (+) અને ઋણ (-) ચિહ્નોથી દિશા જાણી શકાય છે, પરંતુ સમતલ કે અવકાશમાં ગતિના સંપૂર્ણ વર્ણન માટે સદિશની જરૂર પડે છે[span_75](start_span)[span_75](end_span)."
+            "પ્રશ્ન: દ્વિ-પરિમાણ કે ત્રિ-પરિમાણમાં સદિશની જરૂર શા માટે પડે છે[span_87](start_span)[span_87](end_span)?",
+            "જવાબ: સુરેખ પથ પર માત્ર બે જ દિશાઓ હોવાથી ધન (+) અને ઋણ (-) ચિહ્નોથી દિશા જાણી શકાય છે, પરંતુ સમતલ કે અવકાશમાં ગતિના સંપૂર્ણ વર્ણન માટે સદિશની જરૂર પડે છે[span_88](start_span)[span_88](end_span)."
           ],
           "formula": "દ્વિ/ત્રિ-પરિમાણ → સદિશ અનિવાર્ય"
         },
@@ -958,8 +958,8 @@
           "theme": "mint",
           "icon": "📏",
           "points": [
-            "પ્રશ્ન: સદિશ ભૌતિકરાશિના માનને કેવી રીતે દર્શાવાય છે[span_76](start_span)[span_76](end_span)?",
-            "જવાબ: સદિશના માનને નોર્મલ અક્ષર વડે સદિશના ચિહ્ન વગર અથવા સંકેતાક્ષરને માનાંકમાં |F| લખીને દર્શાવાય છે[span_77](start_span)[span_77](end_span)."
+            "પ્રશ્ન: સદિશ ભૌતિકરાશિના માનને કેવી રીતે દર્શાવાય છે[span_89](start_span)[span_89](end_span)?",
+            "જવાબ: સદિશના માનને નોર્મલ અક્ષર વડે સદિશના ચિહ્ન વગર અથવા સંકેતાક્ષરને માનાંકમાં |F| લખીને દર્શાવાય છે[span_90](start_span)[span_90](end_span)."
           ],
           "formula": "|F| = F = 5N"
         },
@@ -970,8 +970,8 @@
           "theme": "amber",
           "icon": "📍",
           "points": [
-            "પ્રશ્ન: સ્થાન સદિશ પરથી કઈ કઈ માહિતી મળે છે[span_78](start_span)[span_78](end_span)?",
-            "જવાબ: (૧) ઉગમબિંદુ O થી કણનું સુરેખ અંતર દર્શાવે છે, અને (૨) ઉગમબિંદુ O ને અનુલક્ષીને કણની ચોક્કસ દિશા દર્શાવે છે[span_79](start_span)[span_79](end_span)."
+            "પ્રશ્ન: સ્થાન સદિશ પરથી કઈ કઈ માહિતી મળે છે[span_91](start_span)[span_91](end_span)?",
+            "જવાબ: (૧) ઉગમબિંદુ O થી કણનું સુરેખ અંતર દર્શાવે છે, અને (૨) ઉગમબિંદુ O ને અનુલક્ષીને કણની ચોક્કસ દિશા દર્શાવે છે[span_92](start_span)[span_92](end_span)."
           ],
           "formula": "સ્થાન સદિશ = અંતર + દિશા"
         },
@@ -982,8 +982,8 @@
           "theme": "purple",
           "icon": "⭕",
           "points": [
-            "પ્રશ્ન: શૂન્ય સદિશની દિશા કેવી હોય છે[span_80](start_span)[span_80](end_span)?",
-            "જવાબ: શૂન્ય સદિશનું માન શૂન્ય હોવાથી તેના માનને દિશા વડે દર્શાવી શકાતી નથી (દિશા અનિશ્ચિત હોય છે)[span_81](start_span)[span_81](end_span)."
+            "પ્રશ્ન: શૂન્ય સદિશની દિશા કેવી હોય છે[span_93](start_span)[span_93](end_span)?",
+            "જવાબ: શૂન્ય સદિશનું માન શૂન્ય હોવાથી તેના માનને દિશા વડે દર્શાવી શકાતી નથી (દિશા અનિશ્ચિત હોય છે)[span_94](start_span)[span_94](end_span)."
           ],
           "formula": "|0| = 0 (દિશા અનિશ્ચિત)"
         },
@@ -994,8 +994,8 @@
           "theme": "peach",
           "icon": "🎯",
           "points": [
-            "પ્રશ્ન: એકમ સદિશનો એકમ અને પરિમાણ કેટલા હોય છે[span_82](start_span)[span_82](end_span)?",
-            "જવાબ: એકમ સદિશનું માન ૧ એકમ હોય છે અને તે કોઈપણ પ્રકારના એકમ કે પરિમાણ ધરાવતો નથી; તે માત્ર દિશા નિર્દેશ કરે છે[span_83](start_span)[span_83](end_span)."
+            "પ્રશ્ન: એકમ સદિશનો એકમ અને પરિમાણ કેટલા હોય છે[span_95](start_span)[span_95](end_span)?",
+            "જવાબ: એકમ સદિશનું માન ૧ એકમ હોય છે અને તે કોઈપણ પ્રકારના એકમ કે પરિમાણ ધરાવતો નથી; તે માત્ર દિશા નિર્દેશ કરે છે[span_96](start_span)[span_96](end_span)."
           ],
           "formula": "|n̂| = 1 (એકમ & પરિમાણ રહિત)"
         },
@@ -1006,10 +1006,10 @@
           "theme": "sky",
           "icon": "🚀",
           "points": [
-            "પ્રશ્ન: પ્રક્ષિપ્ત ગતિ દરમિયાન કયો વેગ ઘટક સમગ્ર ગતિ દરમિયાન અચળ રહે છે[span_84](start_span)[span_84](end_span)?",
-            "જવાબ: સમક્ષિતિજ દિશામાં પ્રવેગ શૂન્ય હોવાથી વેગનો સમક્ષિતિજ ઘટક vx = v0·cosθ0 સમગ્ર ગતિ દરમિયાન અચળ રહે છે[span_85](start_span)[span_85](end_span)."
+            "પ્રશ્ન: પ્રક્ષિપ્ત ગતિ દરમિયાન કયો વેગ ઘટક સમગ્ર ગતિ દરમિયાન અચળ રહે છે[span_97](start_span)[span_97](end_span)?",
+            "જવાબ: સમક્ષિતિજ દિશામાં પ્રવેગ શૂન્ય હોવાથી વેગનો સમક્ષિતિજ ઘટક v<sub>x</sub> = v<sub>0</sub>·cosθ<sub>0</sub> સમગ્ર ગતિ દરમિયાન અચળ રહે છે[span_98](start_span)[span_98](end_span)."
           ],
-          "formula": "vx = v0 cosθ0 = અચળ"
+          "formula": "v<sub>x</sub> = v<sub>0</sub> cosθ<sub>0</sub> = અચળ"
         },
         {
           "id": 7,
@@ -1018,10 +1018,10 @@
           "theme": "mint",
           "icon": "🏔️",
           "points": [
-            "પ્રશ્ન: પ્રક્ષિપ્ત ગતિમાં મહત્તમ ઊંચાઈએ શિરોલંબ વેગ કેટલો હોય છે[span_86](start_span)[span_86](end_span)[span_87](start_span)[span_87](end_span)?",
-            "જવાબ: મહત્તમ ઊંચાઈએ વેગનો Y-દિશાનો શિરોલંબ ઘટક શૂન્ય (vy = 0) થાય છે, જેથી ત્યાં માત્ર સમક્ષિતિજ વેગ જ રહે છે[span_88](start_span)[span_88](end_span)[span_89](start_span)[span_89](end_span)."
+            "પ્રશ્ન: પ્રક્ષિપ્ત ગતિમાં મહત્તમ ઊંચાઈએ શિરોલંબ વેગ કેટલો હોય છે[span_99](start_span)[span_99](end_span)[span_100](start_span)[span_100](end_span)?",
+            "જવાબ: મહત્તમ ઊંચાઈએ વેગનો Y-દિશાનો શિરોલંબ ઘટક શૂન્ય (v<sub>y</sub> = 0) થાય છે, જેથી ત્યાં માત્ર સમક્ષિતિજ વેગ જ રહે છે[span_101](start_span)[span_101](end_span)[span_102](start_span)[span_102](end_span)."
           ],
-          "formula": "vy = 0 (મહત્તમ ઊંચાઈએ)"
+          "formula": "v<sub>y</sub> = 0 (મહત્તમ ઊંચાઈએ)"
         },
         {
           "id": 8,
@@ -1030,10 +1030,10 @@
           "theme": "amber",
           "icon": "📈",
           "points": [
-            "પ્રશ્ન: પ્રક્ષિપ્ત પદાર્થનો ગતિપથ કેવો હોય છે અને શા માટે[span_90](start_span)[span_90](end_span)?",
-            "જવાબ: ગતિપથનું સમીકરણ y = ax + bx² સ્વરૂપનું દ્વિઘાત સમીકરણ હોવાથી પ્રક્ષિપ્ત પદાર્થનો ગતિપથ પરવલયાકાર (Parabola) હોય છે[span_91](start_span)[span_91](end_span)."
+            "પ્રશ્ન: પ્રક્ષિપ્ત પદાર્થનો ગતિપથ કેવો હોય છે અને શા માટે[span_103](start_span)[span_103](end_span)?",
+            "જવાબ: ગતિપથનું સમીકરણ y = ax + bx<sup>2</sup> સ્વરૂપનું દ્વિઘાત સમીકરણ હોવાથી પ્રક્ષિપ્ત પદાર્થનો ગતિપથ પરવલયાકાર (Parabola) હોય છે[span_104](start_span)[span_104](end_span)."
           ],
-          "formula": "y = ax + bx² → પરવલયાકાર"
+          "formula": "y = ax + bx<sup>2</sup> → પરવલયાકાર"
         },
         {
           "id": 9,
@@ -1042,10 +1042,10 @@
           "theme": "purple",
           "icon": "🎯",
           "points": [
-            "પ્રશ્ન: પ્રક્ષિપ્ત પદાર્થને કયા કોણે ફેંકતાં અવધિ મહત્તમ મળે[span_92](start_span)[span_92](end_span)?",
-            "જવાબ: સમક્ષિતિજ સાથે 45° ના કોણે (θ0 = 45°) પ્રક્ષિપ્ત કરતાં sin2θ0 = 1 બનવાથી મહત્તમ અવધિ Rmax = v0² / g મળે છે[span_93](start_span)[span_93](end_span)."
+            "પ્રશ્ન: પ્રક્ષિપ્ત પદાર્થને કયા કોણે ફેંકતાં અવધિ મહત્તમ મળે[span_105](start_span)[span_105](end_span)?",
+            "જવાબ: સમક્ષિતિજ સાથે 45° ના કોણે (θ<sub>0</sub> = 45°) પ્રક્ષિપ્ત કરતાં sin2θ<sub>0</sub> = 1 બનવાથી મહત્તમ અવધિ R<sub>max</sub> = v<sub>0</sub><sup>2</sup> / g મળે છે[span_106](start_span)[span_106](end_span)."
           ],
-          "formula": "θ0 = 45° → Rmax = v0² / g"
+          "formula": "θ<sub>0</sub> = 45° → R<sub>max</sub> = v<sub>0</sub><sup>2</sup> / g"
         },
         {
           "id": 10,
@@ -1054,10 +1054,10 @@
           "theme": "peach",
           "icon": "⏱️",
           "points": [
-            "પ્રશ્ન: જો જુદા-જુદા વેગે ફેંકેલા ત્રણ પદાર્થો સમાન મહત્તમ ઊંચાઈ પ્રાપ્ત કરે તો તેમના ઉડ્ડયન સમય કેવા મળે[span_94](start_span)[span_94](end_span)?",
-            "જવાબ: મહત્તમ ઊંચાઈ સમાન હોવાથી શિરોલંબ વેગ uy સમાન બને છે, તેથી ત્રણેયનો કુલ ઉડ્ડયન સમય પણ એકસમાન (T1 = T2 = T3) રહે છે[span_95](start_span)[span_95](end_span)."
+            "પ્રશ્ન: જો જુદા-જુદા વેગે ફેંકેલા ત્રણ પદાર્થો સમાન મહત્તમ ઊંચાઈ પ્રાપ્ત કરે તો તેમના ઉડ્ડયન સમય કેવા મળે[span_107](start_span)[span_107](end_span)?",
+            "જવાબ: મહત્તમ ઊંચાઈ સમાન હોવાથી શિરોલંબ વેગ u<sub>y</sub> સમાન બને છે, તેથી ત્રણેયનો કુલ ઉડ્ડયન સમય પણ એકસમાન (T₁ = T₂ = T₃) રહે છે[span_108](start_span)[span_108](end_span)."
           ],
-          "formula": "H1 = H2 = H3 → T1 = T2 = T3"
+          "formula": "H₁ = H₂ = H₃ → T₁ = T₂ = T₃"
         },
         {
           "id": 11,
@@ -1066,10 +1066,10 @@
           "theme": "sky",
           "icon": "⚙️",
           "points": [
-            "પ્રશ્ન: નિયમિત વર્તુળાકાર ગતિમાં કેન્દ્રગામી બળ વડે કેટલું કાર્ય થાય[span_96](start_span)[span_96](end_span)?",
-            "જવાબ: કેન્દ્રગામી બળ હંમેશા વેગ (અને સ્થાનાંતર) ને લંબ દિશામાં લાગતું હોવાથી તેના વડે થતું કાર્ય હંમેશા શૂન્ય (W = 0) હોય છે[span_97](start_span)[span_97](end_span)."
+            "પ્રશ્ન: નિયમિત વર્તુળાકાર ગતિમાં કેન્દ્રગામી બળ વડે કેટલું કાર્ય થાય[span_109](start_span)[span_109](end_span)?",
+            "જવાબ: કેન્દ્રગામી બળ હંમેશા વેગ (અને સ્થાનાંતર) ને લંબ દિશામાં લાગતું હોવાથી તેના વડે થતું કાર્ય હંમેશા શૂન્ય (W = 0) હોય છે[span_110](start_span)[span_110](end_span)."
           ],
-          "formula": "W = Fc · d · cos90° = 0"
+          "formula": "W = F<sub>c</sub> · d · cos90° = 0"
         },
         {
           "id": 12,
@@ -1078,8 +1078,8 @@
           "theme": "mint",
           "icon": "☂️",
           "points": [
-            "પ્રશ્ન: શિરોલંબ પડતા વરસાદમાં v ઝડપથી ચાલતી વ્યક્તિએ છત્રી કયા કોણે રાખવી[span_98](start_span)[span_98](end_span)?",
-            "જવાબ: શિરોલંબ સાથે tanθ = v / b કોણે ગતિની દિશામાં આગળ તરફ છત્રી રાખવી જોઈએ[span_99](start_span)[span_99](end_span)."
+            "પ્રશ્ન: શિરોલંબ પડતા વરસાદમાં v ઝડપથી ચાલતી વ્યક્તિએ છત્રી કયા કોણે રાખવી[span_111](start_span)[span_111](end_span)?",
+            "જવાબ: શિરોલંબ સાથે tanθ = v / b કોણે ગતિની દિશામાં આગળ તરફ છત્રી રાખવી જોઈએ[span_112](start_span)[span_112](end_span)."
           ],
           "formula": "tanθ = v / b"
         },
@@ -1090,10 +1090,10 @@
           "theme": "amber",
           "icon": "📦",
           "points": [
-            "પ્રશ્ન: ત્રિ-પરિમાણમાં સદિશના direction cosines વચ્ચેનો નિત્યસમ સંબંધ જણાવો[span_100](start_span)[span_100](end_span).",
-            "જવાબ: ત્રણેય અક્ષો સાથે બનાવેલા કોણના કોસાઇનના વર્ગોનો સરવાળો હંમેશા ૧ થાય છે: cos²α + cos²β + cos²γ = 1[span_101](start_span)[span_101](end_span)."
+            "પ્રશ્ન: ત્રિ-પરિમાણમાં સદિશના direction cosines વચ્ચેનો નિત્યસમ સંબંધ જણાવો[span_113](start_span)[span_113](end_span).",
+            "જવાબ: ત્રણેય અક્ષો સાથે બનાવેલા કોણના કોસાઇનના વર્ગોનો સરવાળો હંમેશા ૧ થાય છે: cos<sup>2</sup>α + cos<sup>2</sup>β + cos<sup>2</sup>γ = 1[span_114](start_span)[span_114](end_span)."
           ],
-          "formula": "cos²α + cos²β + cos²γ = 1"
+          "formula": "cos<sup>2</sup>α + cos<sup>2</sup>β + cos<sup>2</sup>γ = 1"
         },
         {
           "id": 14,
@@ -1102,10 +1102,10 @@
           "theme": "purple",
           "icon": "📐",
           "points": [
-            "પ્રશ્ન: જો બે સદિશો પરસ્પર લંબ (θ = 90°) હોય તો પરિણામી સદિશનું માન કેટલું થાય[span_102](start_span)[span_102](end_span)?",
-            "જવાબ: cos90° = 0 હોવાથી પરિણામી સદિશનું મૂલ્ય R = √(A² + B²) થાય છે[span_103](start_span)[span_103](end_span)."
+            "પ્રશ્ન: જો બે સદિશો પરસ્પર લંબ (θ = 90°) હોય તો પરિણામી સદિશનું માન કેટલું થાય[span_115](start_span)[span_115](end_span)?",
+            "જવાબ: cos90° = 0 હોવાથી પરિણામી સદિશનું મૂલ્ય R = √(A<sup>2</sup> + B<sup>2</sup>) થાય છે[span_116](start_span)[span_116](end_span)."
           ],
-          "formula": "R = √(A² + B²) (જ્યારે θ = 90°)"
+          "formula": "R = √(A<sup>2</sup> + B<sup>2</sup>) (જ્યારે θ = 90°)"
         },
         {
           "id": 15,
@@ -1114,8 +1114,8 @@
           "theme": "peach",
           "icon": "➖",
           "points": [
-            "પ્રશ્ન: સદિશોની બાદબાકી એટલે શું[span_104](start_span)[span_104](end_span)?",
-            "જવાબ: સદિશ A માંથી સદિશ B બાદ કરવો એટલે કે સદિશ A માં B નો વિરોધી સદિશ (-B) ઉમેરવો[span_105](start_span)[span_105](end_span)."
+            "પ્રશ્ન: સદિશોની બાદબાકી એટલે શું[span_117](start_span)[span_117](end_span)?",
+            "જવાબ: સદિશ A માંથી સદિશ B બાદ કરવો એટલે કે સદિશ A માં B નો વિરોધી સદિશ (-B) ઉમેરવો[span_118](start_span)[span_118](end_span)."
           ],
           "formula": "A - B = A + (-B)"
         }
@@ -1123,3 +1123,5 @@
     }
   }
 }
+
+    
