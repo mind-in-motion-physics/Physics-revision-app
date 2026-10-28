@@ -315,6 +315,16 @@
 
   <!-- ================= 100% DYNAMIC SCRIPT ENGINE ================= -->
   <script>
+    // Universal text cleaner that permanently strips any system citation tags
+    function cleanText(text) {
+      if (!text) return "";
+      return String(text)
+        .replace(/\[span_\d+\]\((start_span|end_span)\)/gi, '')
+        .replace(/\[span_\d+\]/gi, '')
+        .replace(/\(start_span\)|\(end_span\)/gi, '')
+        .trim();
+    }
+
     const themes = {
       sky: { border: "border-sky-300", badgeBg: "bg-sky-100", badgeText: "text-sky-800", titleText: "text-sky-800", backBorder: "border-sky-400", formulaBg: "bg-sky-50 border-sky-300", bullet: "text-sky-600", hoverBorder: "hover:border-sky-400", bgLight: "bg-sky-50/50" },
       amber: { border: "border-amber-300", badgeBg: "bg-amber-100", badgeText: "text-amber-900", titleText: "text-amber-800", backBorder: "border-amber-400", formulaBg: "bg-amber-50 border-amber-300", bullet: "text-amber-600", hoverBorder: "hover:border-amber-400", bgLight: "bg-amber-50/50" },
@@ -377,8 +387,8 @@
                 ${ch.emoji || ch.id}
               </span>
               <div>
-                <h4 class="font-extrabold text-slate-800 text-sm sm:text-base leading-tight">${ch.id}. ${ch.title}</h4>
-                <p class="text-[11px] font-bold text-slate-400 uppercase mt-0.5">${ch.enTitle || ''}</p>
+                <h4 class="font-extrabold text-slate-800 text-sm sm:text-base leading-tight">${ch.id}. ${cleanText(ch.title)}</h4>
+                <p class="text-[11px] font-bold text-slate-400 uppercase mt-0.5">${cleanText(ch.enTitle || '')}</p>
               </div>
             </div>
             <span class="text-xs font-bold text-slate-400">ખોલો →</span>
@@ -396,7 +406,7 @@
       const chObj = list.find(c => c.id === chId);
       const chTitle = chObj ? chObj.title : `પ્રકરણ ${chId}`;
 
-      document.getElementById('headerSubtitle').innerText = `ધોરણ ${currentClass} • પ્રકરણ ${chId}: ${chTitle}`;
+      document.getElementById('headerSubtitle').innerText = `ધોરણ ${currentClass} • પ્રકરણ ${chId}: ${cleanText(chTitle)}`;
       document.getElementById('breadcrumbText').innerText = `ધોરણ ${currentClass} > પ્રકરણ ${chId}`;
       document.getElementById('navStatusBadge').innerText = `Ch: ${chId}`;
 
@@ -463,8 +473,8 @@
                   ${card.icon || '#' + String(card.id || idx + 1).padStart(2, '0')}
                 </span>
                 <div class="text-left">
-                  <h4 class="font-bold ${t.titleText} text-sm sm:text-base leading-snug">${card.title}</h4>
-                  <p class="text-[10px] sm:text-xs font-semibold text-slate-400 uppercase tracking-wider mt-0.5">${card.enTitle || '1-Mark Question'}</p>
+                  <h4 class="font-bold ${t.titleText} text-sm sm:text-base leading-snug">${cleanText(card.title)}</h4>
+                  <p class="text-[10px] sm:text-xs font-semibold text-slate-400 uppercase tracking-wider mt-0.5">${cleanText(card.enTitle || '1-Mark Question')}</p>
                 </div>
               </div>
               <div class="flex items-center gap-1.5 flex-shrink-0">
@@ -477,7 +487,7 @@
         return;
       }
 
-      // ================= Flashcards & Formulas: Circular Icon Centered (Exact 1000009869.png Look) =================
+      // ================= Flashcards & Formulas: Circular Icon Centered =================
       cardsGrid.className = "grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3.5 sm:gap-5 w-full mb-12";
       cardsGrid.innerHTML = items.map((card, idx) => {
         const t = themes[card.theme] || themes.sky;
@@ -496,8 +506,8 @@
               <div class="w-16 h-16 sm:w-18 sm:h-18 rounded-full ${t.badgeBg} flex items-center justify-center text-3xl sm:text-4xl shadow-inner mb-3 transition-transform hover:scale-105">
                 ${card.icon || '⚡'}
               </div>
-              <h2 class="text-sm sm:text-base font-extrabold ${t.titleText} leading-snug line-clamp-2">${card.title}</h2>
-              <p class="text-[9px] sm:text-[10px] font-bold text-slate-400 uppercase tracking-wider mt-1 line-clamp-1">${card.enTitle || ''}</p>
+              <h2 class="text-sm sm:text-base font-extrabold ${t.titleText} leading-snug line-clamp-2">${cleanText(card.title)}</h2>
+              <p class="text-[9px] sm:text-[10px] font-bold text-slate-400 uppercase tracking-wider mt-1 line-clamp-1">${cleanText(card.enTitle || '')}</p>
             </div>
 
             <div class="pt-2 border-t border-dashed border-slate-200 text-center flex items-center justify-center gap-1 flex-shrink-0">
@@ -540,8 +550,8 @@
           <div class="w-20 h-20 sm:w-24 sm:h-24 rounded-full ${t.badgeBg} flex items-center justify-center text-4xl sm:text-5xl shadow-inner mb-4">
             ${card.icon || (isQ ? '❓' : '⚡')}
           </div>
-          <h2 class="text-2xl sm:text-3xl font-extrabold ${t.titleText} leading-snug">${card.title}</h2>
-          <p class="text-xs sm:text-sm font-bold text-slate-400 uppercase tracking-widest mt-1.5">${card.enTitle || ''}</p>
+          <h2 class="text-2xl sm:text-3xl font-extrabold ${t.titleText} leading-snug">${cleanText(card.title)}</h2>
+          <p class="text-xs sm:text-sm font-bold text-slate-400 uppercase tracking-widest mt-1.5">${cleanText(card.enTitle || '')}</p>
         </div>
         <div class="mt-4 pt-3 border-t border-dashed border-slate-200 text-center flex items-center justify-center gap-2 text-xs sm:text-sm font-bold text-indigo-700 bg-indigo-50/90 py-2.5 rounded-2xl flex-shrink-0">
           <span>🔄 કાર્ડ પર ફરી ટચ કરો: 3D Flip (${isQ ? 'સચોટ ઉત્તર' : 'સૂત્રો & નોટ્સ'})</span>
@@ -557,7 +567,7 @@
       const itemsList = pointsArray.map(pt => `
         <li class="flex items-start gap-2 text-xs sm:text-sm leading-relaxed text-slate-800 font-medium">
           <span class="${t.bullet} font-extrabold text-base leading-none select-none mt-1 flex-shrink-0">•</span>
-          <span class="text-slate-800 leading-snug">${pt}</span>
+          <span class="text-slate-800 leading-snug">${cleanText(pt)}</span>
         </li>
       `).join('');
 
@@ -568,15 +578,15 @@
                class="max-h-44 sm:max-h-52 w-auto object-contain rounded-xl"
                loading="lazy"
                onerror="this.parentElement.style.display='none'">
-          ${card.imageCaption ? `<span class="text-[11px] font-semibold text-slate-500 mt-1.5 text-center">${card.imageCaption}</span>` : ''}
+          ${card.imageCaption ? `<span class="text-[11px] font-semibold text-slate-500 mt-1.5 text-center">${cleanText(card.imageCaption)}</span>` : ''}
         </div>
       ` : '';
 
       return `
         <div class="flex items-center justify-between w-full border-b border-dashed border-slate-200 pb-2 px-1 flex-shrink-0">
           <div>
-            <h3 class="text-lg sm:text-xl font-extrabold ${t.titleText}">${card.title}</h3>
-            <p class="text-[11px] font-bold text-slate-400 uppercase tracking-wider">${card.enTitle || ''}</p>
+            <h3 class="text-lg sm:text-xl font-extrabold ${t.titleText}">${cleanText(card.title)}</h3>
+            <p class="text-[11px] font-bold text-slate-400 uppercase tracking-wider">${cleanText(card.enTitle || '')}</p>
           </div>
           <span class="text-xs font-extrabold px-2.5 py-1 rounded-full ${t.badgeBg} ${t.badgeText}">
             ${isQ ? 'સચોટ ઉત્તર' : 'મુખ્ય વિગતો'}
@@ -587,7 +597,7 @@
           ${imageHtml}
           ${card.formula ? `
             <div class="mt-3 p-2.5 rounded-2xl border ${t.formulaBg} shadow-sm overflow-x-auto text-center math-font text-sm sm:text-base font-bold">
-              ${card.formula}
+              ${cleanText(card.formula)}
             </div>` : ''}
         </div>
         <div class="pt-2 border-t border-dashed border-slate-200 flex items-center justify-between text-[11px] font-semibold text-slate-400 px-1 flex-shrink-0">
