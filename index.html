@@ -173,6 +173,22 @@
       0%, 100% { transform: translateY(0); }
       50% { transform: translateY(-4px); }
     }
+
+    sub {
+      font-size: 0.75em;
+      line-height: 0;
+      position: relative;
+      vertical-align: baseline;
+      bottom: -0.25em;
+    }
+
+    sup {
+      font-size: 0.75em;
+      line-height: 0;
+      position: relative;
+      vertical-align: baseline;
+      top: -0.35em;
+    }
   </style>
 </head>
 <body class="flex flex-col items-center p-3 sm:p-6 lg:p-8">
@@ -313,18 +329,8 @@
     <p>Mind In Motion Physics • Concept by <span class="font-bold text-slate-700">Vasim Luhar</span> (MSc, B.Ed)</p>
   </footer>
 
-  <!-- ================= 100% DYNAMIC SCRIPT ENGINE ================= -->
+  <!-- ================= SCRIPT ENGINE ================= -->
   <script>
-    // Universal text cleaner that permanently strips any system citation tags
-    function cleanText(text) {
-      if (!text) return "";
-      return String(text)
-        .replace(/\[span_\d+\]\((start_span|end_span)\)/gi, '')
-        .replace(/\[span_\d+\]/gi, '')
-        .replace(/\(start_span\)|\(end_span\)/gi, '')
-        .trim();
-    }
-
     const themes = {
       sky: { border: "border-sky-300", badgeBg: "bg-sky-100", badgeText: "text-sky-800", titleText: "text-sky-800", backBorder: "border-sky-400", formulaBg: "bg-sky-50 border-sky-300", bullet: "text-sky-600", hoverBorder: "hover:border-sky-400", bgLight: "bg-sky-50/50" },
       amber: { border: "border-amber-300", badgeBg: "bg-amber-100", badgeText: "text-amber-900", titleText: "text-amber-800", backBorder: "border-amber-400", formulaBg: "bg-amber-50 border-amber-300", bullet: "text-amber-600", hoverBorder: "hover:border-amber-400", bgLight: "bg-amber-50/50" },
@@ -338,6 +344,15 @@
     let currentChapter = null;
     let currentCategory = 'cards';
     const logoUrl = "https://drive.google.com/thumbnail?id=1eCSReKlV_fPkLyw5VBPuB0h6WRoainYN&sz=w200";
+
+    // Text Sanitizer: Removes AI citation tags while strictly preserving HTML math tags (<sub>, <sup>, <strong>, etc.)
+    function cleanText(str) {
+      if (!str) return '';
+      return String(str)
+        .replace(/\[span_\d+\]\((start_span|end_span)\)/gi, '')
+        .replace(/\[span_\d+\]/gi, '')
+        .trim();
+    }
 
     async function loadJsonDatabase() {
       try {
@@ -404,9 +419,9 @@
       
       const list = (fullDatabase.chapters && fullDatabase.chapters[currentClass]) ? fullDatabase.chapters[currentClass] : [];
       const chObj = list.find(c => c.id === chId);
-      const chTitle = chObj ? chObj.title : `પ્રકરણ ${chId}`;
+      const chTitle = chObj ? cleanText(chObj.title) : `પ્રકરણ ${chId}`;
 
-      document.getElementById('headerSubtitle').innerText = `ધોરણ ${currentClass} • પ્રકરણ ${chId}: ${cleanText(chTitle)}`;
+      document.getElementById('headerSubtitle').innerText = `ધોરણ ${currentClass} • પ્રકરણ ${chId}: ${chTitle}`;
       document.getElementById('breadcrumbText').innerText = `ધોરણ ${currentClass} > પ્રકરણ ${chId}`;
       document.getElementById('navStatusBadge').innerText = `Ch: ${chId}`;
 
@@ -460,7 +475,7 @@
         return;
       }
 
-      // ================= 1-Mark Questions: Slim Clean Rectangular Bars =================
+      // ================= 1-Mark Questions: Slim Rectangular Bars =================
       if (currentCategory === 'questions') {
         cardsGrid.className = "flex flex-col gap-3 w-full max-w-3xl mx-auto mb-12";
         cardsGrid.innerHTML = items.map((card, idx) => {
@@ -487,7 +502,7 @@
         return;
       }
 
-      // ================= Flashcards & Formulas: Circular Icon Centered =================
+      // ================= Flashcards & Formulas =================
       cardsGrid.className = "grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3.5 sm:gap-5 w-full mb-12";
       cardsGrid.innerHTML = items.map((card, idx) => {
         const t = themes[card.theme] || themes.sky;
@@ -501,7 +516,6 @@
               <img src="${logoUrl}" alt="logo" class="brand-logo-clean w-5 h-5 flex-shrink-0" onerror="this.src='https://placehold.co/30x30/ea580c/fff?text=M'">
             </div>
             
-            <!-- Exact Center Circular Icon -->
             <div class="flex flex-col items-center justify-center my-auto px-1 text-center">
               <div class="w-16 h-16 sm:w-18 sm:h-18 rounded-full ${t.badgeBg} flex items-center justify-center text-3xl sm:text-4xl shadow-inner mb-3 transition-transform hover:scale-105">
                 ${card.icon || '⚡'}
@@ -519,7 +533,7 @@
       }).join('');
     }
 
-    // Modal Builder Engine (Smooth Center Zoom + 3D Flip)
+    // Modal Builder Engine
     const zoomBackdrop = document.getElementById("zoomBackdrop");
     const zoomActor = document.getElementById("zoomActor");
     const zoomCardFlipper = document.getElementById("zoomCardFlipper");
@@ -574,7 +588,7 @@
       const imageHtml = card.imageUrl ? `
         <div class="my-2.5 w-full flex flex-col items-center justify-center bg-slate-50 border border-slate-200 rounded-2xl p-2 shadow-inner">
           <img src="${card.imageUrl}" 
-               alt="${card.title} આકૃતિ" 
+               alt="${cleanText(card.title)} આકૃતિ" 
                class="max-h-44 sm:max-h-52 w-auto object-contain rounded-xl"
                loading="lazy"
                onerror="this.parentElement.style.display='none'">
