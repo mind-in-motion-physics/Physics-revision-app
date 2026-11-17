@@ -1120,8 +1120,596 @@
           "formula": "A - B = A + (-B)"
         }
       ]
+    },
+      "4": {
+      "cards": [
+        {
+          "id": 1,
+          "title": "ગતિશાસ્ત્ર અને બળના મુખ્ય પ્રકારો",
+          "enTitle": "Dynamics & Types of Forces",
+          "theme": "sky",
+          "icon": "⚙️",
+          "points": [
+            "<strong>ગતિશાસ્ત્ર (Dynamics):</strong> યંત્રશાસ્ત્રના જે વિભાગમાં ગતિના કારણો અને ગતિ કરતી વસ્તુના ગુણધર્મો સહિત ગતિની ચર્ચા થાય છે તેને ગતિશાસ્ત્ર કહે છે[span_54](start_span)[span_54](end_span).",
+            "<strong>સંપર્કબળ:</strong> બે પદાર્થોના ભૌતિક સંપર્ક દ્વારા લાગતું બળ (દા.ત. ટેબલને ધક્કો મારવો, ઘર્ષણબળ, લંબબળ)[span_55](start_span)[span_55](end_span). તે કૃત્રિમ અને અસંરક્ષી બળ છે[span_56](start_span)[span_56](end_span).",
+            "<strong>ક્ષેત્રબળ:</strong> સંપર્કમાં આવ્યા સિવાય બળક્ષેત્ર દ્વારા લાગતું બળ (દા.ત. ગુરુત્વાકર્ષણ, ચુંબકીય, વિદ્યુતબળ)[span_57](start_span)[span_57](end_span). તે કુદરતી અને સંરક્ષી બળ છે[span_58](start_span)[span_58](end_span)."
+          ],
+          "formula": "બળના પ્રકારો: (૧) સંપર્કબળ &nbsp;|&nbsp; (૨) ક્ષેત્રબળ"
+        },
+        {
+          "id": 2,
+          "title": "જડત્વનો ગુણધર્મ (Inertia)",
+          "enTitle": "Property of Inertia",
+          "theme": "mint",
+          "icon": "🪨",
+          "points": [
+            "જો પદાર્થ પર ચોખ્ખું બાહ્ય બળ શૂન્ય હોય, તો સ્થિર પદાર્થ સ્થિર રહે છે અને ગતિમાન પદાર્થ નિયમિત વેગથી ગતિ ચાલુ રાખે છે; પદાર્થના આ ગુણધર્મને <strong>જડત્વ</strong> કહે છે[span_59](start_span)[span_59](end_span).",
+            "જડત્વ એટલે 'અવસ્થાના ફેરફારનો વિરોધ' અને જડત્વનું માપ એટલે પદાર્થનું <strong>દળ (m)</strong>[span_60](start_span)[span_60](end_span).",
+            "જે પદાર્થનું દળ વધુ તેનું જડત્વ વધુ અને ઓછા દળવાળા પદાર્થનું જડત્વ ઓછું હોય છે[span_61](start_span)[span_61](end_span)."
+          ],
+          "formula": "જડત્વ ∝ પદાર્થનું દળ (m)"
+        },
+        {
+          "id": 3,
+          "title": "ન્યૂટનનો ગતિનો પહેલો નિયમ",
+          "enTitle": "Newton's First Law of Motion",
+          "theme": "amber",
+          "icon": "1️⃣",
+          "points": [
+            "દરેક પદાર્થ તેની સ્થિર અવસ્થા અથવા નિયમિત સુરેખ ગતિની અવસ્થા જાળવી રાખે છે સિવાય કે કોઈ બાહ્યબળ તેને અન્ય કંઈક કરવાની ફરજ પાડે[span_62](start_span)[span_62](end_span).",
+            "સરળ શબ્દોમાં: જો પદાર્થ પર ચોખ્ખું બાહ્ય બળ શૂન્ય (F<sub>net</sub> = 0) હોય, તો તેનો પ્રવેગ શૂન્ય (a = 0) હોય છે[span_63](start_span)[span_63](end_span).",
+            "આ નિયમ જડત્વ અને બળની વ્યાખ્યા આપે છે, પરંતુ તેના પરથી બળનું મૂલ્ય જાણી શકાતું નથી[span_64](start_span)[span_64](end_span)."
+          ],
+          "formula": "જો F<sub>net</sub> = 0 &nbsp;⇒&nbsp; a = 0 (વેગ v = અચળ)"
+        },
+        {
+          "id": 4,
+          "title": "રેખીય વેગમાન (Linear Momentum)",
+          "enTitle": "Linear Momentum",
+          "theme": "purple",
+          "icon": "💨",
+          "points": [
+            "પદાર્થના દળ (m) અને તેના વેગ (v) ના ગુણાકારને રેખીય વેગમાન (<span class='vec'>p</span>) કહે છે[span_65](start_span)[span_65](end_span).",
+            "વેગમાન સદિશ રાશિ છે અને તેની દિશા હંમેશા વેગની દિશામાં હોય છે[span_66](start_span)[span_66](end_span).",
+            "SI એકમ: <strong>kg·m·s<sup>-1</sup></strong> અથવા <strong>N·s</strong>; CGS એકમ: g·cm·s<sup>-1</sup> (ડાઈન·સેકન્ડ) અને પારિમાણિક સૂત્ર: <strong>[M<sup>1</sup>L<sup>1</sup>T<sup>-1</sup>]</strong>[span_67](start_span)[span_67](end_span)."
+          ],
+          "formula": "<span class='vec'>p</span> = m<span class='vec'>v</span> &nbsp;|&nbsp; [M<sup>1</sup>L<sup>1</sup>T<sup>-1</sup>]"
+        },
+        {
+          "id": 5,
+          "title": "ન્યૂટનનો ગતિનો બીજો નિયમ",
+          "enTitle": "Newton's Second Law of Motion",
+          "theme": "peach",
+          "icon": "2️⃣",
+          "points": [
+            "પદાર્થના વેગમાનના ફેરફારનો દર તેના પર લાગતા પરિણામી બાહ્ય બળના સમપ્રમાણમાં અને લગાડેલા બળની દિશામાં હોય છે[span_68](start_span)[span_68](end_span).",
+            "અચળ દળ ધરાવતા પદાર્થ માટે: <span class='vec'>F</span> = d<span class='vec'>p</span>/dt = m(d<span class='vec'>v</span>/dt) = m<span class='vec'>a</span>[span_69](start_span)[span_69](end_span).",
+            "બળનો SI એકમ <strong>ન્યૂટન (N = kg·m/s<sup>2</sup>)</strong> અને CGS એકમ <strong>ડાઈન (g·cm/s<sup>2</sup>)</strong> છે (1 N = 10<sup>5</sup> dyne)[span_70](start_span)[span_70](end_span)."
+          ],
+          "formula": "<span class='vec'>F</span> = d<span class='vec'>p</span>/dt = m<span class='vec'>a</span>"
+        },
+        {
+          "id": 6,
+          "title": "ચલિત દળ તંત્ર (Variable Mass System)",
+          "enTitle": "Generalized Second Law",
+          "theme": "sky",
+          "icon": "🚀",
+          "points": [
+            "જ્યારે તંત્રનું દળ સમય સાથે બદલાતું હોય (જેમ કે રોકેટ પ્રણોદન કે કન્વેયર બેલ્ટ), ત્યારે બળનું વધુ મૂળભૂત સૂત્ર વપરાય છે[span_71](start_span)[span_71](end_span).",
+            "F<sub>net(બાહ્ય)</sub> = d(mv)/dt = m(dv/dt) + v(dm/dt)[span_72](start_span)[span_72](end_span).",
+            "ન્યૂટનનો બીજો નિયમ એ સ્થાનિક સંબંધ છે: આપેલ ક્ષણે પ્રવેગ તે જ ક્ષણે લાગતા બળ વડે નક્કી થાય છે, ગતિના ભૂતકાળ પર આધારિત નથી[span_73](start_span)[span_73](end_span)."
+          ],
+          "formula": "F<sub>net</sub> = m(dv/dt) + v(dm/dt)"
+        },
+        {
+          "id": 7,
+          "title": "બળનો આઘાત (Impulse of Force)",
+          "enTitle": "Impulse & Impulsive Force",
+          "theme": "mint",
+          "icon": "💥",
+          "points": [
+            "પદાર્થ પર લાગતું બળ અને તે બળ જેટલા સમયગાળા માટે લાગતું હોય તે સમયગાળાના ગુણાકારને <strong>બળનો આઘાત</strong> કહે છે[span_74](start_span)[span_74](end_span).",
+            "બળનો આઘાત હંમેશા પદાર્થના વેગમાનના ફેરફાર જેટલો હોય છે: <span class='vec'>F</span>·Δt = Δ<span class='vec'>p</span>[span_75](start_span)[span_75](end_span).",
+            "ખૂબ ટૂંકા સમયગાળામાં લાગતા મોટા બળને <strong>આઘાતી બળ</strong> કહે છે[span_76](start_span)[span_76](end_span). તેનો એકમ <strong>N·s</strong> અથવા kg·m·s<sup>-1</sup> છે[span_77](start_span)[span_77](end_span)."
+          ],
+          "formula": "આઘાત J = <span class='vec'>F</span>·Δt = Δ<span class='vec'>p</span>"
+        },
+        {
+          "id": 8,
+          "title": "ન્યૂટનનો ગતિનો ત્રીજો નિયમ",
+          "enTitle": "Newton's Third Law of Motion",
+          "theme": "amber",
+          "icon": "3️⃣",
+          "points": [
+            "બે પદાર્થો વચ્ચેની આંતરક્રિયા દરમિયાન એક પદાર્થ બીજા પદાર્થ પર જેટલું બળ (ક્રિયાબળ) લગાડે છે, તેટલા જ મૂલ્યનું બળ (પ્રતિક્રિયાબળ) બીજો પદાર્થ પહેલા પર વિરુદ્ધ દિશામાં લગાડે છે[span_78](start_span)[span_78](end_span).",
+            "ક્રિયાબળ અને પ્રતિક્રિયાબળ હંમેશા <strong>જોડ (Pair)</strong> માં, એક જ ક્ષણે અને <strong>બે જુદા-જુદા પદાર્થો</strong> પર લાગે છે[span_79](start_span)[span_79](end_span).",
+            "તેથી બંને બળો એકબીજાની અસર નાબૂદ કરી શકતા નથી[span_80](start_span)[span_80](end_span). ગણિતીય સ્વરૂપ: <span class='vec'>F</span><sub>AB</sub> = -<span class='vec'>F</span><sub>BA</sub>[span_81](start_span)[span_81](end_span)."
+          ],
+          "formula": "<span class='vec'>F</span><sub>AB</sub> = -<span class='vec'>F</span><sub>BA</sub>"
+        },
+        {
+          "id": 9,
+          "title": "કણનું સંતુલન અને લેમીનો પ્રમેય",
+          "enTitle": "Equilibrium & Lami's Theorem",
+          "theme": "purple",
+          "icon": "⚖️",
+          "points": [
+            "જે બળોની કાર્યરેખાઓ એક જ બિંદુમાંથી પસાર થતી હોય તેને <strong>એકબિંદુગામી બળો</strong> કહે છે[span_82](start_span)[span_82](end_span).",
+            "કણના સંતુલન માટે તેના પર લાગતા બધા બાહ્ય બળોનો સદિશ સરવાળો શૂન્ય થવો જોઈએ: Σ<span class='vec'>F</span> = 0 (એટલે કે ΣF<sub>x</sub> = 0, ΣF<sub>y</sub> = 0, ΣF<sub>z</sub> = 0)[span_83](start_span)[span_83](end_span).",
+            "<strong>લેમીનો પ્રમેય:</strong> એક જ બિંદુએ લાગતા ત્રણ સંતુલિત બળો માટે દરેક બળનું મૂલ્ય બાકીના બે બળો વચ્ચેના ખૂણાના sine ના સમપ્રમાણમાં હોય છે[span_84](start_span)[span_84](end_span)."
+          ],
+          "formula": "F<sub>1</sub>/sinα = F<sub>2</sub>/sinβ = F<sub>3</sub>/sinγ"
+        },
+        {
+          "id": 10,
+          "title": "સ્થિત ઘર્ષણબળ (Static Friction)",
+          "enTitle": "Static Friction & Laws",
+          "theme": "peach",
+          "icon": "🛑",
+          "points": [
+            "સંપર્કમાં રહેલી બે સપાટીઓ વચ્ચે થતી અપેક્ષિત ગતિનો વિરોધ કરતા બળને <strong>સ્થિત ઘર્ષણબળ (f<sub>s</sub>)</strong> કહે છે[span_85](start_span)[span_85](end_span). તે સ્વયં-સમાયોજિત (Self-adjusting) બળ છે[span_86](start_span)[span_86](end_span).",
+            "મહત્તમ સ્થિત ઘર્ષણબળ સંપર્ક સપાટીના ક્ષેત્રફળ પર આધારિત નથી, પરંતુ લંબબળ (N) ના સમપ્રમાણમાં હોય છે: f<sub>s(max)</sub> = μ<sub>s</sub>N[span_87](start_span)[span_87](end_span).",
+            "જ્યાં μ<sub>s</sub> એ સ્થિત ઘર્ષણાંક છે (મૂલ્ય 0.01 થી 1.5 ની વચ્ચે)[span_88](start_span)[span_88](end_span). જો પદાર્થ ખસતો ન હોય તો f<sub>s</sub> ≤ μ<sub>s</sub>N[span_89](start_span)[span_89](end_span)."
+          ],
+          "formula": "f<sub>s(max)</sub> = μ<sub>s</sub>N &nbsp;|&nbsp; f<sub>s</sub> ≤ μ<sub>s</sub>N"
+        },
+        {
+          "id": 11,
+          "title": "ગતિક ઘર્ષણબળ (Kinetic Friction)",
+          "enTitle": "Kinetic Friction & Laws",
+          "theme": "sky",
+          "icon": "🛷",
+          "points": [
+            "સંપર્કમાં રહેલી સપાટીઓની વાસ્તવિક સાપેક્ષ ગતિનો વિરોધ કરતા ઘર્ષણબળને <strong>ગતિક ઘર્ષણબળ (f<sub>k</sub>)</strong> કહે છે[span_90](start_span)[span_90](end_span).",
+            "ગતિક ઘર્ષણબળ સંપર્ક ક્ષેત્રફળ કે સાપેક્ષ વેગ પર આધારિત નથી, પરંતુ લંબબળના સમપ્રમાણમાં હોય છે: f<sub>k</sub> = μ<sub>k</sub>N[span_91](start_span)[span_91](end_span).",
+            "હંમેશા f<sub>s(max)</sub> > f<sub>k</sub> હોવાથી ગતિક ઘર્ષણાંક સ્થિત ઘર્ષણાંક કરતાં નાનો હોય છે (<strong>μ<sub>k</sub> < μ<sub>s</sub></strong>)[span_92](start_span)[span_92](end_span)."
+          ],
+          "formula": "f<sub>k</sub> = μ<sub>k</sub>N &nbsp;|&nbsp; μ<sub>k</sub> < μ<sub>s</sub>"
+        },
+        {
+          "id": 12,
+          "title": "રોલિંગ ઘર્ષણબળ (Rolling Friction)",
+          "enTitle": "Rolling Friction",
+          "theme": "mint",
+          "icon": "🛞",
+          "points": [
+            "પદાર્થ સરક્યા સિવાય ગબડતો હોય ત્યારે લાગતા ઘર્ષણબળને <strong>રોલિંગ (લોટણ) ઘર્ષણબળ (f<sub>r</sub>)</strong> કહે છે: f<sub>r</sub> = μ<sub>r</sub>N[span_93](start_span)[span_93](end_span).",
+            "સમાન દળ માટે રોલિંગ ઘર્ષણબળ, સ્થિત અને ગતિક ઘર્ષણબળ કરતાં ૧૦૦ થી ૧૦૦૦ માં ભાગનું એટલે કે અત્યંત ઓછું હોય છે[span_94](start_span)[span_94](end_span).",
+            "ઘર્ષણાંકોનો ક્રમ: <strong>μ<sub>r</sub> < μ<sub>k</sub> < μ<sub>s</sub></strong>[span_95](start_span)[span_95](end_span)."
+          ],
+          "formula": "f<sub>r</sub> = μ<sub>r</sub>N &nbsp;|&nbsp; μ<sub>r</sub> < μ<sub>k</sub> < μ<sub>s</sub>"
+        },
+        {
+          "id": 13,
+          "title": "ઘર્ષણકોણ અને વિરામકોણ",
+          "enTitle": "Angle of Friction & Repose",
+          "theme": "amber",
+          "icon": "📐",
+          "points": [
+            "<strong>ઘર્ષણનો ખૂણો (λ):</strong> મહત્તમ સ્થિત ઘર્ષણબળ અને લંબબળના પરિણામી બળે લંબબળ સાથે બનાવેલો ખૂણો; tanλ = f<sub>s(max)</sub>/N = μ<sub>s</sub>[span_96](start_span)[span_96](end_span).",
+            "<strong>વિરામકોણ (θ):</strong> સમક્ષિતિજ સાથે જે મહત્તમ કોણે ઢાળ પરથી પદાર્થ સરકવાની તૈયારી કરે તેને વિરામકોણ કહે છે: tanθ = μ<sub>s</sub>[span_97](start_span)[span_97](end_span).",
+            "ઘર્ષણકોણ (λ) અને વિરામકોણ (θ) બંનેના મૂલ્યો હંમેશા સમાન હોય છે (<strong>θ = λ = tan<sup>-1</sup>(μ<sub>s</sub>)</strong>)[span_98](start_span)[span_98](end_span)."
+          ],
+          "formula": "μ<sub>s</sub> = tanλ = tanθ"
+        },
+        {
+          "id": 14,
+          "title": "કેન્દ્રગામી બળ અને સમતલ વક્રાકાર રસ્તો",
+          "enTitle": "Centripetal Force & Level Road",
+          "theme": "purple",
+          "icon": "🚗",
+          "points": [
+            "R ત્રિજ્યાના વર્તુળાકાર પથ પર v ઝડપથી ગતિ કરતા m દળના પદાર્થને કેન્દ્ર તરફ જરૂરી કેન્દ્રગામી બળ: F<sub>c</sub> = mv<sup>2</sup> / R[span_99](start_span)[span_99](end_span).",
+            "સમતલ વક્રાકાર રસ્તા પર વાહનને જરૂરી કેન્દ્રગામી બળ ટાયર અને રસ્તા વચ્ચેના <strong>સ્થિત ઘર્ષણબળ</strong> દ્વારા પૂરું પાડવામાં આવે છે[span_100](start_span)[span_100](end_span).",
+            "સમતલ વક્રાકાર રસ્તા પર મહત્તમ સલામત ઝડપ: <strong>v<sub>max</sub> = √(μ<sub>s</sub>Rg)</strong>, જે વાહનના દળ પર આધારિત નથી[span_101](start_span)[span_101](end_span)."
+          ],
+          "formula": "v<sub>max</sub> = √(μ<sub>s</sub>Rg) (સમતલ વક્રાકાર રસ્તો)"
+        },
+        {
+          "id": 15,
+          "title": "ઢોળાવવાળો વક્રાકાર રસ્તો (Banked Road)",
+          "enTitle": "Motion on a Banked Road",
+          "theme": "peach",
+          "icon": "🛣️",
+          "points": [
+            "θ ઢોળાવવાળા વક્રાકાર રસ્તા પર લંબબળનો ઘટક N·sinθ અને ઘર્ષણબળનો ઘટક f·cosθ બંને મળીને કેન્દ્રગામી બળ પૂરું પાડે છે[span_102](start_span)[span_102](end_span).",
+            "મહત્તમ સલામત ઝડપ: v<sub>max</sub> = √[Rg(μ<sub>s</sub> + tanθ) / (1 - μ<sub>s</sub>tanθ)][span_103](start_span)[span_103](end_span).",
+            "<strong>Optimum ઝડપ (v<sub>0</sub>):</strong> લીસા માર્ગ (μ<sub>s</sub> = 0) માટે ઘર્ષણના ઉપયોગ વિના સલામત ઝડપ <strong>v<sub>0</sub> = √(Rg·tanθ)</strong> મળે છે, જ્યાં ટાયરનો ઘસારો ન્યૂનતમ થાય છે[span_104](start_span)[span_104](end_span)."
+          ],
+          "formula": "v<sub>0</sub> = √(Rg·tanθ) (Optimum ઝડપ)"
+        },
+        {
+          "id": 16,
+          "title": "વર્તુળાકાર રસ્તા પર સાઇકલ સવારનું નમન",
+          "enTitle": "Bending of a Cyclist",
+          "theme": "sky",
+          "icon": "🚴",
+          "points": [
+            "વર્તુળાકાર વળાંક લેતી વખતે સાઇકલ સવાર શિરોલંબ સાથે θ ખૂણે અંદર તરફ નમે છે[span_105](start_span)[span_105](end_span).",
+            "લંબબળનો સમક્ષિતિજ ઘટક <strong>N·sinθ = mv<sup>2</sup>/r</strong> જરૂરી કેન્દ્રગામી બળ પૂરું પાડે છે અને શિરોલંબ ઘટક <strong>N·cosθ = mg</strong> વજનને સંતોલે છે[span_106](start_span)[span_106](end_span).",
+            "સલામત ઝડપનું સૂત્ર: v = √(rg·tanθ) અથવા tanθ = v<sup>2</sup> / (rg)[span_107](start_span)[span_107](end_span)."
+          ],
+          "formula": "tanθ = v<sup>2</sup> / (rg) &nbsp;|&nbsp; v = √(rg·tanθ)"
+        },
+        {
+          "id": 17,
+          "title": "આભાસી બળ (Pseudo Force)",
+          "enTitle": "Pseudo Force in Non-Inertial Frame",
+          "theme": "mint",
+          "icon": "👻",
+          "points": [
+            "જ્યારે અવલોકનકર્તા પ્રવેગી (અજડત્વીય) નિર્દેશ ફ્રેમમાં ઊભો રહીને ન્યૂટનના નિયમો લગાડે ત્યારે પદાર્થ પર લાગતા કાલ્પનિક બળને <strong>આભાસી બળ</strong> કહે છે[span_108](start_span)[span_108](end_span).",
+            "આભાસી બળ પદાર્થના દળ (m) અને નિર્દેશ ફ્રેમના પ્રવેગ (<span class='vec'>a</span><sub>F</sub>) ના ગુણાકાર જેટલું અને <strong>ફ્રેમના પ્રવેગની વિરુદ્ધ દિશામાં</strong> હોય છે[span_109](start_span)[span_109](end_span).",
+            "આભાસી બળ કોઈ ભૌતિક આંતરક્રિયાથી ઉદ્ભવતું ન હોવાથી તેના પર ન્યૂટનનો ત્રીજો નિયમ લાગુ પડતો નથી[span_110](start_span)[span_110](end_span)."
+          ],
+          "formula": "<span class='vec'>F</span><sub>pseudo</sub> = -m<span class='vec'>a</span><sub>F</sub>"
+        },
+        {
+          "id": 18,
+          "title": "ઢાળ પર પદાર્થને ઉપર ખેંચવા જરૂરી લઘુત્તમ બળ",
+          "enTitle": "Minimum Pulling Force on Incline",
+          "theme": "amber",
+          "icon": "🧗",
+          "points": [
+            "θ ઢોળાવવાળા સમતલ પર m દળના પદાર્થને ઢાળ સાથે α ખૂણે F બળ લગાડી ઉપર ખસેડવા જરૂરી બળ: F = mg(sinθ + μcosθ) / (cosα + μsinα)[span_111](start_span)[span_111](end_span).",
+            "આ બળ F લઘુત્તમ બને તે માટે છેદ મહત્તમ થવો જોઈએ, જે શરત મુજબ <strong>tanα = μ</strong> (અથવા α = tan<sup>-1</sup>μ) મળે છે[span_112](start_span)[span_112](end_span).",
+            "લઘુત્તમ બળનું મૂલ્ય: <strong>F<sub>min</sub> = mg(sinθ + μcosθ) / √(1 + μ<sup>2</sup>)</strong> થાય છે[span_113](start_span)[span_113](end_span)."
+          ],
+          "formula": "F<sub>min</sub> = mg(sinθ + μcosθ) / √(1 + μ<sup>2</sup>)"
+        }
+      ],
+      "formulas": [
+        {
+          "id": 1,
+          "title": "ન્યૂટનનો બીજો નિયમ અને ચલિત દળ",
+          "enTitle": "Second Law & Variable Mass",
+          "theme": "sky",
+          "icon": "2️⃣",
+          "points": [
+            "રેખીય વેગમાન: <span class='vec'>p</span> = m<span class='vec'>v</span>[span_114](start_span)[span_114](end_span)",
+            "અચળ દળ માટે બળ: <span class='vec'>F</span> = d<span class='vec'>p</span>/dt = m<span class='vec'>a</span>[span_115](start_span)[span_115](end_span)",
+            "ચલિત દળ તંત્ર માટે: F<sub>net</sub> = m(dv/dt) + v(dm/dt)[span_116](start_span)[span_116](end_span)"
+          ],
+          "formula": "F = d(mv)/dt = m(dv/dt) + v(dm/dt)"
+        },
+        {
+          "id": 2,
+          "title": "બળનો આઘાત અને વેગમાન સંરક્ષણ",
+          "enTitle": "Impulse & Third Law",
+          "theme": "mint",
+          "icon": "💥",
+          "points": [
+            "બળનો આઘાત: J = <span class='vec'>F</span>·Δt = Δ<span class='vec'>p</span> = m(<span class='vec'>v</span><sub>2</sub> - <span class='vec'>v</span><sub>1</sub>)[span_117](start_span)[span_117](end_span)[span_118](start_span)[span_118](end_span)",
+            "ન્યૂટનનો ત્રીજો નિયમ: <span class='vec'>F</span><sub>AB</sub> = -<span class='vec'>F</span><sub>BA</sub>[span_119](start_span)[span_119](end_span)",
+            "આભાસી બળ (અજડત્વીય ફ્રેમમાં): <span class='vec'>F</span><sub>pseudo</sub> = -m<span class='vec'>a</span><sub>F</sub>[span_120](start_span)[span_120](end_span)"
+          ],
+          "formula": "J = F·Δt = Δp &nbsp;|&nbsp; F<sub>pseudo</sub> = -ma<sub>F</sub>"
+        },
+        {
+          "id": 3,
+          "title": "કણનું સંતુલન અને લેમીનો પ્રમેય",
+          "enTitle": "Equilibrium & Lami's Theorem",
+          "theme": "amber",
+          "icon": "⚖️",
+          "points": [
+            "સંતુલનની શરત: Σ<span class='vec'>F</span> = 0 &nbsp;⇒&nbsp; ΣF<sub>x</sub> = 0, ΣF<sub>y</sub> = 0, ΣF<sub>z</sub> = 0[span_121](start_span)[span_121](end_span)",
+            "ત્રણ એકબિંદુગામી બળો માટે લેમીનો પ્રમેય: F<sub>1</sub>/sinα = F<sub>2</sub>/sinβ = F<sub>3</sub>/sinγ[span_122](start_span)[span_122](end_span)"
+          ],
+          "formula": "F<sub>1</sub>/sinα = F<sub>2</sub>/sinβ = F<sub>3</sub>/sinγ"
+        },
+        {
+          "id": 4,
+          "title": "સ્થિત, ગતિક અને રોલિંગ ઘર્ષણના સૂત્રો",
+          "enTitle": "Laws of Friction",
+          "theme": "purple",
+          "icon": "🛑",
+          "points": [
+            "મહત્તમ સ્થિત ઘર્ષણબળ: f<sub>s(max)</sub> = μ<sub>s</sub>N &nbsp;(સામાન્ય રીતે f<sub>s</sub> ≤ μ<sub>s</sub>N)[span_123](start_span)[span_123](end_span)",
+            "ગતિક ઘર્ષણબળ: f<sub>k</sub> = μ<sub>k</sub>N[span_124](start_span)[span_124](end_span)",
+            "રોલિંગ ઘર્ષણબળ: f<sub>r</sub> = μ<sub>r</sub>N &nbsp;|&nbsp; સંબંધ: μ<sub>r</sub> < μ<sub>k</sub> < μ<sub>s</sub>[span_125](start_span)[span_125](end_span)"
+          ],
+          "formula": "f<sub>s(max)</sub> = μ<sub>s</sub>N &nbsp;|&nbsp; f<sub>k</sub> = μ<sub>k</sub>N &nbsp;|&nbsp; f<sub>r</sub> = μ<sub>r</sub>N"
+        },
+        {
+          "id": 5,
+          "title": "ઘર્ષણકોણ અને વિરામકોણ",
+          "enTitle": "Angle of Friction & Repose",
+          "theme": "peach",
+          "icon": "📐",
+          "points": [
+            "ઘર્ષણકોણ (λ): tanλ = f<sub>s(max)</sub> / N = μ<sub>s</sub>[span_126](start_span)[span_126](end_span)",
+            "વિરામકોણ (θ): ઢાળ પર f = mg·sinθ અને N = mg·cosθ હોવાથી tanθ = μ<sub>s</sub>[span_127](start_span)[span_127](end_span)",
+            "બંને ખૂણા સમાન: θ = λ = tan<sup>-1</sup>(μ<sub>s</sub>)[span_128](start_span)[span_128](end_span)"
+          ],
+          "formula": "μ<sub>s</sub> = tanλ = tanθ"
+        },
+        {
+          "id": 6,
+          "title": "સમતલ અને ઢોળાવવાળા વક્રાકાર રસ્તા પર ઝડપ",
+          "enTitle": "Safe Speed on Curved Roads",
+          "theme": "sky",
+          "icon": "🚗",
+          "points": [
+            "કેન્દ્રગામી બળ: F<sub>c</sub> = mv<sup>2</sup> / R[span_129](start_span)[span_129](end_span)",
+            "સમતલ વક્રાકાર રસ્તા પર મહત્તમ સલામત ઝડપ: v<sub>max</sub> = √(μ<sub>s</sub>Rg)[span_130](start_span)[span_130](end_span)",
+            "ઢોળાવવાળા વક્રાકાર રસ્તા પર મહત્તમ ઝડપ: v<sub>max</sub> = √[Rg(μ<sub>s</sub> + tanθ) / (1 - μ<sub>s</sub>tanθ)][span_131](start_span)[span_131](end_span)"
+          ],
+          "formula": "v<sub>max</sub> = √[Rg(μ<sub>s</sub> + tanθ) / (1 - μ<sub>s</sub>tanθ)]"
+        },
+        {
+          "id": 7,
+          "title": "Optimum ઝડપ અને સાઇકલ સવારનું નમન",
+          "enTitle": "Optimum Speed & Cyclist Bending",
+          "theme": "mint",
+          "icon": "🚴",
+          "points": [
+            "લીસા ઢોળાવવાળા વક્રાકાર માર્ગ (μ<sub>s</sub> = 0) પર Optimum ઝડપ: v<sub>0</sub> = √(Rg·tanθ)[span_132](start_span)[span_132](end_span)",
+            "ઢાળ પર વાહન પાર્ક કરવાની શરત: tanθ ≤ μ<sub>s</sub>[span_133](start_span)[span_133](end_span)",
+            "વર્તુળાકાર વળાંક પર સાઇકલ સવારનું નમન: tanθ = v<sup>2</sup> / (rg)[span_134](start_span)[span_134](end_span)"
+          ],
+          "formula": "v<sub>0</sub> = √(Rg·tanθ) &nbsp;|&nbsp; tanθ = v<sup>2</sup> / (rg)"
+        },
+        {
+          "id": 8,
+          "title": "ઢાળ પર પદાર્થને ઉપર ખેંચવા જરૂરી લઘુત્તમ બળ",
+          "enTitle": "Minimum Force on Inclined Plane",
+          "theme": "amber",
+          "icon": "🧗",
+          "points": [
+            "ઢાળ સાથે α ખૂણે ખેંચવા જરૂરી બળ: F = mg(sinθ + μcosθ) / (cosα + μsinα)[span_135](start_span)[span_135](end_span)",
+            "લઘુત્તમ બળ માટે ખૂણાની શરત: tanα = μ &nbsp;⇒&nbsp; α = tan<sup>-1</sup>(μ)[span_136](start_span)[span_136](end_span)",
+            "લઘુત્તમ બળનું સૂત્ર: F<sub>min</sub> = mg(sinθ + μcosθ) / √(1 + μ<sup>2</sup>)[span_137](start_span)[span_137](end_span)"
+          ],
+          "formula": "F<sub>min</sub> = mg(sinθ + μcosθ) / √(1 + μ<sup>2</sup>)"
+        }
+      ],
+      "questions": [
+        {
+          "id": 1,
+          "title": "ગતિશાસ્ત્ર (Dynamics) કોને કહે છે?",
+          "enTitle": "1-Mark Question",
+          "theme": "sky",
+          "icon": "❓",
+          "points": [
+            "<strong>પ્રશ્ન:</strong> યંત્રશાસ્ત્રમાં ગતિશાસ્ત્ર (Dynamics) ની વ્યાખ્યા આપો[span_138](start_span)[span_138](end_span).",
+            "<strong>જવાબ:</strong> યંત્રશાસ્ત્રના જે વિભાગમાં ગતિના કારણો અને ગતિ કરતી વસ્તુના ગુણધર્મો સહિત ગતિની ચર્ચા કરવામાં આવે છે, તેને ગતિશાસ્ત્ર કહે છે[span_139](start_span)[span_139](end_span)."
+          ],
+          "formula": "ગતિશાસ્ત્ર = ગતિ + ગતિના કારણોનો અભ્યાસ"
+        },
+        {
+          "id": 2,
+          "title": "સંપર્કબળ અને ક્ષેત્રબળ વચ્ચે મુખ્ય ભિન્નતા",
+          "enTitle": "1-Mark Question",
+          "theme": "mint",
+          "icon": "🧲",
+          "points": [
+            "<strong>પ્રશ્ન:</strong> સંપર્કબળ અને ક્ષેત્રબળ વચ્ચેની બે ભિન્નતાઓ લખો[span_140](start_span)[span_140](end_span).",
+            "<strong>જવાબ:</strong> (૧) સંપર્કબળ કૃત્રિમ છે જ્યારે ક્ષેત્રબળ કુદરતી છે, અને (૨) સંપર્કબળ અસંરક્ષી છે જ્યારે ક્ષેત્રબળ સંરક્ષી છે[span_141](start_span)[span_141](end_span)."
+          ],
+          "formula": "ક્ષેત્રબળ → કુદરતી અને સંરક્ષી"
+        },
+        {
+          "id": 3,
+          "title": "જડત્વનું માપ કઈ ભૌતિકરાશિ છે?",
+          "enTitle": "1-Mark Question",
+          "theme": "amber",
+          "icon": "🪨",
+          "points": [
+            "<strong>પ્રશ્ન:</strong> જડત્વ એટલે શું અને તે શેના પર આધાર રાખે છે[span_142](start_span)[span_142](end_span)[span_143](start_span)[span_143](end_span)?",
+            "<strong>જવાબ:</strong> બાહ્ય બળની ગેરહાજરીમાં પદાર્થની પોતાની અવસ્થા જાળવી રાખવાના ગુણધર્મને જડત્વ કહે છે[span_144](start_span)[span_144](end_span). જડત્વનું માપ પદાર્થનું દળ (m) છે[span_145](start_span)[span_145](end_span)."
+          ],
+          "formula": "જડત્વનું માપ = દળ (m)"
+        },
+        {
+          "id": 4,
+          "title": "ન્યૂટનના પહેલા નિયમની મર્યાદા",
+          "enTitle": "1-Mark Question",
+          "theme": "purple",
+          "icon": "1️⃣",
+          "points": [
+            "<strong>પ્રશ્ન:</strong> ન્યૂટનના ગતિના પહેલા નિયમ પરથી શું જાણી શકાય છે અને તેની મર્યાદા શું છે[span_146](start_span)[span_146](end_span)?",
+            "<strong>જવાબ:</strong> પહેલા નિયમ પરથી જડત્વ અને બળની ગુણાત્મક વ્યાખ્યા મળે છે, પરંતુ બળનું સંખ્યાત્મક મૂલ્ય જાણી શકાતું નથી તે તેની મર્યાદા છે[span_147](start_span)[span_147](end_span)."
+          ],
+          "formula": "પહેલો નિયમ → બળની વ્યાખ્યા (મૂલ્ય નહીં)"
+        },
+        {
+          "id": 5,
+          "title": "ટેબલ પર સ્થિર પડેલા પુસ્તક પર લાગતા બળો",
+          "enTitle": "1-Mark Question",
+          "theme": "peach",
+          "icon": "📚",
+          "points": [
+            "<strong>પ્રશ્ન:</strong> સમક્ષિતિજ ટેબલ પર સ્થિર પડેલા પુસ્તક પર ચોખ્ખું બળ શૂન્ય કેમ હોય છે[span_148](start_span)[span_148](end_span)?",
+            "<strong>જવાબ:</strong> પુસ્તક પર અધોદિશામાં લાગતું વજનબળ (W = mg) અને ઊર્ધ્વદિશામાં લાગતું લંબબળ (N) સમાન મૂલ્યના અને પરસ્પર વિરુદ્ધ દિશામાં હોવાથી પરિણામી બાહ્ય બળ શૂન્ય થાય છે[span_149](start_span)[span_149](end_span)."
+          ],
+          "formula": "N = W = mg &nbsp;⇒&nbsp; F<sub>net</sub> = 0"
+        },
+        {
+          "id": 6,
+          "title": "રેખીય વેગમાનનો SI એકમ અને પારિમાણિક સૂત્ર",
+          "enTitle": "1-Mark Question",
+          "theme": "sky",
+          "icon": "💨",
+          "points": [
+            "<strong>પ્રશ્ન:</strong> રેખીય વેગમાનનો SI એકમ અને પારિમાણિક સૂત્ર લખો[span_150](start_span)[span_150](end_span).",
+            "<strong>જવાબ:</strong> રેખીય વેગમાનનો SI એકમ <strong>kg·m·s<sup>-1</sup></strong> અથવા <strong>N·s</strong> છે અને પારિમાણિક સૂત્ર <strong>[M<sup>1</sup>L<sup>1</sup>T<sup>-1</sup>]</strong> છે[span_151](start_span)[span_151](end_span)."
+          ],
+          "formula": "SI એકમ: N·s &nbsp;|&nbsp; [M<sup>1</sup>L<sup>1</sup>T<sup>-1</sup>]"
+        },
+        {
+          "id": 7,
+          "title": "૧ ન્યૂટન બળની વ્યાખ્યા",
+          "enTitle": "1-Mark Question",
+          "theme": "mint",
+          "icon": "2️⃣",
+          "points": [
+            "<strong>પ્રશ્ન:</strong> SI પદ્ધતિમાં ૧ ન્યૂટન (1 N) બળની વ્યાખ્યા આપો[span_152](start_span)[span_152](end_span).",
+            "<strong>જવાબ:</strong> જે બળ 1 kg દળના પદાર્થમાં 1 m/s<sup>2</sup> જેટલો પ્રવેગ ઉત્પન્ન કરે છે તે બળને <strong>૧ ન્યૂટન (1 N)</strong> બળ કહે છે[span_153](start_span)[span_153](end_span)."
+          ],
+          "formula": "1 N = 1 kg × 1 m/s<sup>2</sup>"
+        },
+        {
+          "id": 8,
+          "title": "પ્રવેગિત ટ્રેનમાંથી પથ્થર છોડતા તેનો પ્રવેગ",
+          "enTitle": "1-Mark Question",
+          "theme": "amber",
+          "icon": "🚆",
+          "points": [
+            "<strong>પ્રશ્ન:</strong> પ્રવેગિત ગતિ કરતી ટ્રેનમાંથી પથ્થરને બહાર પડતો મૂક્યા પછીની ક્ષણે તેનો સમક્ષિતિજ પ્રવેગ કેટલો હોય (હવાનો અવરોધ અવગણતાં)[span_154](start_span)[span_154](end_span)?",
+            "<strong>જવાબ:</strong> પથ્થર ટ્રેનથી છૂટો પડ્યા પછી તેના પર કોઈ સમક્ષિતિજ બળ લાગતું ન હોવાથી તેનો સમક્ષિતિજ પ્રવેગ <strong>શૂન્ય</strong> હોય છે (પથ્થરને અગાઉની ક્ષણના પ્રવેગની કોઈ સ્મૃતિ હોતી નથી)[span_155](start_span)[span_155](end_span)."
+          ],
+          "formula": "a<sub>x</sub> = 0, a<sub>y</sub> = g (નીચે તરફ)"
+        },
+        {
+          "id": 9,
+          "title": "બળનો આઘાત કઈ રાશિના ફેરફાર જેટલો હોય છે?",
+          "enTitle": "1-Mark Question",
+          "theme": "purple",
+          "icon": "💥",
+          "points": [
+            "<strong>પ્રશ્ન:</strong> બળનો આઘાત એટલે શું અને તે શેના જેટલો હોય છે[span_156](start_span)[span_156](end_span)?",
+            "<strong>જવાબ:</strong> બળ અને સમયગાળાના ગુણાકારને બળનો આઘાત (<span class='vec'>F</span>·Δt) કહે છે, અને તે હંમેશા પદાર્થના <strong>વેગમાનના ફેરફાર (Δ<span class='vec'>p</span>)</strong> જેટલો હોય છે[span_157](start_span)[span_157](end_span)."
+          ],
+          "formula": "આઘાત = <span class='vec'>F</span>·Δt = Δ<span class='vec'>p</span>"
+        },
+        {
+          "id": 10,
+          "title": "ક્રિયાબળ અને પ્રતિક્રિયાબળ કેમ નાબૂદ થતા નથી?",
+          "enTitle": "1-Mark Question",
+          "theme": "peach",
+          "icon": "3️⃣",
+          "points": [
+            "<strong>પ્રશ્ન:</strong> ન્યૂટનના ત્રીજા નિયમ મુજબ ક્રિયાબળ અને પ્રતિક્રિયાબળ સમાન અને વિરુદ્ધ હોવા છતાં એકબીજાની અસર કેમ નાબૂદ કરતા નથી[span_158](start_span)[span_158](end_span)?",
+            "<strong>જવાબ:</strong> કારણ કે ક્રિયાબળ અને પ્રતિક્રિયાબળ એક જ પદાર્થ પર નહીં, પરંતુ હંમેશા <strong>બે જુદા-જુદા પદાર્થો</strong> પર લાગે છે[span_159](start_span)[span_159](end_span)."
+          ],
+          "formula": "<span class='vec'>F</span><sub>AB</sub> = -<span class='vec'>F</span><sub>BA</sub> (અલગ પદાર્થો પર)"
+        },
+        {
+          "id": 11,
+          "title": "એકબિંદુગામી બળો કોને કહે છે?",
+          "enTitle": "1-Mark Question",
+          "theme": "sky",
+          "icon": "🎯",
+          "points": [
+            "<strong>પ્રશ્ન:</strong> એકબિંદુગામી બળો (Concurrent Forces) ની વ્યાખ્યા આપો[span_160](start_span)[span_160](end_span).",
+            "<strong>જવાબ:</strong> જે બળોની કાર્યરેખાઓ એક જ સામાન્ય બિંદુમાંથી પસાર થતી હોય, તે બળોને એકબિંદુગામી બળો કહે છે[span_161](start_span)[span_161](end_span)."
+          ],
+          "formula": "સંતુલન માટે: Σ<span class='vec'>F</span> = 0"
+        },
+        {
+          "id": 12,
+          "title": "સ્થિત ઘર્ષણબળને Self-adjusting force કેમ કહે છે?",
+          "enTitle": "1-Mark Question",
+          "theme": "mint",
+          "icon": "🛑",
+          "points": [
+            "<strong>પ્રશ્ન:</strong> સ્થિત ઘર્ષણબળને સ્વયં-સમાયોજિત બળ (Self-adjusting force) શા માટે કહેવામાં આવે છે[span_162](start_span)[span_162](end_span)?",
+            "<strong>જવાબ:</strong> કારણ કે પદાર્થ પર લાગતા બાહ્ય બળના મૂલ્ય અને દિશા અનુસાર સ્થિત ઘર્ષણબળ અમુક મહત્તમ હદ (f<sub>s(max)</sub>) સુધી આપમેળે પોતાનું મૂલ્ય અને દિશા બદલીને પદાર્થને સ્થિર રાખે છે[span_163](start_span)[span_163](end_span)."
+          ],
+          "formula": "0 ≤ f<sub>s</sub> ≤ μ<sub>s</sub>N"
+        },
+        {
+          "id": 13,
+          "title": "ઘર્ષણાંકોનો ચઢતો ક્રમ જણાવો",
+          "enTitle": "1-Mark Question",
+          "theme": "amber",
+          "icon": "📊",
+          "points": [
+            "<strong>પ્રશ્ન:</strong> સ્થિત ઘર્ષણાંક (μ<sub>s</sub>), ગતિક ઘર્ષણાંક (μ<sub>k</sub>) અને રોલિંગ ઘર્ષણાંક (μ<sub>r</sub>) વચ્ચેનો સંબંધ જણાવો[span_164](start_span)[span_164](end_span).",
+            "<strong>જવાબ:</strong> રોલિંગ ઘર્ષણ સૌથી ઓછું અને સ્થિત ઘર્ષણ સૌથી વધુ હોવાથી તેમનો ક્રમ <strong>μ<sub>r</sub> < μ<sub>k</sub> < μ<sub>s</sub></strong> હોય છે[span_165](start_span)[span_165](end_span)."
+          ],
+          "formula": "μ<sub>r</sub> < μ<sub>k</sub> < μ<sub>s</sub>"
+        },
+        {
+          "id": 14,
+          "title": "ઘર્ષણકોણ અને વિરામકોણ વચ્ચેનો સંબંધ",
+          "enTitle": "1-Mark Question",
+          "theme": "purple",
+          "icon": "📐",
+          "points": [
+            "<strong>પ્રશ્ન:</strong> ઘર્ષણકોણ (λ) અને વિરામકોણ (θ) વચ્ચે શું સંબંધ છે[span_166](start_span)[span_166](end_span)?",
+            "<strong>જવાબ:</strong> બંનેના ટેન્જન્ટનું મૂલ્ય સ્થિત ઘર્ષણાંક (μ<sub>s</sub>) જેટલું હોવાથી ઘર્ષણકોણ અને વિરામકોણ હંમેશા સમાન (<strong>θ = λ</strong>) હોય છે[span_167](start_span)[span_167](end_span)."
+          ],
+          "formula": "θ = λ = tan<sup>-1</sup>(μ<sub>s</sub>)"
+        },
+        {
+          "id": 15,
+          "title": "સમતલ વક્રાકાર રસ્તા પર કેન્દ્રગામી બળ કોણ પૂરું પાડે?",
+          "enTitle": "1-Mark Question",
+          "theme": "peach",
+          "icon": "🚗",
+          "points": [
+            "<strong>પ્રશ્ન:</strong> સમતલ વક્રાકાર રસ્તા પર વળાંક લેતા વાહનને જરૂરી કેન્દ્રગામી બળ કયા બળ દ્વારા મળે છે[span_168](start_span)[span_168](end_span)[span_169](start_span)[span_169](end_span)?",
+            "<strong>જવાબ:</strong> રસ્તા અને વાહનના ટાયરો વચ્ચે લાગતા <strong>સ્થિત ઘર્ષણબળ (f<sub>s</sub>)</strong> દ્વારા જરૂરી કેન્દ્રગામી બળ પૂરું પાડવામાં આવે છે[span_170](start_span)[span_170](end_span)."
+          ],
+          "formula": "f<sub>s</sub> = mv<sup>2</sup> / R &nbsp;⇒&nbsp; v<sub>max</sub> = √(μ<sub>s</sub>Rg)"
+        },
+        {
+          "id": 16,
+          "title": "ઢોળાવવાળા વક્રાકાર રસ્તા પર Optimum ઝડપ એટલે શું?",
+          "enTitle": "1-Mark Question",
+          "theme": "sky",
+          "icon": "🛣️",
+          "points": [
+            "<strong>પ્રશ્ન:</strong> ઢોળાવવાળા વક્રાકાર રસ્તા પર Optimum ઝડપ (v<sub>0</sub>) કોને કહે છે અને તેનું સૂત્ર લખો[span_171](start_span)[span_171](end_span)?",
+            "<strong>જવાબ:</strong> જે ઝડપે જતાં કેન્દ્રગામી બળ પૂરું પાડવામાં ઘર્ષણનો કોઈ ફાળો ન હોય અને ટાયરનો ઘસારો ન્યૂનતમ થાય તેને Optimum ઝડપ <strong>v<sub>0</sub> = √(Rg·tanθ)</strong> કહે છે[span_172](start_span)[span_172](end_span)."
+          ],
+          "formula": "v<sub>0</sub> = √(Rg·tanθ)"
+        },
+        {
+          "id": 17,
+          "title": "ઢાળવાળા રસ્તા પર વાહન પાર્ક કરવાની શરત",
+          "enTitle": "1-Mark Question",
+          "theme": "mint",
+          "icon": "🅿️",
+          "points": [
+            "<strong>પ્રશ્ન:</strong> θ ઢોળાવવાળા રસ્તા પર વાહન સરક્યા વગર પાર્ક કરી શકાય તે માટેની શરત જણાવો[span_173](start_span)[span_173](end_span).",
+            "<strong>જવાબ:</strong> ઢાળના ખૂણાનો ટેન્જન્ટ સ્થિત ઘર્ષણાંક જેટલો કે તેનાથી ઓછો હોવો જોઈએ, એટલે કે <strong>tanθ ≤ μ<sub>s</sub></strong>[span_174](start_span)[span_174](end_span)."
+          ],
+          "formula": "tanθ ≤ μ<sub>s</sub>"
+        },
+        {
+          "id": 18,
+          "title": "આભાસી બળની દિશા કઈ તરફ હોય છે?",
+          "enTitle": "1-Mark Question",
+          "theme": "amber",
+          "icon": "👻",
+          "points": [
+            "<strong>પ્રશ્ન:</strong> અજડત્વીય (પ્રવેગી) નિર્દેશ ફ્રેમમાં લાગતા આભાસી બળનું મૂલ્ય અને દિશા જણાવો[span_175](start_span)[span_175](end_span).",
+            "<strong>જવાબ:</strong> આભાસી બળનું મૂલ્ય પદાર્થના દળ અને ફ્રેમના પ્રવેગના ગુણાકાર જેટલું (ma<sub>F</sub>) અને તેની દિશા <strong>નિર્દેશ ફ્રેમના પ્રવેગની વિરુદ્ધ દિશામાં</strong> હોય છે[span_176](start_span)[span_176](end_span)."
+          ],
+          "formula": "<span class='vec'>F</span><sub>pseudo</sub> = -m<span class='vec'>a</span><sub>F</sub>"
+        },
+        {
+          "id": 19,
+          "title": "લેમીનો પ્રમેય ક્યારે લાગુ પાડી શકાય?",
+          "enTitle": "1-Mark Question",
+          "theme": "purple",
+          "icon": "⚖️",
+          "points": [
+            "<strong>પ્રશ્ન:</strong> લેમીનો પ્રમેય (Lami's Theorem) લખો[span_177](start_span)[span_177](end_span).",
+            "<strong>જવાબ:</strong> જો કોઈ એક જ બિંદુએ લાગતા ત્રણ સમતલીય બળો <span class='vec'>F</span><sub>1</sub>, <span class='vec'>F</span><sub>2</sub>, <span class='vec'>F</span><sub>3</sub> સંતુલનમાં હોય, તો F<sub>1</sub>/sinα = F<sub>2</sub>/sinβ = F<sub>3</sub>/sinγ થાય છે[span_178](start_span)[span_178](end_span)."
+          ],
+          "formula": "F<sub>1</sub>/sinα = F<sub>2</sub>/sinβ = F<sub>3</sub>/sinγ"
+        },
+        {
+          "id": 20,
+          "title": "વળાંક લેતી વખતે સાઇકલ સવાર કેમ નમે છે?",
+          "enTitle": "1-Mark Question",
+          "theme": "peach",
+          "icon": "🚴",
+          "points": [
+            "<strong>પ્રશ્ન:</strong> વર્તુળાકાર રસ્તા પર વળાંક લેતી વખતે સાઇકલ સવારને જરૂરી કેન્દ્રગામી બળ ક્યાંથી મળે છે[span_179](start_span)[span_179](end_span)?",
+            "<strong>જવાબ:</strong> સાઇકલ સવાર શિરોલંબ સાથે θ ખૂણે અંદર તરફ નમવાથી લંબબળનો સમક્ષિતિજ ઘટક <strong>N·sinθ</strong> જરૂરી કેન્દ્રગામી બળ પૂરું પાડે છે[span_180](start_span)[span_180](end_span)."
+          ],
+          "formula": "N·sinθ = mv<sup>2</sup>/r &nbsp;⇒&nbsp; v = √(rg·tanθ)"
+        }
+      ]
     }
   }
 }
+
+  
+
 
     
