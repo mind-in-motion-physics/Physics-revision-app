@@ -1705,10 +1705,658 @@
           "formula": "N·sinθ = mv<sup>2</sup>/r &nbsp;⇒&nbsp; v = √(rg·tanθ)"
         }
       ]
+    },
+      "5": {
+      "cards": [
+        {
+          "id": 1,
+          "title": "સદિશોનો અદિશ ગુણાકાર (Dot Product)",
+          "enTitle": "Scalar (Dot) Product of Vectors",
+          "theme": "sky",
+          "icon": "📐",
+          "points": [
+            "જો બે સદિશોનો ગુણાકાર કરતાં પરિણામ અદિશ રાશિ મળે, તો તેને <strong>અદિશ (ડોટ) ગુણાકાર</strong> કહે છે: <span class='vec'>A</span> · <span class='vec'>B</span> = AB·cosθ[span_64](start_span)[span_64](end_span).",
+            "ભૌમિતિક અર્થઘટન: <span class='vec'>A</span> · <span class='vec'>B</span> એ <span class='vec'>A</span> ના મૂલ્ય અને <span class='vec'>B</span> ના <span class='vec'>A</span> પરના પ્રક્ષેપ (B·cosθ) ના ગુણાકાર જેટલો હોય છે[span_65](start_span)[span_65](end_span).",
+            "ગુણધર્મો: અદિશ ગુણાકાર સમક્રમી (<span class='vec'>A</span>·<span class='vec'>B</span> = <span class='vec'>B</span>·<span class='vec'>A</span>) છે અને વિભાજનના નિયમનું પાલન કરે છે: <span class='vec'>A</span>·(<span class='vec'>B</span> + <span class='vec'>C</span>) = <span class='vec'>A</span>·<span class='vec'>B</span> + <span class='vec'>A</span>·<span class='vec'>C</span>[span_66](start_span)[span_66](end_span)."
+          ],
+          "formula": "<span class='vec'>A</span> · <span class='vec'>B</span> = AB·cosθ = A<sub>x</sub>B<sub>x</sub> + A<sub>y</sub>B<sub>y</sub> + A<sub>z</sub>B<sub>z</sub>"
+        },
+        {
+          "id": 2,
+          "title": "અદિશ ગુણાકારના ખાસ કિસ્સા અને એકમ સદિશો",
+          "enTitle": "Dot Product Properties & Unit Vectors",
+          "theme": "mint",
+          "icon": "🎯",
+          "points": [
+            "જો બે સદિશો પરસ્પર લંબ (θ = 90°) હોય તો <span class='vec'>A</span> · <span class='vec'>B</span> = AB·cos90° = <strong>0</strong>[span_67](start_span)[span_67](end_span).",
+            "સદિશનો પોતાની સાથેનો અદિશ ગુણાકાર તેના મૂલ્યના વર્ગ જેટલો થાય છે: <span class='vec'>A</span> · <span class='vec'>A</span> = A<sup>2</sup> &nbsp;⇒&nbsp; |<span class='vec'>A</span>| = <span class='sqrt'>√<span class='sqrt-rad'><span class='vec'>A</span> · <span class='vec'>A</span></span></span>[span_68](start_span)[span_68](end_span).",
+            "લંબ એકમ સદિશો માટે: <strong>î·î = ĵ·ĵ = k̂·k̂ = 1</strong> અને <strong>î·ĵ = ĵ·k̂ = k̂·î = 0</strong>[span_69](start_span)[span_69](end_span)."
+          ],
+          "formula": "cosθ = <span class='frac'><span><span class='vec'>A</span> · <span class='vec'>B</span></span><span>AB</span></span> &nbsp;|&nbsp; î·î = 1, &nbsp; î·ĵ = 0"
+        },
+        {
+          "id": 3,
+          "title": "અચળ બળ વડે થતું કાર્ય (Work)",
+          "enTitle": "Work Done by a Constant Force",
+          "theme": "amber",
+          "icon": "🏗️",
+          "points": [
+            "બળના સ્થાનાંતરની દિશામાંના ઘટક (F·cosθ) અને સ્થાનાંતરના મૂલ્ય (d) ના ગુણાકારને <strong>કાર્ય (W)</strong> કહે છે[span_70](start_span)[span_70](end_span).",
+            "કાર્ય એ બળ <span class='vec'>F</span> અને સ્થાનાંતર <span class='vec'>d</span> નો અદિશ ગુણાકાર હોવાથી કાર્ય <strong>અદિશ રાશિ</strong> છે[span_71](start_span)[span_71](end_span).",
+            "કાર્યનો SI એકમ <strong>જૂલ (J = N·m = kg·m<sup>2</sup>/s<sup>2</sup>)</strong>, CGS એકમ <strong>અર્ગ (erg = dyne·cm)</strong> છે (1 J = 10<sup>7</sup> erg) અને પારિમાણિક સૂત્ર <strong>[M<sup>1</sup>L<sup>2</sup>T<sup>-2</sup>]</strong> છે[span_72](start_span)[span_72](end_span)."
+          ],
+          "formula": "W = <span class='vec'>F</span> · <span class='vec'>d</span> = Fd·cosθ"
+        },
+        {
+          "id": 4,
+          "title": "ધન, ઋણ અને શૂન્ય કાર્યની શરતો",
+          "enTitle": "Positive, Negative & Zero Work",
+          "theme": "purple",
+          "icon": "⚖️",
+          "points": [
+            "<strong>ધન કાર્ય (W > 0):</strong> જ્યારે 0° ≤ θ < 90° હોય ત્યારે બળ વડે પદાર્થ પર કાર્ય થાય છે અને ગતિઊર્જા વધે છે[span_73](start_span)[span_73](end_span)[span_74](start_span)[span_74](end_span).",
+            "<strong>ઋણ કાર્ય (W < 0):</strong> જ્યારે 90° < θ ≤ 180° હોય ત્યારે પદાર્થ વડે બળની વિરુદ્ધ દિશામાં કાર્ય થાય છે અને ગતિઊર્જા ઘટે છે[span_75](start_span)[span_75](end_span)[span_76](start_span)[span_76](end_span).",
+            "<strong>શૂન્ય કાર્ય (W = 0):</strong> (૧) બળ શૂન્ય હોય, (૨) સ્થાનાંતર શૂન્ય હોય, અથવા (૩) બળ અને સ્થાનાંતર પરસ્પર લંબ (θ = 90°) હોય (દા.ત. કેન્દ્રગામી બળ વડે કાર્ય)[span_77](start_span)[span_77](end_span)."
+          ],
+          "formula": "θ = 0° ⇒ W = +Fd &nbsp;|&nbsp; θ = 90° ⇒ W = 0 &nbsp;|&nbsp; θ = 180° ⇒ W = -Fd"
+        },
+        {
+          "id": 5,
+          "title": "ઊર્જાના વ્યાવહારિક એકમો",
+          "enTitle": "Alternative Units of Energy",
+          "theme": "peach",
+          "icon": "⚡",
+          "points": [
+            "<strong>અર્ગ (erg):</strong> 1 erg = 10<sup>-7</sup> J[span_78](start_span)[span_78](end_span).",
+            "<strong>ઇલેક્ટ્રોન વોલ્ટ (eV):</strong> પરમાણુ અને ન્યુક્લિયર ભૌતિકવિજ્ઞાનમાં વપરાય છે; 1 eV = 1.6 × 10<sup>-19</sup> J[span_79](start_span)[span_79](end_span).",
+            "<strong>કેલરી (cal):</strong> ઉષ્માઊર્જા માટે; 1 cal = 4.186 J[span_80](start_span)[span_80](end_span).",
+            "<strong>કિલોવોટ-અવર (kWh):</strong> વિદ્યુત ઊર્જાનો વ્યાવહારિક એકમ (1 યુનિટ); 1 kWh = 3.6 × 10<sup>6</sup> J[span_81](start_span)[span_81](end_span)[span_82](start_span)[span_82](end_span)."
+          ],
+          "formula": "1 kWh = 3.6 × 10<sup>6</sup> J &nbsp;|&nbsp; 1 eV = 1.6 × 10<sup>-19</sup> J"
+        },
+        {
+          "id": 6,
+          "title": "ગતિઊર્જા (Kinetic Energy) અને વેગમાન સંબંધ",
+          "enTitle": "Kinetic Energy & Momentum Relation",
+          "theme": "sky",
+          "icon": "🏃",
+          "points": [
+            "પદાર્થની ગતિના કારણે તેમાં રહેલી કાર્ય કરવાની ક્ષમતાને <strong>ગતિઊર્જા (K)</strong> કહે છે: K = <span class='frac'><span>1</span><span>2</span></span>mv<sup>2</sup>[span_83](start_span)[span_83](end_span).",
+            "ગતિઊર્જા (K) અને રેખીય વેગમાન (p = mv) વચ્ચેનો સંબંધ: <strong>K = <span class='frac'><span>p<sup>2</sup></span><span>2m</span></span></strong> અથવા <strong>p = <span class='sqrt'>√<span class='sqrt-rad'>2mK</span></span></strong>[span_84](start_span)[span_84](end_span).",
+            "જો બે પદાર્થોના વેગમાન સમાન હોય, તો હલકા પદાર્થની ગતિઊર્જા વધુ હોય છે (K ∝ <span class='frac'><span>1</span><span>m</span></span>); અને જો ગતિઊર્જા સમાન હોય, તો ભારે પદાર્થનું વેગમાન વધુ હોય છે (p ∝ <span class='sqrt'>√<span class='sqrt-rad'>m</span></span>)[span_85](start_span)[span_85](end_span)."
+          ],
+          "formula": "K = <span class='frac'><span>1</span><span>2</span></span>mv<sup>2</sup> = <span class='frac'><span>p<sup>2</sup></span><span>2m</span></span> &nbsp;|&nbsp; p = <span class='sqrt'>√<span class='sqrt-rad'>2mK</span></span>"
+        },
+        {
+          "id": 7,
+          "title": "ચલબળ વડે થતું કાર્ય (Variable Force)",
+          "enTitle": "Work Done by a Variable Force",
+          "theme": "mint",
+          "icon": "📈",
+          "points": [
+            "જે બળનું મૂલ્ય કે દિશા સ્થાન અથવા સમય સાથે બદલાતા હોય તેને <strong>ચલબળ</strong> કહે છે[span_86](start_span)[span_86](end_span).",
+            "એક પરિમાણમાં પ્રારંભિક સ્થાન x<sub>i</sub> થી અંતિમ સ્થાન x<sub>f</sub> સુધી ચલબળ F(x) વડે થતું કાર્ય બળના સ્થાન પરના નિયત સંકલન વડે મળે છે[span_87](start_span)[span_87](end_span).",
+            "ભૌમિતિક રીતે: <strong>F(x) વિરુદ્ધ x ના આલેખ નીચે ઘેરાતા પ્રદેશનું ક્ષેત્રફળ</strong> ચલબળ વડે થતું કાર્ય દર્શાવે છે[span_88](start_span)[span_88](end_span)."
+          ],
+          "formula": "W = ∫<sub>x<sub>i</sub></sub><sup>x<sub>f</sub></sup> F(x)·dx = F(x) → x આલેખનું ક્ષેત્રફળ"
+        },
+        {
+          "id": 8,
+          "title": "કાર્ય-ઊર્જા પ્રમેય (Work-Energy Theorem)",
+          "enTitle": "Work-Energy Theorem",
+          "theme": "amber",
+          "icon": "🔄",
+          "points": [
+            "પદાર્થની ગતિઊર્જામાં થતો ફેરફાર તેના પર લાગતા પરિણામી (ચોખ્ખા) બળ વડે થતાં કાર્ય જેટલો હોય છે: <strong>ΔK = K<sub>f</sub> - K<sub>i</sub> = W</strong>[span_89](start_span)[span_89](end_span)[span_90](start_span)[span_90](end_span).",
+            "આ પ્રમેય અચળ બળ અને ચલબળ બંને માટે તેમજ સંરક્ષી અને અસંરક્ષી બંને પ્રકારના બળો માટે સત્ય છે[span_91](start_span)[span_91](end_span)[span_92](start_span)[span_92](end_span).",
+            "કાર્ય-ઊર્જા પ્રમેય એ ન્યૂટનના ગતિના બીજા નિયમનું સંકલિત (Scalar) સ્વરૂપ છે[span_93](start_span)[span_93](end_span)."
+          ],
+          "formula": "ΔK = K<sub>f</sub> - K<sub>i</sub> = <span class='frac'><span>1</span><span>2</span></span>mv<sup>2</sup> - <span class='frac'><span>1</span><span>2</span></span>mu<sup>2</sup> = W<sub>net</sub>"
+        },
+        {
+          "id": 9,
+          "title": "સ્થિતિઊર્જા અને ગુરુત્વીય સ્થિતિઊર્જા",
+          "enTitle": "Potential Energy & Gravitational PE",
+          "theme": "purple",
+          "icon": "🏔️",
+          "points": [
+            "પદાર્થની વિશિષ્ટ સ્થિતિ (સ્થાન) અથવા ગોઠવણી (સંરચના) ના કારણે તેમાં રહેલી કાર્ય કરવાની ક્ષમતાને <strong>સ્થિતિઊર્જા (V)</strong> કહે છે[span_94](start_span)[span_94](end_span).",
+            "પૃથ્વીની સપાટીથી h ઊંચાઈએ m દળના પદાર્થની ગુરુત્વીય સ્થિતિઊર્જા <strong>V(h) = mgh</strong> છે, જે ગુરુત્વાકર્ષણ બળ વડે થયેલા કાર્યના ઋણ મૂલ્ય (-W<sub>g</sub>) જેટલી હોય છે[span_95](start_span)[span_95](end_span).",
+            "સ્થિતિઊર્જા માત્ર સંરક્ષી બળો માટે જ વ્યાખ્યાયિત થાય છે; તેનો SI એકમ જૂલ (J) અને પારિમાણિક સૂત્ર [M<sup>1</sup>L<sup>2</sup>T<sup>-2</sup>] છે[span_96](start_span)[span_96](end_span)[span_97](start_span)[span_97](end_span)."
+          ],
+          "formula": "V(h) = mgh &nbsp;|&nbsp; ΔV = -W<sub>conservative</sub>"
+        },
+        {
+          "id": 10,
+          "title": "સંરક્ષી અને અસંરક્ષી બળો",
+          "enTitle": "Conservative & Non-Conservative Forces",
+          "theme": "peach",
+          "icon": "🔁",
+          "points": [
+            "<strong>સંરક્ષી બળ:</strong> જે બળ વડે થતું કાર્ય માત્ર પ્રારંભિક અને અંતિમ સ્થાન પર આધાર રાખે, ગતિમાર્ગ પર આધાર ન રાખે (બંધ માર્ગ પર કાર્ય શૂન્ય)[span_98](start_span)[span_98](end_span). દા.ત. ગુરુત્વાકર્ષણ, વિદ્યુત અને સ્પ્રિંગ બળ[span_99](start_span)[span_99](end_span)[span_100](start_span)[span_100](end_span).",
+            "<strong>અસંરક્ષી બળ:</strong> જે બળ વડે થતું કાર્ય ગતિપથની લંબાઈ કે વેગ પર આધાર રાખે[span_101](start_span)[span_101](end_span). દા.ત. ઘર્ષણબળ, શ્યાનતા બળ[span_102](start_span)[span_102](end_span).",
+            "સંરક્ષી બળ અને સ્થિતિઊર્જા વચ્ચેનો સંબંધ: <strong>F(x) = -<span class='frac'><span>dV</span><span>dx</span></span></strong> (સ્થિતિઊર્જાના સ્થાન સાપેક્ષ વિકલનનું ઋણ મૂલ્ય)[span_103](start_span)[span_103](end_span)."
+          ],
+          "formula": "F = -<span class='frac'><span>dV</span><span>dx</span></span> &nbsp;|&nbsp; ∮<span class='vec'>F</span><sub>c</sub>·d<span class='vec'>r</span> = 0"
+        },
+        {
+          "id": 11,
+          "title": "યાંત્રિક ઊર્જા સંરક્ષણનો નિયમ",
+          "enTitle": "Conservation of Mechanical Energy",
+          "theme": "sky",
+          "icon": "♾️",
+          "points": [
+            "પદાર્થની ગતિઊર્જા (K) અને સ્થિતિઊર્જા (V) ના સરવાળાને કુલ <strong>યાંત્રિક ઊર્જા (E = K + V)</strong> કહે છે[span_104](start_span)[span_104](end_span).",
+            "<strong>નિયમ:</strong> જો તંત્ર પર માત્ર સંરક્ષી બળો વડે જ કાર્ય થતું હોય, તો તંત્રની કુલ યાંત્રિક ઊર્જા અચળ રહે છે (સંરક્ષણ થાય છે)[span_105](start_span)[span_105](end_span).",
+            "એટલે કે ΔK + ΔV = 0 &nbsp;⇒&nbsp; <strong>K<sub>i</sub> + V<sub>i</sub> = K<sub>f</sub> + V<sub>f</sub> = અચળ</strong>[span_106](start_span)[span_106](end_span)."
+          ],
+          "formula": "E = K + V = અચળ &nbsp;|&nbsp; K<sub>i</sub> + V<sub>i</sub> = K<sub>f</sub> + V<sub>f</sub>"
+        },
+        {
+          "id": 12,
+          "title": "હુકનો નિયમ અને સ્પ્રિંગની સ્થિતિઊર્જા",
+          "enTitle": "Hooke's Law & Spring Potential Energy",
+          "theme": "mint",
+          "icon": "🌀",
+          "points": [
+            "<strong>હુકનો નિયમ:</strong> સ્પ્રિંગની સમપ્રમાણતાની હદમાં સ્પ્રિંગમાં ઉદ્ભવતું પુનઃસ્થાપક બળ (F<sub>s</sub>) સ્થાનાંતર (x) ના સમપ્રમાણમાં અને વિરુદ્ધ દિશામાં હોય છે: <strong>F<sub>s</sub> = -kx</strong>[span_107](start_span)[span_107](end_span).",
+            "જ્યાં k એ સ્પ્રિંગ અચળાંક છે (SI એકમ: <strong>N·m<sup>-1</sup></strong>, પારિમાણિક સૂત્ર: [M<sup>1</sup>L<sup>0</sup>T<sup>-2</sup>])[span_108](start_span)[span_108](end_span). કડક સ્પ્રિંગ માટે k મોટો અને નરમ સ્પ્રિંગ માટે k નાનો હોય છે[span_109](start_span)[span_109](end_span).",
+            "સ્પ્રિંગને x જેટલી ખેંચતા કે દબાવતા સ્પ્રિંગ બળ વડે થતું કાર્ય W<sub>s</sub> = -<span class='frac'><span>1</span><span>2</span></span>kx<sup>2</sup> અને સંગ્રહિત સ્થિતિઊર્જા <strong>V(x) = <span class='frac'><span>1</span><span>2</span></span>kx<sup>2</sup></strong> થાય છે[span_110](start_span)[span_110](end_span)[span_111](start_span)[span_111](end_span)."
+          ],
+          "formula": "F<sub>s</sub> = -kx &nbsp;|&nbsp; V(x) = <span class='frac'><span>1</span><span>2</span></span>kx<sup>2</sup>"
+        },
+        {
+          "id": 13,
+          "title": "સ્પ્રિંગ-બ્લોક તંત્રમાં ઊર્જા સંરક્ષણ અને આલેખ",
+          "enTitle": "Energy Conservation in Spring System",
+          "theme": "amber",
+          "icon": "📊",
+          "points": [
+            "મહત્તમ કંપવિસ્તાર x<sub>m</sub> સુધી ખેંચીને છોડેલા બ્લોક માટે કોઈ પણ x સ્થાને કુલ યાંત્રિક ઊર્જા: E = <span class='frac'><span>1</span><span>2</span></span>kx<sup>2</sup> + <span class='frac'><span>1</span><span>2</span></span>mv<sup>2</sup> = <span class='frac'><span>1</span><span>2</span></span>kx<sub>m</sub><sup>2</sup>[span_112](start_span)[span_112](end_span).",
+            "સંતુલન સ્થાને (x = 0): સ્થિતિઊર્જા શૂન્ય (V = 0) અને ગતિઊર્જા મહત્તમ (K<sub>max</sub> = <span class='frac'><span>1</span><span>2</span></span>mv<sub>m</sub><sup>2</sup> = <span class='frac'><span>1</span><span>2</span></span>kx<sub>m</sub><sup>2</sup>) હોય છે[span_113](start_span)[span_113](end_span)[span_114](start_span)[span_114](end_span).",
+            "અંત્ય બિંદુઓએ (x = ±x<sub>m</sub>): ગતિઊર્જા શૂન્ય (K = 0) અને સ્થિતિઊર્જા મહત્તમ (V<sub>max</sub> = <span class='frac'><span>1</span><span>2</span></span>kx<sub>m</sub><sup>2</sup>) હોય છે[span_115](start_span)[span_115](end_span)."
+          ],
+          "formula": "v<sub>m</sub> = <span class='sqrt'>√<span class='sqrt-rad'><span class='frac'><span>k</span><span>m</span></span></span></span> · x<sub>m</sub>"
+        },
+        {
+          "id": 14,
+          "title": "પાવર (Power) અને તેના એકમો",
+          "enTitle": "Power & Horsepower",
+          "theme": "purple",
+          "icon": "🔌",
+          "points": [
+            "કાર્ય કરવાના સમયદરને <strong>પાવર (કાર્યત્વરા)</strong> કહે છે: સરેરાશ પાવર &lt;P&gt; = <span class='frac'><span>ΔW</span><span>Δt</span></span> અને તાત્ક્ષણિક પાવર P = <span class='frac'><span>dW</span><span>dt</span></span> = <span class='vec'>F</span> · <span class='vec'>v</span> = Fv·cosθ[span_116](start_span)[span_116](end_span).",
+            "પાવર <strong>અદિશ રાશિ</strong> છે; તેનો SI એકમ <strong>વોટ (W = J/s)</strong> અને પારિમાણિક સૂત્ર <strong>[M<sup>1</sup>L<sup>2</sup>T<sup>-3</sup>]</strong> છે[span_117](start_span)[span_117](end_span).",
+            "વ્યાવહારિક એકમ: <strong>1 હોર્સપાવર (1 hp) = 746 W</strong>[span_118](start_span)[span_118](end_span). પાવર-સમય (P-t) આલેખ નીચેનું ક્ષેત્રફળ કુલ કાર્ય (W = ∫P·dt) આપે છે[span_119](start_span)[span_119](end_span)."
+          ],
+          "formula": "P = <span class='frac'><span>dW</span><span>dt</span></span> = <span class='vec'>F</span> · <span class='vec'>v</span> &nbsp;|&nbsp; 1 hp = 746 W"
+        },
+        {
+          "id": 15,
+          "title": "શિરોલંબ વર્તુળમાં ગતિ (Vertical Circular Motion)",
+          "enTitle": "Motion in a Vertical Circle",
+          "theme": "peach",
+          "icon": "🎡",
+          "points": [
+            "r લંબાઈની દોરી સાથે બાંધેલા m દળના પદાર્થના શિરોલંબ વર્તુળમાં કોઈ θ કોણે દોરીમાં તણાવ: T = <span class='frac'><span>mv<sup>2</sup></span><span>r</span></span> + mg·cosθ[span_120](start_span)[span_120](end_span).",
+            "સૌથી નીચેના બિંદુએ (L, θ = 0°): તણાવ T<sub>L</sub> = <span class='frac'><span>mv<sub>L</sub><sup>2</sup></span><span>r</span></span> + mg; અને સૌથી ઉપરના બિંદુએ (H, θ = 180°): T<sub>H</sub> = <span class='frac'><span>mv<sub>H</sub><sup>2</sup></span><span>r</span></span> - mg (T<sub>L</sub> - T<sub>H</sub> = 6mg)[span_121](start_span)[span_121](end_span).",
+            "વર્તુળ પૂર્ણ કરવા માટે લઘુત્તમ વેગ: ટોચ પર <strong>v<sub>H</sub> = <span class='sqrt'>√<span class='sqrt-rad'>gr</span></span></strong>, સમક્ષિતિજ સ્થાને <strong>v = <span class='sqrt'>√<span class='sqrt-rad'>3gr</span></span></strong> અને તળિયે <strong>v<sub>L</sub> = <span class='sqrt'>√<span class='sqrt-rad'>5gr</span></span></strong>[span_122](start_span)[span_122](end_span)."
+          ],
+          "formula": "v<sub>L</sub> = <span class='sqrt'>√<span class='sqrt-rad'>5gr</span></span> &nbsp;|&nbsp; v<sub>H</sub> = <span class='sqrt'>√<span class='sqrt-rad'>gr</span></span> &nbsp;|&nbsp; h<sub>min</sub> = <span class='frac'><span>5r</span><span>2</span></span>"
+        },
+        {
+          "id": 16,
+          "title": "સંઘાત (અથડામણ) અને રેસ્ટિટ્યુશન ગુણાંક",
+          "enTitle": "Collisions & Coefficient of Restitution",
+          "theme": "sky",
+          "icon": "🎱",
+          "points": [
+            "દરેક પ્રકારના સંઘાતમાં <strong>કુલ રેખીય વેગમાન</strong> અને <strong>કુલ ઊર્જાનું</strong> સંરક્ષણ થાય જ છે[span_123](start_span)[span_123](end_span)[span_124](start_span)[span_124](end_span).",
+            "<strong>સ્થિતિસ્થાપક સંઘાત:</strong> વેગમાન અને ગતિઊર્જા બંનેનું સંરક્ષણ થાય છે (સંરક્ષી બળો માટે)[span_125](start_span)[span_125](end_span)[span_126](start_span)[span_126](end_span).",
+            "<strong>રેસ્ટિટ્યુશન ગુણાંક (e):</strong> સંઘાત બાદ સાપેક્ષ વેગ અને સંઘાત પહેલાંના સાપેક્ષ વેગના ગુણોત્તરને e કહે છે[span_127](start_span)[span_127](end_span). પૂર્ણ સ્થિતિસ્થાપક માટે <strong>e = 1</strong>, પૂર્ણ અસ્થિતિસ્થાપક માટે <strong>e = 0</strong>, અને સામાન્ય અસ્થિતિસ્થાપક માટે <strong>0 < e < 1</strong>[span_128](start_span)[span_128](end_span)."
+          ],
+          "formula": "e = <span class='frac'><span>v<sub>2</sub> - v<sub>1</sub></span><span>u<sub>1</sub> - u<sub>2</sub></span></span> &nbsp;|&nbsp; (Elastic: e = 1, Inelastic: e = 0)"
+        },
+        {
+          "id": 17,
+          "title": "એક પરિમાણમાં સ્થિતિસ્થાપક સંઘાતના સૂત્રો",
+          "enTitle": "1D Elastic Collision Velocities",
+          "theme": "mint",
+          "icon": "💥",
+          "points": [
+            "સંઘાત પહેલાં સાપેક્ષ વેગ = સંઘાત બાદ સાપેક્ષ વેગ: <strong>u<sub>1</sub> - u<sub>2</sub> = v<sub>2</sub> - v<sub>1</sub></strong>[span_129](start_span)[span_129](end_span).",
+            "પ્રથમ પદાર્થનો અંતિમ વેગ: v<sub>1</sub> = (<span class='frac'><span>m<sub>1</sub> - m<sub>2</sub></span><span>m<sub>1</sub> + m<sub>2</sub></span></span>)u<sub>1</sub> + (<span class='frac'><span>2m<sub>2</sub></span><span>m<sub>1</sub> + m<sub>2</sub></span></span>)u<sub>2</sub>[span_130](start_span)[span_130](end_span).",
+            "બીજા પદાર્થનો અંતિમ વેગ: v<sub>2</sub> = (<span class='frac'><span>m<sub>2</sub> - m<sub>1</sub></span><span>m<sub>1</sub> + m<sub>2</sub></span></span>)u<sub>2</sub> + (<span class='frac'><span>2m<sub>1</sub></span><span>m<sub>1</sub> + m<sub>2</sub></span></span>)u<sub>1</sub>[span_131](start_span)[span_131](end_span)."
+          ],
+          "formula": "v<sub>1</sub> = (<span class='frac'><span>m<sub>1</sub> - m<sub>2</sub></span><span>m<sub>1</sub> + m<sub>2</sub></span></span>)u<sub>1</sub> + (<span class='frac'><span>2m<sub>2</sub></span><span>m<sub>1</sub> + m<sub>2</sub></span></span>)u<sub>2</sub>"
+        },
+        {
+          "id": 18,
+          "title": "સ્થિતિસ્થાપક સંઘાતના ત્રણ ખાસ કિસ્સા",
+          "enTitle": "Special Cases of Elastic Collision",
+          "theme": "amber",
+          "icon": "🎯",
+          "points": [
+            "<strong>કિસ્સો ૧ (સમાન દળ, m<sub>1</sub> = m<sub>2</sub>):</strong> બંને ગોળાઓ પોતાના વેગની અદલાબદલી કરે છે (v<sub>1</sub> = u<sub>2</sub>, v<sub>2</sub> = u<sub>1</sub>; જો u<sub>2</sub> = 0 તો v<sub>1</sub> = 0, v<sub>2</sub> = u<sub>1</sub>)[span_132](start_span)[span_132](end_span)[span_133](start_span)[span_133](end_span).",
+            "<strong>કિસ્સો ૨ (ભારે લક્ષ્ય સ્થિર, m<sub>2</sub> >> m<sub>1</sub>, u<sub>2</sub> = 0):</strong> હલકો ગોળો તેટલી જ ઝડપથી પાછો ફેંકાય છે (<strong>v<sub>1</sub> ≈ -u<sub>1</sub></strong>) અને ભારે ગોળો સ્થિર રહે છે (v<sub>2</sub> ≈ 0)[span_134](start_span)[span_134](end_span)[span_135](start_span)[span_135](end_span).",
+            "<strong>કિસ્સો ૩ (હલકું લક્ષ્ય સ્થિર, m<sub>1</sub> >> m<sub>2</sub>, u<sub>2</sub> = 0):</strong> ભારે ગોળો લગભગ તે જ વેગથી આગળ વધે છે (v<sub>1</sub> ≈ u<sub>1</sub>) અને હલકો ગોળો બમણી ઝડપથી (<strong>v<sub>2</sub> ≈ 2u<sub>1</sub></strong>) ગતિ કરે છે[span_136](start_span)[span_136](end_span)[span_137](start_span)[span_137](end_span)."
+          ],
+          "formula": "m<sub>1</sub> = m<sub>2</sub> ⇒ વેગની અદલાબદલી &nbsp;|&nbsp; m<sub>1</sub> >> m<sub>2</sub> ⇒ v<sub>2</sub> = 2u<sub>1</sub>"
+        },
+        {
+          "id": 19,
+          "title": "સંપૂર્ણ અસ્થિતિસ્થાપક સંઘાત (Completely Inelastic)",
+          "enTitle": "Completely Inelastic Collision",
+          "theme": "purple",
+          "icon": "🧱",
+          "points": [
+            "જે અથડામણમાં બંને પદાર્થો અથડાયા પછી ચોંટી જઈને સમાન અંતિમ વેગ (v<sub>f</sub>) થી સંયુક્ત તંત્ર તરીકે ગતિ કરે, તેને <strong>સંપૂર્ણ અસ્થિતિસ્થાપક સંઘાત (e = 0)</strong> કહે છે[span_138](start_span)[span_138](end_span)[span_139](start_span)[span_139](end_span)[span_140](start_span)[span_140](end_span).",
+            "વેગમાન સંરક્ષણ પરથી સંયુક્ત વેગ: <strong>v<sub>f</sub> = <span class='frac'><span>m<sub>1</sub>u<sub>1</sub> + m<sub>2</sub>u<sub>2</sub></span><span>m<sub>1</sub> + m<sub>2</sub></span></span></strong> (જો u<sub>2</sub> = 0 તો v<sub>f</sub> = <span class='frac'><span>m<sub>1</sub>u<sub>1</sub></span><span>m<sub>1</sub> + m<sub>2</sub></span></span>)[span_141](start_span)[span_141](end_span).",
+            "આ સંઘાતમાં ગતિઊર્જાનું સંરક્ષણ થતું નથી; ગતિઊર્જાનો મહત્તમ વ્યય આંતરિક ઊર્જા/ઉષ્મામાં થાય છે[span_142](start_span)[span_142](end_span)[span_143](start_span)[span_143](end_span)."
+          ],
+          "formula": "v<sub>f</sub> = <span class='frac'><span>m<sub>1</sub>u<sub>1</sub> + m<sub>2</sub>u<sub>2</sub></span><span>m<sub>1</sub> + m<sub>2</sub></span></span> &nbsp;|&nbsp; ΔK = <span class='frac'><span>1</span><span>2</span></span>(<span class='frac'><span>m<sub>1</sub>m<sub>2</sub></span><span>m<sub>1</sub> + m<sub>2</sub></span></span>)(u<sub>1</sub> - u<sub>2</sub>)<sup>2</sup>"
+        },
+        {
+          "id": 20,
+          "title": "અસ્થિતિસ્થાપક સંઘાતમાં વેગ અને ઊર્જા વ્યય",
+          "enTitle": "General Inelastic Collision (0 < e < 1)",
+          "theme": "peach",
+          "icon": "📉",
+          "points": [
+            "રેસ્ટિટ્યુશન ગુણાંક e ધરાવતા એક-પરિમાણીય અસ્થિતિસ્થાપક સંઘાત બાદ અંતિમ વેગો: v<sub>1</sub> = (<span class='frac'><span>m<sub>1</sub> - em<sub>2</sub></span><span>m<sub>1</sub> + m<sub>2</sub></span></span>)u<sub>1</sub> + (<span class='frac'><span>(1 + e)m<sub>2</sub></span><span>m<sub>1</sub> + m<sub>2</sub></span></span>)u<sub>2</sub>[span_144](start_span)[span_144](end_span).",
+            "બીજા પદાર્થનો અંતિમ વેગ: v<sub>2</sub> = (<span class='frac'><span>(1 + e)m<sub>1</sub></span><span>m<sub>1</sub> + m<sub>2</sub></span></span>)u<sub>1</sub> + (<span class='frac'><span>m<sub>2</sub> - em<sub>1</sub></span><span>m<sub>1</sub> + m<sub>2</sub></span></span>)u<sub>2</sub>[span_145](start_span)[span_145](end_span).",
+            "સંઘાત દરમિયાન ગતિઊર્જામાં થતો ઘટાડો: <strong>ΔK = <span class='frac'><span>1</span><span>2</span></span>[<span class='frac'><span>m<sub>1</sub>m<sub>2</sub></span><span>m<sub>1</sub> + m<sub>2</sub></span></span>](1 - e<sup>2</sup>)(u<sub>1</sub> - u<sub>2</sub>)<sup>2</sup></strong>[span_146](start_span)[span_146](end_span)."
+          ],
+          "formula": "ΔK = <span class='frac'><span>1</span><span>2</span></span>[<span class='frac'><span>m<sub>1</sub>m<sub>2</sub></span><span>m<sub>1</sub> + m<sub>2</sub></span></span>](1 - e<sup>2</sup>)(u<sub>1</sub> - u<sub>2</sub>)<sup>2</sup>"
+        }
+      ],
+      "formulas": [
+        {
+          "id": 1,
+          "title": "સદિશોનો અદિશ ગુણાકાર અને ખૂણો",
+          "enTitle": "Scalar Product & Angle Formula",
+          "theme": "sky",
+          "icon": "📐",
+          "points": [
+            "ડોટ ગુણાકાર: <span class='vec'>A</span> · <span class='vec'>B</span> = AB·cosθ = A<sub>x</sub>B<sub>x</sub> + A<sub>y</sub>B<sub>y</sub> + A<sub>z</sub>B<sub>z</sub>[span_147](start_span)[span_147](end_span)[span_148](start_span)[span_148](end_span)",
+            "બે સદિશો વચ્ચેનો ખૂણો: cosθ = <span class='frac'><span>A<sub>x</sub>B<sub>x</sub> + A<sub>y</sub>B<sub>y</sub> + A<sub>z</sub>B<sub>z</sub></span><span><span class='sqrt'>√<span class='sqrt-rad'>A<sub>x</sub><sup>2</sup>+A<sub>y</sub><sup>2</sup>+A<sub>z</sub><sup>2</sup></span></span> · <span class='sqrt'>√<span class='sqrt-rad'>B<sub>x</sub><sup>2</sup>+B<sub>y</sub><sup>2</sup>+B<sub>z</sub><sup>2</sup></span></span></span></span>[span_149](start_span)[span_149](end_span)",
+            "લંબ સદિશોની શરત: <span class='vec'>A</span> ⊥ <span class='vec'>B</span> &nbsp;⇔&nbsp; <span class='vec'>A</span> · <span class='vec'>B</span> = 0[span_150](start_span)[span_150](end_span)"
+          ],
+          "formula": "<span class='vec'>A</span> · <span class='vec'>B</span> = AB·cosθ &nbsp;|&nbsp; cosθ = <span class='frac'><span><span class='vec'>A</span> · <span class='vec'>B</span></span><span>AB</span></span>"
+        },
+        {
+          "id": 2,
+          "title": "અચળ અને ચલબળ વડે થતું કાર્ય",
+          "enTitle": "Work by Constant & Variable Force",
+          "theme": "mint",
+          "icon": "🏗️",
+          "points": [
+            "અચળ બળ વડે કાર્ય: W = <span class='vec'>F</span> · <span class='vec'>d</span> = Fd·cosθ[span_151](start_span)[span_151](end_span)",
+            "એક પરિમાણમાં ચલબળ વડે કાર્ય: W = ∫<sub>x<sub>i</sub></sub><sup>x<sub>f</sub></sup> F(x)·dx[span_152](start_span)[span_152](end_span)",
+            "ત્રિ-પરિમાણમાં ચલબળ વડે કાર્ય: W = ∫<span class='vec'>F</span> · d<span class='vec'>r</span>"
+          ],
+          "formula": "W = Fd·cosθ &nbsp;|&nbsp; W = ∫<sub>x<sub>i</sub></sub><sup>x<sub>f</sub></sup> F(x)·dx"
+        },
+        {
+          "id": 3,
+          "title": "ગતિઊર્જા, વેગમાન અને કાર્ય-ઊર્જા પ્રમેય",
+          "enTitle": "Kinetic Energy & Work-Energy Theorem",
+          "theme": "amber",
+          "icon": "🏃",
+          "points": [
+            "ગતિઊર્જા: K = <span class='frac'><span>1</span><span>2</span></span>mv<sup>2</sup> = <span class='frac'><span>p<sup>2</sup></span><span>2m</span></span> &nbsp;⇔&nbsp; p = <span class='sqrt'>√<span class='sqrt-rad'>2mK</span></span>[span_153](start_span)[span_153](end_span)",
+            "કાર્ય-ઊર્જા પ્રમેય: ΔK = K<sub>f</sub> - K<sub>i</sub> = <span class='frac'><span>1</span><span>2</span></span>mv<sup>2</sup> - <span class='frac'><span>1</span><span>2</span></span>mu<sup>2</sup> = W<sub>net</sub>[span_154](start_span)[span_154](end_span)[span_155](start_span)[span_155](end_span)"
+          ],
+          "formula": "K = <span class='frac'><span>p<sup>2</sup></span><span>2m</span></span> &nbsp;|&nbsp; ΔK = K<sub>f</sub> - K<sub>i</sub> = W<sub>net</sub>"
+        },
+        {
+          "id": 4,
+          "title": "સ્થિતિઊર્જા, સંરક્ષી બળ અને યાંત્રિક ઊર્જા સંરક્ષણ",
+          "enTitle": "Potential Energy & Mechanical Energy",
+          "theme": "purple",
+          "icon": "🏔️",
+          "points": [
+            "ગુરુત્વીય સ્થિતિઊર્જા: V(h) = mgh[span_156](start_span)[span_156](end_span)",
+            "સંરક્ષી બળ અને સ્થિતિઊર્જા સંબંધ: F = -<span class='frac'><span>dV</span><span>dx</span></span>[span_157](start_span)[span_157](end_span)",
+            "યાંત્રિક ઊર્જા સંરક્ષણ: E = K + V = અચળ &nbsp;⇒&nbsp; K<sub>i</sub> + V<sub>i</sub> = K<sub>f</sub> + V<sub>f</sub>[span_158](start_span)[span_158](end_span)"
+          ],
+          "formula": "F = -<span class='frac'><span>dV</span><span>dx</span></span> &nbsp;|&nbsp; K<sub>i</sub> + V<sub>i</sub> = K<sub>f</sub> + V<sub>f</sub>"
+        },
+        {
+          "id": 5,
+          "title": "સ્પ્રિંગ બળ, સ્થિતિઊર્જા અને મહત્તમ ઝડપ",
+          "enTitle": "Spring Force & Energy Equations",
+          "theme": "peach",
+          "icon": "🌀",
+          "points": [
+            "હુકનો નિયમ: F<sub>s</sub> = -kx &nbsp;(સ્પ્રિંગ અચળાંક k = <span class='frac'><span>F<sub>s</sub></span><span>x</span></span>)[span_159](start_span)[span_159](end_span)",
+            "સ્પ્રિંગની સ્થિતિસ્થાપક સ્થિતિઊર્જા: V(x) = <span class='frac'><span>1</span><span>2</span></span>kx<sup>2</sup>[span_160](start_span)[span_160](end_span)[span_161](start_span)[span_161](end_span)",
+            "સ્પ્રિંગ બ્લોકની મહત્તમ ઝડપ (x = 0 પર): v<sub>m</sub> = <span class='sqrt'>√<span class='sqrt-rad'><span class='frac'><span>k</span><span>m</span></span></span></span> · x<sub>m</sub>[span_162](start_span)[span_162](end_span)"
+          ],
+          "formula": "V(x) = <span class='frac'><span>1</span><span>2</span></span>kx<sup>2</sup> &nbsp;|&nbsp; v<sub>m</sub> = <span class='sqrt'>√<span class='sqrt-rad'><span class='frac'><span>k</span><span>m</span></span></span></span> · x<sub>m</sub>"
+        },
+        {
+          "id": 6,
+          "title": "પાવર અને ઊર્જા રૂપાંતર સંબંધો",
+          "enTitle": "Power & Energy Units",
+          "theme": "sky",
+          "icon": "🔌",
+          "points": [
+            "સરેરાશ પાવર: &lt;P&gt; = <span class='frac'><span>ΔW</span><span>Δt</span></span> &nbsp;|&nbsp; તાત્ક્ષણિક પાવર: P = <span class='frac'><span>dW</span><span>dt</span></span> = <span class='vec'>F</span> · <span class='vec'>v</span> = Fv·cosθ[span_163](start_span)[span_163](end_span)",
+            "પાવર-સમય સંકલનથી કાર્ય: W = ∫P·dt[span_164](start_span)[span_164](end_span)",
+            "1 hp = 746 W &nbsp;|&nbsp; 1 kWh = 3.6 × 10<sup>6</sup> J &nbsp;|&nbsp; 1 eV = 1.6 × 10<sup>-19</sup> J[span_165](start_span)[span_165](end_span)[span_166](start_span)[span_166](end_span)"
+          ],
+          "formula": "P = <span class='frac'><span>dW</span><span>dt</span></span> = <span class='vec'>F</span> · <span class='vec'>v</span> &nbsp;|&nbsp; 1 kWh = 3.6 × 10<sup>6</sup> J"
+        },
+        {
+          "id": 7,
+          "title": "શિરોલંબ વર્તુળમાં ગતિ (Vertical Circle)",
+          "enTitle": "Vertical Circular Motion Formulas",
+          "theme": "mint",
+          "icon": "🎡",
+          "points": [
+            "કોઈ θ કોણે દોરીમાં તણાવ: T = <span class='frac'><span>mv<sup>2</sup></span><span>r</span></span> + mg·cosθ[span_167](start_span)[span_167](end_span)",
+            "તળિયે તણાવ (θ = 0°): T<sub>L</sub> = <span class='frac'><span>mv<sub>L</sub><sup>2</sup></span><span>r</span></span> + mg &nbsp;|&nbsp; ટોચ પર (θ = 180°): T<sub>H</sub> = <span class='frac'><span>mv<sub>H</sub><sup>2</sup></span><span>r</span></span> - mg[span_168](start_span)[span_168](end_span)",
+            "લઘુત્તમ વેગો: v<sub>H</sub> = <span class='sqrt'>√<span class='sqrt-rad'>gr</span></span>, &nbsp; v<sub>mid</sub> = <span class='sqrt'>√<span class='sqrt-rad'>3gr</span></span>, &nbsp; v<sub>L</sub> = <span class='sqrt'>√<span class='sqrt-rad'>5gr</span></span> &nbsp;|&nbsp; લઘુત્તમ ઊંચાઈ h = <span class='frac'><span>5r</span><span>2</span></span>[span_169](start_span)[span_169](end_span)"
+          ],
+          "formula": "v<sub>L</sub> = <span class='sqrt'>√<span class='sqrt-rad'>5gr</span></span> &nbsp;|&nbsp; v<sub>H</sub> = <span class='sqrt'>√<span class='sqrt-rad'>gr</span></span> &nbsp;|&nbsp; T<sub>L</sub> - T<sub>H</sub> = 6mg"
+        },
+        {
+          "id": 8,
+          "title": "એક પરિમાણમાં સ્થિતિસ્થાપક સંઘાત (e = 1)",
+          "enTitle": "1D Elastic Collision Equations",
+          "theme": "amber",
+          "icon": "💥",
+          "points": [
+            "રેસ્ટિટ્યુશન ગુણાંક: e = <span class='frac'><span>v<sub>2</sub> - v<sub>1</sub></span><span>u<sub>1</sub> - u<sub>2</sub></span></span> = 1 &nbsp;⇒&nbsp; u<sub>1</sub> - u<sub>2</sub> = v<sub>2</sub> - v<sub>1</sub>[span_170](start_span)[span_170](end_span)[span_171](start_span)[span_171](end_span)",
+            "પ્રથમ કણનો અંતિમ વેગ: v<sub>1</sub> = (<span class='frac'><span>m<sub>1</sub> - m<sub>2</sub></span><span>m<sub>1</sub> + m<sub>2</sub></span></span>)u<sub>1</sub> + (<span class='frac'><span>2m<sub>2</sub></span><span>m<sub>1</sub> + m<sub>2</sub></span></span>)u<sub>2</sub>[span_172](start_span)[span_172](end_span)",
+            "બીજા કણનો અંતિમ વેગ: v<sub>2</sub> = (<span class='frac'><span>m<sub>2</sub> - m<sub>1</sub></span><span>m<sub>1</sub> + m<sub>2</sub></span></span>)u<sub>2</sub> + (<span class='frac'><span>2m<sub>1</sub></span><span>m<sub>1</sub> + m<sub>2</sub></span></span>)u<sub>1</sub>[span_173](start_span)[span_173](end_span)"
+          ],
+          "formula": "v<sub>1</sub> = (<span class='frac'><span>m<sub>1</sub>-m<sub>2</sub></span><span>m<sub>1</sub>+m<sub>2</sub></span></span>)u<sub>1</sub> + (<span class='frac'><span>2m<sub>2</sub></span><span>m<sub>1</sub>+m<sub>2</sub></span></span>)u<sub>2</sub>"
+        },
+        {
+          "id": 9,
+          "title": "અસ્થિતિસ્થાપક સંઘાત અને ગતિઊર્જા વ્યય",
+          "enTitle": "Inelastic Collision & Energy Loss",
+          "theme": "purple",
+          "icon": "🧱",
+          "points": [
+            "સંપૂર્ણ અસ્થિતિસ્થાપક સંઘાત (e = 0) માં સંયુક્ત વેગ: v<sub>f</sub> = <span class='frac'><span>m<sub>1</sub>u<sub>1</sub> + m<sub>2</sub>u<sub>2</sub></span><span>m<sub>1</sub> + m<sub>2</sub></span></span>[span_174](start_span)[span_174](end_span)[span_175](start_span)[span_175](end_span)",
+            "સામાન્ય અસ્થિતિસ્થાપક સંઘાત (0 < e < 1) માં ગતિઊર્જા વ્યય: ΔK = <span class='frac'><span>1</span><span>2</span></span>[<span class='frac'><span>m<sub>1</sub>m<sub>2</sub></span><span>m<sub>1</sub> + m<sub>2</sub></span></span>](1 - e<sup>2</sup>)(u<sub>1</sub> - u<sub>2</sub>)<sup>2</sup>[span_176](start_span)[span_176](end_span)",
+            "સંપૂર્ણ અસ્થિતિસ્થાપક સંઘાત (e = 0) માં ગતિઊર્જા વ્યય: ΔK = <span class='frac'><span>1</span><span>2</span></span>[<span class='frac'><span>m<sub>1</sub>m<sub>2</sub></span><span>m<sub>1</sub> + m<sub>2</sub></span></span>](u<sub>1</sub> - u<sub>2</sub>)<sup>2</sup>[span_177](start_span)[span_177](end_span)[span_178](start_span)[span_178](end_span)"
+          ],
+          "formula": "ΔK = <span class='frac'><span>1</span><span>2</span></span>[<span class='frac'><span>m<sub>1</sub>m<sub>2</sub></span><span>m<sub>1</sub> + m<sub>2</sub></span></span>](1 - e<sup>2</sup>)(u<sub>1</sub> - u<sub>2</sub>)<sup>2</sup>"
+        }
+      ],
+      "questions": [
+        {
+          "id": 1,
+          "title": "પરસ્પર લંબ સદિશોનો અદિશ ગુણાકાર કેટલો થાય?",
+          "enTitle": "1-Mark Question",
+          "theme": "sky",
+          "icon": "📐",
+          "points": [
+            "<strong>પ્રશ્ન:</strong> જો બે શૂન્યેતર સદિશો <span class='vec'>A</span> અને <span class='vec'>B</span> પરસ્પર લંબ હોય, તો તેમનો અદિશ ગુણાકાર કેટલો મળે[span_179](start_span)[span_179](end_span)?",
+            "<strong>જવાબ:</strong> પરસ્પર લંબ સદિશો વચ્ચેનો ખૂણો θ = 90° હોવાથી <span class='vec'>A</span> · <span class='vec'>B</span> = AB·cos90° = <strong>0 (શૂન્ય)</strong> થાય છે[span_180](start_span)[span_180](end_span)."
+          ],
+          "formula": "<span class='vec'>A</span> ⊥ <span class='vec'>B</span> &nbsp;⇒&nbsp; <span class='vec'>A</span> · <span class='vec'>B</span> = 0"
+        },
+        {
+          "id": 2,
+          "title": "એકમ સદિશો î·î અને î·ĵ ના મૂલ્યો જણાવો",
+          "enTitle": "1-Mark Question",
+          "theme": "mint",
+          "icon": "🎯",
+          "points": [
+            "<strong>પ્રશ્ન:</strong> કાર્તેઝિય યામાક્ષ પદ્ધતિના એકમ સદિશો માટે î·î અને î·ĵ ના મૂલ્યો લખો[span_181](start_span)[span_181](end_span).",
+            "<strong>જવાબ:</strong> સમાન એકમ સદિશો માટે <strong>î·î = ĵ·ĵ = k̂·k̂ = 1</strong> અને પરસ્પર લંબ એકમ સદિશો માટે <strong>î·ĵ = ĵ·k̂ = k̂·î = 0</strong> થાય છે[span_182](start_span)[span_182](end_span)."
+          ],
+          "formula": "î·î = 1 &nbsp;|&nbsp; î·ĵ = 0"
+        },
+        {
+          "id": 3,
+          "title": "૧ જૂલ (1 J) કાર્યની વ્યાખ્યા આપો",
+          "enTitle": "1-Mark Question",
+          "theme": "amber",
+          "icon": "🏗️",
+          "points": [
+            "<strong>પ્રશ્ન:</strong> SI પદ્ધતિમાં ૧ જૂલ (1 J) કાર્યની વ્યાખ્યા આપો[span_183](start_span)[span_183](end_span).",
+            "<strong>જવાબ:</strong> એક ન્યૂટન (1 N) બળની અસર હેઠળ, બળની દિશામાં કણનું સ્થાનાંતર એક મીટર (1 m) થાય તો થયેલા કાર્યને <strong>૧ જૂલ (1 J)</strong> કહે છે (1 J = 10<sup>7</sup> erg)[span_184](start_span)[span_184](end_span)."
+          ],
+          "formula": "1 J = 1 N × 1 m = 10<sup>7</sup> erg"
+        },
+        {
+          "id": 4,
+          "title": "કાર્ય ઋણ ક્યારે મળે? ઉદાહરણ આપો",
+          "enTitle": "1-Mark Question",
+          "theme": "purple",
+          "icon": "➖",
+          "points": [
+            "<strong>પ્રશ્ન:</strong> પદાર્થ પર થયેલું કાર્ય ઋણ ક્યારે મળે છે[span_185](start_span)[span_185](end_span)?",
+            "<strong>જવાબ:</strong> જ્યારે બળ અને સ્થાનાંતર વચ્ચેનો ખૂણો 90° થી 180° ની વચ્ચે (90° < θ ≤ 180°) હોય ત્યારે cosθ ઋણ હોવાથી કાર્ય ઋણ મળે છે (દા.ત. ઘર્ષણબળ વડે થતું કાર્ય)[span_186](start_span)[span_186](end_span)."
+          ],
+          "formula": "90° < θ ≤ 180° &nbsp;⇒&nbsp; W = Fd·cosθ < 0"
+        },
+        {
+          "id": 5,
+          "title": "નિયમિત વર્તુળાકાર ગતિમાં કેન્દ્રગામી બળ વડે કાર્ય",
+          "enTitle": "1-Mark Question",
+          "theme": "peach",
+          "icon": "🎡",
+          "points": [
+            "<strong>પ્રશ્ન:</strong> નિયમિત વર્તુળાકાર ગતિ કરતા કણ પર કેન્દ્રગામી બળ વડે કેટલું કાર્ય થાય[span_187](start_span)[span_187](end_span)?",
+            "<strong>જવાબ:</strong> વર્તુળાકાર ગતિમાં કેન્દ્રગામી બળ (ત્રિજ્યા તરફ) અને સ્થાનાંતર (સ્પર્શક તરફ) હંમેશા પરસ્પર લંબ (θ = 90°) હોવાથી થતું કાર્ય <strong>શૂન્ય (W = 0)</strong> હોય છે[span_188](start_span)[span_188](end_span)."
+          ],
+          "formula": "W = Fd·cos90° = 0"
+        },
+        {
+          "id": 6,
+          "title": "1 kWh એટલે કેટલા જૂલ થાય?",
+          "enTitle": "1-Mark Question",
+          "theme": "sky",
+          "icon": "⚡",
+          "points": [
+            "<strong>પ્રશ્ન:</strong> કિલોવોટ-અવર (kWh) કઈ ભૌતિકરાશિનો એકમ છે અને 1 kWh બરાબર કેટલા જૂલ થાય[span_189](start_span)[span_189](end_span)?",
+            "<strong>જવાબ:</strong> kWh એ <strong>ઊર્જા (કાર્ય)</strong> નો એકમ છે, પાવરનો નહીં[span_190](start_span)[span_190](end_span). 1 kWh = 1000 W × 3600 s = <strong>3.6 × 10<sup>6</sup> J</strong> થાય છે[span_191](start_span)[span_191](end_span)[span_192](start_span)[span_192](end_span)."
+          ],
+          "formula": "1 kWh = 3.6 × 10<sup>6</sup> J"
+        },
+        {
+          "id": 7,
+          "title": "સમાન વેગમાન ધરાવતા બે પદાર્થોમાં કોની ગતિઊર્જા વધુ?",
+          "enTitle": "1-Mark Question",
+          "theme": "mint",
+          "icon": "🏃",
+          "points": [
+            "<strong>પ્રશ્ન:</strong> એક હલકો અને એક ભારે પદાર્થ સમાન રેખીય વેગમાન ધરાવે છે, તો કોની ગતિઊર્જા વધુ હશે[span_193](start_span)[span_193](end_span)?",
+            "<strong>જવાબ:</strong> K = <span class='frac'><span>p<sup>2</sup></span><span>2m</span></span> મુજબ અચળ વેગમાન માટે K ∝ <span class='frac'><span>1</span><span>m</span></span> હોવાથી <strong>હલકા પદાર્થની ગતિઊર્જા વધુ</strong> હશે[span_194](start_span)[span_194](end_span)."
+          ],
+          "formula": "p = અચળ &nbsp;⇒&nbsp; K ∝ <span class='frac'><span>1</span><span>m</span></span>"
+        },
+        {
+          "id": 8,
+          "title": "F(x) → x આલેખ નીચેનું ક્ષેત્રફળ શું દર્શાવે છે?",
+          "enTitle": "1-Mark Question",
+          "theme": "amber",
+          "icon": "📈",
+          "points": [
+            "<strong>પ્રશ્ન:</strong> ચલબળ F(x) વિરુદ્ધ સ્થાનાંતર (x) ના આલેખ નીચે ઘેરાતા પ્રદેશનું ક્ષેત્રફળ કઈ ભૌતિકરાશિ આપે છે[span_195](start_span)[span_195](end_span)?",
+            "<strong>જવાબ:</strong> F(x) → x આલેખ નીચેનું ક્ષેત્રફળ ચલબળ વડે પદાર્થ પર થયેલું <strong>કુલ કાર્ય (W = ∫F(x)dx)</strong> દર્શાવે છે[span_196](start_span)[span_196](end_span)."
+          ],
+          "formula": "ક્ષેત્રફળ = W = ∫<sub>x<sub>i</sub></sub><sup>x<sub>f</sub></sup> F(x)·dx"
+        },
+        {
+          "id": 9,
+          "title": "કાર્ય-ઊર્જા પ્રમેયનું વિધાન લખો",
+          "enTitle": "1-Mark Question",
+          "theme": "purple",
+          "icon": "🔄",
+          "points": [
+            "<strong>પ્રશ્ન:</strong> કાર્ય-ઊર્જા પ્રમેય (Work-Energy Theorem) લખો[span_197](start_span)[span_197](end_span)[span_198](start_span)[span_198](end_span).",
+            "<strong>જવાબ:</strong> પદાર્થની ગતિઊર્જામાં થતો ફેરફાર તેના પર લાગતા ચોખ્ખા (પરિણામી) બળ વડે થતાં કાર્ય જેટલો હોય છે: <strong>K<sub>f</sub> - K<sub>i</sub> = W</strong>[span_199](start_span)[span_199](end_span)[span_200](start_span)[span_200](end_span)."
+          ],
+          "formula": "ΔK = K<sub>f</sub> - K<sub>i</sub> = W"
+        },
+        {
+          "id": 10,
+          "title": "સંરક્ષી બળ અને અસંરક્ષી બળનું એક-એક ઉદાહરણ",
+          "enTitle": "1-Mark Question",
+          "theme": "peach",
+          "icon": "🔁",
+          "points": [
+            "<strong>પ્રશ્ન:</strong> સંરક્ષી બળ અને અસંરક્ષી બળ કોને કહે છે? ઉદાહરણ આપો[span_201](start_span)[span_201](end_span).",
+            "<strong>જવાબ:</strong> જે બળ વડે થતું કાર્ય ગતિમાર્ગ પર આધાર ન રાખે તે <strong>સંરક્ષી બળ</strong> (દા.ત. ગુરુત્વાકર્ષણ બળ, સ્પ્રિંગ બળ) અને જે ગતિમાર્ગ પર આધાર રાખે તે <strong>અસંરક્ષી બળ</strong> (દા.ત. ઘર્ષણબળ) કહેવાય[span_202](start_span)[span_202](end_span)[span_203](start_span)[span_203](end_span)."
+          ],
+          "formula": "સંરક્ષી: ગુરુત્વાકર્ષણ | અસંરક્ષી: ઘર્ષણ"
+        },
+        {
+          "id": 11,
+          "title": "સ્થિતિઊર્જા અને સંરક્ષી બળ વચ્ચેનો સંબંધ",
+          "enTitle": "1-Mark Question",
+          "theme": "sky",
+          "icon": "🏔️",
+          "points": [
+            "<strong>પ્રશ્ન:</strong> એક પરિમાણમાં સંરક્ષી બળ F(x) અને સ્થિતિઊર્જા V(x) વચ્ચેનો સંબંધ લખો[span_204](start_span)[span_204](end_span).",
+            "<strong>જવાબ:</strong> સંરક્ષી બળ એ સ્થિતિઊર્જાના સ્થાન સાપેક્ષ વિકલનના ઋણ મૂલ્ય જેટલું હોય છે: <strong>F(x) = -<span class='frac'><span>dV</span><span>dx</span></span></strong>[span_205](start_span)[span_205](end_span)."
+          ],
+          "formula": "F(x) = -<span class='frac'><span>dV</span><span>dx</span></span>"
+        },
+        {
+          "id": 12,
+          "title": "યાંત્રિક ઊર્જા સંરક્ષણની શરત કઈ છે?",
+          "enTitle": "1-Mark Question",
+          "theme": "mint",
+          "icon": "♾️",
+          "points": [
+            "<strong>પ્રશ્ન:</strong> તંત્રની કુલ યાંત્રિક ઊર્જાનું સંરક્ષણ ક્યારે થાય છે[span_206](start_span)[span_206](end_span)?",
+            "<strong>જવાબ:</strong> જ્યારે તંત્ર પર માત્ર <strong>સંરક્ષી બળો</strong> વડે જ કાર્ય થતું હોય (અસંરક્ષી બળો ગેરહાજર હોય), ત્યારે તંત્રની કુલ યાંત્રિક ઊર્જા (K + V) અચળ રહે છે[span_207](start_span)[span_207](end_span)."
+          ],
+          "formula": "K + V = અચળ (માત્ર સંરક્ષી બળો માટે)"
+        },
+        {
+          "id": 13,
+          "title": "સ્પ્રિંગ અચળાંક (k) નો SI એકમ અને પારિમાણિક સૂત્ર",
+          "enTitle": "1-Mark Question",
+          "theme": "amber",
+          "icon": "🌀",
+          "points": [
+            "<strong>પ્રશ્ન:</strong> હુકના નિયમમાં આવતા સ્પ્રિંગ અચળાંક (k) નો SI એકમ અને પારિમાણિક સૂત્ર જણાવો[span_208](start_span)[span_208](end_span).",
+            "<strong>જવાબ:</strong> k = <span class='frac'><span>F<sub>s</sub></span><span>x</span></span> પરથી તેનો SI એકમ <strong>N·m<sup>-1</sup></strong> (અથવા kg·s<sup>-2</sup>) છે અને પારિમાણિક સૂત્ર <strong>[M<sup>1</sup>L<sup>0</sup>T<sup>-2</sup>]</strong> છે[span_209](start_span)[span_209](end_span)."
+          ],
+          "formula": "SI એકમ: N·m<sup>-1</sup> &nbsp;|&nbsp; [M<sup>1</sup>L<sup>0</sup>T<sup>-2</sup>]"
+        },
+        {
+          "id": 14,
+          "title": "સ્પ્રિંગ-બ્લોક તંત્રમાં કયા સ્થાને ઝડપ મહત્તમ હોય?",
+          "enTitle": "1-Mark Question",
+          "theme": "purple",
+          "icon": "📊",
+          "points": [
+            "<strong>પ્રશ્ન:</strong> સ્પ્રિંગના છેડે બાંધેલા બ્લોકની ગતિમાં કયા સ્થાને ઝડપ મહત્તમ હોય છે અને કેટલી હોય છે[span_210](start_span)[span_210](end_span)[span_211](start_span)[span_211](end_span)?",
+            "<strong>જવાબ:</strong> સંતુલન સ્થાને (<strong>x = 0</strong>) સ્થિતિઊર્જા શૂન્ય થવાથી ઝડપ મહત્તમ બને છે: <strong>v<sub>m</sub> = <span class='sqrt'>√<span class='sqrt-rad'><span class='frac'><span>k</span><span>m</span></span></span></span> · x<sub>m</sub></strong>[span_212](start_span)[span_212](end_span)[span_213](start_span)[span_213](end_span)."
+          ],
+          "formula": "x = 0 પર v<sub>m</sub> = <span class='sqrt'>√<span class='sqrt-rad'><span class='frac'><span>k</span><span>m</span></span></span></span> · x<sub>m</sub>"
+        },
+        {
+          "id": 15,
+          "title": "૧ હોર્સપાવર (1 hp) બરાબર કેટલા વોટ?",
+          "enTitle": "1-Mark Question",
+          "theme": "peach",
+          "icon": "🔌",
+          "points": [
+            "<strong>પ્રશ્ન:</strong> પાવરનો SI એકમ શું છે અને ૧ હોર્સપાવર (1 hp) એટલે કેટલા વોટ થાય[span_214](start_span)[span_214](end_span)?",
+            "<strong>જવાબ:</strong> પાવરનો SI એકમ <strong>વોટ (W = J/s)</strong> છે અને બ્રિટિશ એકમ <strong>1 hp = 746 W</strong> થાય છે[span_215](start_span)[span_215](end_span)."
+          ],
+          "formula": "1 hp = 746 W"
+        },
+        {
+          "id": 16,
+          "title": "શિરોલંબ વર્તુળ પૂર્ણ કરવા તળિયે લઘુત્તમ વેગ",
+          "enTitle": "1-Mark Question",
+          "theme": "sky",
+          "icon": "🎡",
+          "points": [
+            "<strong>પ્રશ્ન:</strong> r ત્રિજ્યાના શિરોલંબ વર્તુળને પૂર્ણ કરવા માટે સૌથી નીચેના બિંદુએ (L) અને સૌથી ઉપરના બિંદુએ (H) લઘુત્તમ વેગ કેટલા હોવા જોઈએ[span_216](start_span)[span_216](end_span)?",
+            "<strong>જવાબ:</strong> સૌથી નીચેના બિંદુએ લઘુત્તમ વેગ <strong>v<sub>L</sub> = <span class='sqrt'>√<span class='sqrt-rad'>5gr</span></span></strong> અને સૌથી ઉપરના બિંદુએ લઘુત્તમ વેગ <strong>v<sub>H</sub> = <span class='sqrt'>√<span class='sqrt-rad'>gr</span></span></strong> હોવો જોઈએ[span_217](start_span)[span_217](end_span)."
+          ],
+          "formula": "v<sub>L</sub> = <span class='sqrt'>√<span class='sqrt-rad'>5gr</span></span> &nbsp;|&nbsp; v<sub>H</sub> = <span class='sqrt'>√<span class='sqrt-rad'>gr</span></span>"
+        },
+        {
+          "id": 17,
+          "title": "શિરોલંબ લુપ બનાવવા જરૂરી લઘુત્તમ ઊંચાઈ",
+          "enTitle": "1-Mark Question",
+          "theme": "mint",
+          "icon": "🎢",
+          "points": [
+            "<strong>પ્રશ્ન:</strong> r ત્રિજ્યાનું શિરોલંબ લુપ (Loop-the-loop) પૂર્ણ કરવા માટે પદાર્થને કેટલી લઘુત્તમ ઊંચાઈએથી છોડવો જોઈએ[span_218](start_span)[span_218](end_span)?",
+            "<strong>જવાબ:</strong> યાંત્રિક ઊર્જા સંરક્ષણ (mgh = <span class='frac'><span>1</span><span>2</span></span>mv<sub>L</sub><sup>2</sup> = <span class='frac'><span>5</span><span>2</span></span>mgr) પરથી લઘુત્તમ ઊંચાઈ <strong>h = <span class='frac'><span>5r</span><span>2</span></span> = 2.5r</strong> હોવી જોઈએ[span_219](start_span)[span_219](end_span)."
+          ],
+          "formula": "h<sub>min</sub> = <span class='frac'><span>5r</span><span>2</span></span>"
+        },
+        {
+          "id": 18,
+          "title": "સ્થિતિસ્થાપક અને અસ્થિતિસ્થાપક સંઘાતનો તફાવત",
+          "enTitle": "1-Mark Question",
+          "theme": "amber",
+          "icon": "🎱",
+          "points": [
+            "<strong>પ્રશ્ન:</strong> સ્થિતિસ્થાપક અને અસ્થિતિસ્થાપક સંઘાત વચ્ચે મુખ્ય તફાવત શું છે[span_220](start_span)[span_220](end_span)[span_221](start_span)[span_221](end_span)?",
+            "<strong>જવાબ:</strong> સ્થિતિસ્થાપક સંઘાતમાં રેખીય વેગમાન અને <strong>ગતિઊર્જા બંનેનું</strong> સંરક્ષણ થાય છે, જ્યારે અસ્થિતિસ્થાપક સંઘાતમાં માત્ર રેખીય વેગમાનનું જ સંરક્ષણ થાય છે (ગતિઊર્જાનું સંરક્ષણ થતું નથી)[span_222](start_span)[span_222](end_span)[span_223](start_span)[span_223](end_span)."
+          ],
+          "formula": "દરેક સંઘાતમાં: p<sub>કુલ</sub> = અચળ"
+        },
+        {
+          "id": 19,
+          "title": "રેસ્ટિટ્યુશન ગુણાંક (e) ના મૂલ્યો જણાવો",
+          "enTitle": "1-Mark Question",
+          "theme": "purple",
+          "icon": "📏",
+          "points": [
+            "<strong>પ્રશ્ન:</strong> સંપૂર્ણ સ્થિતિસ્થાપક અને સંપૂર્ણ અસ્થિતિસ્થાપક સંઘાત માટે રેસ્ટિટ્યુશન ગુણાંક (e) ના મૂલ્યો કેટલા હોય છે[span_224](start_span)[span_224](end_span)?",
+            "<strong>જવાબ:</strong> સંપૂર્ણ સ્થિતિસ્થાપક સંઘાત માટે <strong>e = 1</strong> અને સંપૂર્ણ અસ્થિતિસ્થાપક સંઘાત માટે <strong>e = 0</strong> હોય છે[span_225](start_span)[span_225](end_span)."
+          ],
+          "formula": "e = <span class='frac'><span>v<sub>2</sub> - v<sub>1</sub></span><span>u<sub>1</sub> - u<sub>2</sub></span></span> &nbsp;(Elastic: e=1, Inelastic: e=0)"
+        },
+        {
+          "id": 20,
+          "title": "સમાન દળના બે ગોળાઓના સ્થિતિસ્થાપક સંઘાતનું પરિણામ",
+          "enTitle": "1-Mark Question",
+          "theme": "peach",
+          "icon": "💥",
+          "points": [
+            "<strong>પ્રશ્ન:</strong> એક પરિમાણમાં સમાન દળ (m<sub>1</sub> = m<sub>2</sub>) ધરાવતા બે ગોળાઓ વચ્ચે સ્થિતિસ્થાપક અથડામણ થાય તો તેમના વેગમાં શું ફેરફાર થાય[span_226](start_span)[span_226](end_span)[span_227](start_span)[span_227](end_span)?",
+            "<strong>જવાબ:</strong> બંને ગોળાઓ પોતાના <strong>વેગની અદલાબદલી</strong> કરે છે; એટલે કે પ્રથમ ગોળો બીજાના પ્રારંભિક વેગથી (v<sub>1</sub> = u<sub>2</sub>) અને બીજો ગોળો પ્રથમના પ્રારંભિક વેગથી (v<sub>2</sub> = u<sub>1</sub>) ગતિ કરે છે[span_228](start_span)[span_228](end_span)[span_229](start_span)[span_229](end_span)."
+          ],
+          "formula": "m<sub>1</sub> = m<sub>2</sub> &nbsp;⇒&nbsp; v<sub>1</sub> = u<sub>2</sub>, &nbsp; v<sub>2</sub> = u<sub>1</sub>"
+        },
+        {
+          "id": 21,
+          "title": "ભારે દીવાલ સાથે અથડાઈને પાછા ફરતા દડાનો વેગ",
+          "enTitle": "1-Mark Question",
+          "theme": "sky",
+          "icon": "🧱",
+          "points": [
+            "<strong>પ્રશ્ન:</strong> જો ખૂબ જ હલકો ગોળો (m<sub>1</sub>) સ્થિર રહેલા અત્યંત ભારે ગોળા (m<sub>2</sub> >> m<sub>1</sub>) સાથે સ્થિતિસ્થાપક અથડામણ કરે તો શું થાય[span_230](start_span)[span_230](end_span)[span_231](start_span)[span_231](end_span)?",
+            "<strong>જવાબ:</strong> હલકો ગોળો લગભગ તેટલી જ ઝડપથી વિરુદ્ધ દિશામાં પાછો ફેંકાય છે (<strong>v<sub>1</sub> ≈ -u<sub>1</sub></strong>) અને ભારે ગોળો સ્થિર જ રહે છે (v<sub>2</sub> ≈ 0)[span_232](start_span)[span_232](end_span)[span_233](start_span)[span_233](end_span)."
+          ],
+          "formula": "m<sub>2</sub> >> m<sub>1</sub> &nbsp;⇒&nbsp; v<sub>1</sub> ≈ -u<sub>1</sub>, &nbsp; v<sub>2</sub> ≈ 0"
+        },
+        {
+          "id": 22,
+          "title": "સંપૂર્ણ અસ્થિતિસ્થાપક સંઘાત બાદ સંયુક્ત વેગનું સૂત્ર",
+          "enTitle": "1-Mark Question",
+          "theme": "mint",
+          "icon": "🔗",
+          "points": [
+            "<strong>પ્રશ્ન:</strong> u<sub>1</sub> વેગથી ગતિ કરતો m<sub>1</sub> દળનો પદાર્થ સ્થિર રહેલા m<sub>2</sub> દળના પદાર્થ સાથે ચોંટી જાય તો સંયુક્ત તંત્રનો અંતિમ વેગ કેટલો થાય[span_234](start_span)[span_234](end_span)?",
+            "<strong>જવાબ:</strong> વેગમાન સંરક્ષણ (m<sub>1</sub>u<sub>1</sub> = (m<sub>1</sub> + m<sub>2</sub>)v<sub>f</sub>) પરથી સંયુક્ત અંતિમ વેગ <strong>v<sub>f</sub> = <span class='frac'><span>m<sub>1</sub>u<sub>1</sub></span><span>m<sub>1</sub> + m<sub>2</sub></span></span></strong> થાય છે[span_235](start_span)[span_235](end_span)."
+          ],
+          "formula": "v<sub>f</sub> = <span class='frac'><span>m<sub>1</sub>u<sub>1</sub></span><span>m<sub>1</sub> + m<sub>2</sub></span></span>"
+        }
+      ]
     }
   }
 }
-
   
 
 
